@@ -1,7 +1,24 @@
 import "./App.css";
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Form from './pages/Form';
+import GardenProfile from './pages/GardenProfile';
+import Layout from './components/Layout';
+
 
 function App() {
-  return <div className="App">Holi</div>;
+  return (
+    <div>
+       <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="form" element={<Form />} />
+        <Route path="garden" element={<GardenProfile />} />
+      </Route>
+    </Routes>
+    </div>
+   
+  )
 }
 
 export default App;

@@ -1,8 +1,10 @@
-import React from "react";
-import Footer from "../components/Footer";
 import "../assets/styles/form.css";
 
 export default function Form() {
+  return <div className="background">FORMULARIO</div>;
+}
+
+/* export default function Form() {
   return (
     <div className="container">
       <fieldset>
@@ -33,3 +35,4 @@ export default function Form() {
     </div>
   );
 }
+ */

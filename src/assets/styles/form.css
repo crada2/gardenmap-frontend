@@ -1,3 +1,10 @@
+.background {
+  background-image: url(../img/bgForm.png);
+  background-size: contain;
+  width: 900px;
+  height: auto;
+}
+
 .container {
   display: flex;
   justify-content: flex-start;

@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Form from "./pages/Form";
 import GardenProfile from "./pages/GardenProfile";
 import Layout from "./components/Layout";
-import "../src/assets/styles/style.css";
+import "./assets/styles/style.css";
 
 export default function App() {
   return (

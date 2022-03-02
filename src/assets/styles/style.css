@@ -1,0 +1,31 @@
+@import url(header.css);
+@import url(main.css);
+@import url(hero.css);
+@import url(footer.css);
+@import url(form.css);
+@import url(home.css);
+@import url(profile.css);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  box-sizing: initial;
+}
+
+html {
+  font-size: 13pt;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --color-principal: #5748af;
+  --color-accent: #7e68fe;
+  --color-grey: #e9e9e9;
+}

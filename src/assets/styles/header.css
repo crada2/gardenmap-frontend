@@ -1,24 +1,26 @@
-header {
+
+.containerHeader {
+    color: aliceblue;
     cursor: not-allowed;
     display: flex;
-    background-color: var(--color-principal);
+    background-color: var(--color-header);
     position: fixed;
     width: 100%;
     min-height: 90px;
     height: 56px;
-    background-color: rgb(16, 11, 30);
+ 
   }
-  header div {
+  .header {
     flex: 2;
     display: flex;
     justify-content: center;
   }
-  header img {
+ .logo {
     height: 3rem;
     padding: 1rem;
   }
   
-  nav {
+  .nav {
     padding: 1rem;
     cursor: pointer;
     flex: 2;
@@ -26,29 +28,33 @@ header {
     justify-content: start;
   }
   
-  header a {
+  .navList {
+    list-style: none;
     text-decoration: none;
     color: antiquewhite;
     padding: 1rem;
   }
-  
-  header p {
+  .separator{
     padding: 1rem;
     color: antiquewhite;
   }
+
+  .headerSpan{
+      display: none;
+  }
   
   @media (max-width: 1194px) {
-    header span {
+    .headerSpan {
       flex: 2;
       display: flex;
       justify-content: center;
     }
-    header span img {
+    .menu {
       height: 3rem;
       padding: 1rem;
       border-radius: 1.6em;
     }
-    nav {
+    .nav {
       display: none;
     }
   }

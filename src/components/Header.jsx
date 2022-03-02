@@ -5,9 +5,9 @@ import "../assets/styles/header.css";
 const Header = () => {
   return (
     <div className="containerHeader">
-      <div className="header"><img className="logo"  src={require("../assets/img/logoName.png")} title="Logo GardenMap" alt="Logo GardenMap" /></div>
+      <div className="boxHeader"><img className="logoName"  src={require("../assets/img/logoName.png")} title="Logo GardenMap" alt="Logo GardenMap" /></div>
       
-      <nav className="nav">
+      <nav className="boxNav">
        
         <li className="navList" > GardenMali </li>
         <li className="navList" > OurStory </li>

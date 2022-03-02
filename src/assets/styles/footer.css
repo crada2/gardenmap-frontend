@@ -1,3 +1,11 @@
-h1{
-    font-size: 5rem;
+.footer {
+  background-color: #2f4922;
+  color: black;
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
 }

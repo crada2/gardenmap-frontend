@@ -1,8 +1,10 @@
 const GardenForm = () => {
   return (
-    <div className="registration-form">
-      <div className="container">
+    <div className="container">
+      <div className="container-title">
         <legend>Tell us about you</legend>
+      </div>
+      <div className="container-content">
         <form className="content">
           <div className="row">
             <label htmlFor="name">Name</label>

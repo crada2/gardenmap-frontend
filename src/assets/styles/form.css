@@ -1,16 +1,27 @@
 .container {
   display: flex;
   justify-content: flex-start;
+  background: var(--color-form);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin: 0.25rem;
+  border-radius: 3%;
+  border: 1px solid #2f2f2f;
+  padding-bottom: 3rem;
 }
 
-.container-title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5vh;
+.container legend {
+  text-align: center;
+  background-color: aquamarine;
+  font-size: 1em;
+  padding: 1rem;
 }
 
-.container-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.content {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }

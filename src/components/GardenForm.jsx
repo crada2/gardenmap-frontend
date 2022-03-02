@@ -19,7 +19,7 @@ const GardenForm = () => {
             <input type="text" placeholder="Where is your garden?" />
           </div>
           <div className="row">
-            <label htmlFor="email">email</label>
+            <label htmlFor="email">Email</label>
             <input type="text" placeholder="What is your e-mail??" />
           </div>
           <div className="row">

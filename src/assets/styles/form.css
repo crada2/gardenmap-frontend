@@ -13,20 +13,31 @@
 .container {
   display: flex;
   justify-content: flex-start;
-  background: var(--color-form);
+  background: gray;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 50%;
+  width: 40%;
+  height: 60%;
   margin: 0.25rem;
-  border-radius: 3%;
-  border: 1px solid #2f2f2f;
+  border-radius: 2%;
+  box-sizing: border-box;
+  box-shadow: 0 0 0.25em -0.25em #000;
+  /* border: 1px solid #2f2f2f; */
   padding-bottom: 3rem;
+  position: relative;
 }
 
-.container legend {
+//background: var(--color-form);
+
+.container-title {
   text-align: center;
   background-color: aquamarine;
   font-size: 1em;
   padding: 1rem;
+  margin: 0.25em;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
 }
 
 .content {

@@ -26,8 +26,6 @@
   position: relative;
 }
 
-//background: var(--color-form);
-
 .container-title {
   text-align: center;
   background-color: aquamarine;
@@ -40,11 +38,41 @@
   border-bottom: 3px solid #78788c;
 }
 
-.content {
+.container-content {
   margin: 0 auto;
   display: block;
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #78788c;
+  color: #fff;
 }

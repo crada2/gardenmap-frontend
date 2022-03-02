@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <div><img src="/assets/img/unicorn-WM.png" title="Unicorn WM" alt="logo unicorn" /></div>
+      <div><img src="/assets/img/logo.png" title="Logo GardenMap" alt="Logo GardenMap" /></div>
       
       <nav>
        

@@ -1,0 +1,55 @@
+header {
+    cursor: not-allowed;
+    display: flex;
+    background-color: var(--color-principal);
+    position: fixed;
+    width: 100%;
+    min-height: 90px;
+    height: 56px;
+    background-color: rgb(16, 11, 30);
+  }
+  header div {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  header img {
+    height: 3rem;
+    padding: 1rem;
+  }
+  
+  nav {
+    padding: 1rem;
+    cursor: pointer;
+    flex: 2;
+    display: flex;
+    justify-content: start;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 1rem;
+  }
+  
+  header p {
+    padding: 1rem;
+    color: antiquewhite;
+  }
+  
+  @media (max-width: 1194px) {
+    header span {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+    }
+    header span img {
+      height: 3rem;
+      padding: 1rem;
+      border-radius: 1.6em;
+    }
+    nav {
+      display: none;
+    }
+  }
+  

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #2f4922;
+  background-color: var(--color-footer);
   color: black;
   font-family: "Archivo", sans-serif;
   font-size: 1rem;
@@ -8,12 +8,18 @@
   bottom: 0;
   position: fixed;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .logo {
-  width: 40%;
+  width: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
   height: auto;
+  border-radius: 100%;
+  padding: 0.5rem;
 }

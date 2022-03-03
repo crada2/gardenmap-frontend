@@ -1,28 +1,46 @@
+@font-face {
+  font-family: romantice;
+  src: url(../fonts/ROMANTICE.otf);
+}
+
 .background {
   background-image: url(../img/garden.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 100vh;
   opacity: 0.9;
-  position: relative;
+  position: absolute;
 }
 
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
+  border-radius: 1%;
+  background-color: #dbcfe6;
+  width: 80%;
+  height: 20em;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   margin-left: 5%;
   margin-top: 15%;
+  margin-bottom: 15%;
 }
 
 .container-title {
+  background: red;
+  font-family: romantice;
+  font-size: medium;
+  width: 100%;
+  height: 40vh;
+  padding: 0% 0% 20% 0%;
   display: flex;
-  align-items: center;
+  flex-direction: center;
+  flex-direction: column;
   /* background-image: url(../img/formBanner.png); */
+}
+
+.container-content {
+  background: green;
+  padding: 5%;
 }
 
 .col-25 {
@@ -41,9 +59,9 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 5%;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   box-sizing: border-box;
   resize: vertical;
   background-color: var(--color-form);
@@ -55,8 +73,13 @@ button {
   color: white;
   padding: 3%;
   border: none;
-  border-radius: 2%;
+  border-radius: 0.25rem;
   cursor: pointer;
   float: right;
   margin: 2%;
+}
+
+label {
+  padding: 0.25em 0.25em 0.25em 0;
+  display: inline-block;
 }

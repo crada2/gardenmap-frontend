@@ -3,7 +3,7 @@ const GardenForm = () => {
     <div className="background">
       <div className="container">
         <div className="container-title">
-          <legend>Tell us about you</legend>
+          <p>Tell us about you</p>
         </div>
         <div className="container-content">
           <form className="content">

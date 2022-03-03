@@ -16,7 +16,7 @@
 .container {
   border-radius: 1%;
   background-color: #dbcfe6;
-  width: 80%;
+  max-width: 70%;
   height: 20em;
   display: flex;
   flex-direction: column;
@@ -26,27 +26,27 @@
 }
 
 .container-title {
-  background: red;
   font-family: romantice;
-  font-size: medium;
+  font-size: 2em;
   width: 100%;
   height: 40vh;
-  padding: 0% 0% 20% 0%;
+  padding: 10% 0% 10% 0%;
   display: flex;
-  flex-direction: center;
-  flex-direction: column;
-  /* background-image: url(../img/formBanner.png); */
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/formBanner.png);
+  background-size: 100%;
 }
 
 .container-content {
-  background: green;
+  background: rgb(207, 194, 186);
   padding: 5%;
 }
 
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .col-75 {

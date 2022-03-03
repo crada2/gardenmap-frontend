@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import BtnSlider from '../Hero/BtnSlider'
 import DataSlider from '../Hero/DataSlider'
-import '../../assets/styles/hero.css'
+
 
 const Hero = () => {
   const [slideIndex, setSlideIndex] = useState(1)

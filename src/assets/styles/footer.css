@@ -3,10 +3,10 @@
   color: black;
   font-family: "Archivo", sans-serif;
   font-size: 1rem;
-  height: 7vh;
+ 
   width: 100%;
   bottom: 0;
-  position: fixed;
+  
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -1,0 +1,46 @@
+.containerHome{
+    padding-top: 23rem;
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #9D977F;
+}
+.boxInfo{
+    display: flex;
+    justify-content: center;
+}
+.homeImg{
+    width: 12rem;
+}
+.plant{
+    margin-top:1.3rem;;
+}
+.sectionHome{
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+   
+}
+.homeUl{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.homeLi{
+    margin-top: 1rem;;
+    margin-top: 1rem;
+   list-style:circle;
+
+}
+.google-map-code{
+    display: flex;
+    justify-content: center;
+}
+.ifraMap{
+    width: 50%;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+}

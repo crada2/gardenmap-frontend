@@ -1,10 +1,6 @@
-import React from "react";
+import "../assets/styles/form.css";
+import GardenForm from "../components/GardenForm";
 
-const Form = () => {
-  return (
-    <div>
-      <h1>FORM</h1>
-    </div>
-  );
-};
-export default Form;
+export default function Form() {
+  return <GardenForm />;
+}

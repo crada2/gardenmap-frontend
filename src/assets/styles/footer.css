@@ -1,3 +1,25 @@
-h1{
-    font-size: 5rem;
+.footer {
+  background-color: var(--color-footer);
+  color: black;
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  height: 7vh;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+  border-radius: 100%;
+  padding: 0.5rem;
 }

@@ -1,5 +1,4 @@
 @import url(header.css);
-
 @import url(hero.css);
 @import url(footer.css);
 @import url(form.css);
@@ -19,15 +18,14 @@
 }
 
 html {
-  
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 
 :root {
-  --color-circle: #8C6239;
-  --color-header: #3A2D19;
-  --color-footer: #2F4922;
+  --color-circle: #8c6239;
+  --color-header: #3a2d19;
+  --color-footer: #2f4922;
   --color-font: #056564;
-  --color-form: #9D8D7F /*color inputs formulario*/
+  --color-form: #9d8d7f; /*color inputs formulario*/
 }

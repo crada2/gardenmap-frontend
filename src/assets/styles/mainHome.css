@@ -5,9 +5,9 @@
 
   background-image: url(../img/Rectangle.svg);
   background-size: cover;
-  background-position: 0% 0%;
+  background-position: 4% 0%;
 
-  height: 51em;
+  
 }
 
 .title {
@@ -57,7 +57,7 @@
 }
 
 .sectionMap {
-  margin: 2em;
+ 
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -66,24 +66,25 @@
 .ifraMap {
   width: 100%;
   height: 16rem;
-  border: 4px solid #cca36b;
+  border: 4px solid #cca46b81;
   box-sizing: border-box;
   border-radius: 3px;
 }
 .boxBtn {
   display: flex;
   justify-content: center;
-  padding: 4px;
+  padding: 5px;
 }
 .btnMain {
   margin: 9px;
+  border: 2px solid #cca46b81;
   display: flex;
   justify-content: center;
   width: 6em;
-  background-color: var(--color-form);
-  color: white;
+  background-color: rgb(139, 209, 33);
+  color: rgb(0, 0, 0);
   padding: 1%;
-  border: none;
+
   border-radius: 0.25rem;
   cursor: pointer;
 }

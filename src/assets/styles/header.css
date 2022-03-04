@@ -48,12 +48,47 @@
     display: flex;
     justify-content: center;
   }
-  .menu {
-    height: 3rem;
+  .logoName {
+    height: 5rem;
     padding: 1rem;
     border-radius: 1.6em;
   }
   .boxNav {
+    padding: 1rem;
+    cursor: pointer;
+    flex: 2;
+    display: flex;
+    justify-content: start;
+  }
+
+  .navList {
+    list-style: none;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 1rem;
+  }
+  .separator {
+    padding: 1rem;
+    color: antiquewhite;
+  }
+
+  .headerSpan {
     display: none;
+  }
+
+  @media (max-width: 1194px) {
+    .headerSpan {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+    }
+    .menu {
+      height: 5rem;
+      padding: 1rem;
+      border-radius: 1.6em;
+    }
+    .boxNav {
+      display: none;
+    }
   }
 }

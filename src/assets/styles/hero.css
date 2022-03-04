@@ -68,10 +68,10 @@
     display: flex;
   }
   .dot {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    border: 3px solid #f1f1f1;
+    border: 1px solid #f1f1f1;
     margin: 0 5px;
     background: #f1f1f1;
   }

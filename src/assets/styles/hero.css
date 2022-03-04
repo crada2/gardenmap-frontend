@@ -31,11 +31,11 @@
   }
   
   .btn-slide {
-    width: 0px;
-    height: 0px;
-    border-radius: 10%;
-    background: #f1f1f141;
-    border: 1px solid rgba(129, 126, 126, 0.287);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #fffafa05;
+    border: 1px solid #fffafa05;
     position: absolute;
     display: flex;
     justify-content: center;

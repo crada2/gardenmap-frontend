@@ -1,13 +1,13 @@
 .circle {
-  height: 89vh;
+  height: 95vh;
   width: 166vh;
   background: #8c6239;
   border-radius: 1px;
-  display: flex;
+  display: grid;
   position: absolute;
   -webkit-clip-path: circle(75.3% at 74% 72%);
   clip-path: circle(75.3% at 74% 82%);
-  left: 9%;
+  left: 15%;
 }
 
 .container-mainprofile {

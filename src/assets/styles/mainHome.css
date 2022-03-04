@@ -56,6 +56,7 @@
     margin:1rem;
     width: 55%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   
 }
@@ -77,21 +78,13 @@
     box-sizing: border-box;
     border-radius: 3px;
 }
-.btn{
-    margin-left: 24em;
-    margin-bottom: 1em;
-    font-size:14px;
-    font-family:Arial;
-    width:120px;
-    height:30px;
-    border-width:1px;
-    font-weight:bold;
-    border-top-left-radius:6px;
-    border-top-right-radius:6px;
-    border-bottom-left-radius:6px;
-    border-bottom-right-radius:6px;
-    box-shadow:inset 0px 0px 14px -3px #8dcc17;
-    text-shadow:inset 0px 1px 0px #7dc913;
-    background:linear-gradient(#afc976, #92df03);
-  
+.btnMain{
+    width: 5em;
+    background-color: var(--color-form);
+    color: white;
+    padding: 1%;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    float: right;
 }

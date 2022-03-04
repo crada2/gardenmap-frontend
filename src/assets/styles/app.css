@@ -2,7 +2,7 @@
 @import url(hero.css);
 @import url(footer.css);
 @import url(form.css);
-@import url(home.css);
+@import url(mainHome.css);
 @import url(profile.css);
 
 * {
@@ -23,6 +23,7 @@ html {
 }
 
 :root {
+  --color-btnGreen: #0B320C;
   --color-circle: #8c6239;
   --color-header: #3a2d19;
   --color-footer: #2f4922;

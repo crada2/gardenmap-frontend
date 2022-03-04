@@ -1,0 +1,97 @@
+.containerHome{
+
+   background-image: url(../img/Rectangle.svg);
+   background-size: cover;
+   background-position: 0% 0%;
+  
+  
+   height:auto;
+ 
+}
+
+.title{
+    font-size: 40px;
+   padding: 1em;
+    display: flex;
+    justify-content: center;
+    color: #9D977F;
+}
+.boxInfo{
+    display: flex;
+    margin: -1em;
+   justify-content: center;
+    padding-top: 4rem;
+   
+}
+.homeImg{
+    width: 15rem;
+}
+.planet{
+    border-radius: 100%;
+}
+.plant{
+    margin-top:1.3rem;;
+}
+.sectionHome{
+   
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.boxList{
+    margin: 1em;
+    max-height: 9em;
+    padding-top: 1rem;
+
+}
+.homeLi{
+  
+    margin: 1rem 5rem;
+    list-style:circle;
+
+}
+.google-map-code{
+    margin:1rem;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.sectionMap{
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+   
+}
+.ifraMap{
+    width: 100%;
+    height: 16rem;
+    border: 4px solid #CCA36B;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.btn{
+    margin-left: 24em;
+    margin-bottom: 1em;
+    font-size:14px;
+    font-family:Arial;
+    width:120px;
+    height:30px;
+    border-width:1px;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 0px 14px -3px #8dcc17;
+    text-shadow:inset 0px 1px 0px #7dc913;
+    background:linear-gradient(#afc976, #92df03);
+  
+}

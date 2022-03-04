@@ -5,8 +5,8 @@ import MainProfile from "../components/MainProfile";
 const GardenProfile = () => {
   return (
     <div>
-      <Hero/>
-      <MainProfile/>
+      <Hero />
+      <MainProfile />
     </div>
   );
 };

@@ -63,10 +63,9 @@
 
 .sectionMap{
  
-
+    margin: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
    

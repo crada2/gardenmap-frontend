@@ -1,9 +1,9 @@
 import React from "react";
-
+import "../assets/styles/form.css";
 const GardenForm = () => {
   return (
     <div className="background">
-      <div className="container">
+      <div className="containerFormGarden">
         <div className="title">
           <p>Tell us about you</p>
         </div>

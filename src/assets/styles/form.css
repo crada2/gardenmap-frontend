@@ -10,23 +10,22 @@
   width: 100%;
   height: 100vh;
   opacity: 0.9;
-  position: absolute;
+  /*position: absolute;*/
 }
 
-.container {
+.containerFormGarden {
   border-radius: 0.2rem;
   border: 1px #807a85 solid;
   background-color: #dbcfe6;
-  min-width: 50%;
-  height: 20em;
+  max-width: 40%;
+  height: 5%;
   display: flex;
   flex-direction: column;
   margin-left: 5%;
-  margin-top: 15%;
-  margin-bottom: 15%;
-  top: 3vh;
+  margin-bottom: 30%;
+  top: 4vw;
   position: relative;
-  float: left;
+  
 }
 
 .title {
@@ -94,4 +93,45 @@ button {
 
 button:hover {
   background-color: #807a85;
+}
+
+
+
+/*.containerFormGarden {
+    border-radius: 0.2rem;
+    border: 1px #807a85 solid;
+    background-color: #dbcfe6;
+    max-width: 87%;
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 5%; */
+    /* margin-bottom: 30%; 
+    top: 4vw;
+    position: relative;
+}*/
+
+
+ /* Extra Small Devices, Phones */ 
+ @media only screen and (max-width : 480px) {
+  .containerFormGarden {
+   
+    max-width: 87vw;
+ 
+
+    /* margin-left: 5%; */
+   
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .containerFormGarden {
+   
+    max-width: 90vw;
+ 
+
+    /* margin-left: 5%; */
+   
+}
 }

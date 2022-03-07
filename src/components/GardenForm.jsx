@@ -4,30 +4,33 @@ const GardenForm = () => {
   return (
     <div className="background">
       <div className="container">
-        <div className="container-title">
+        <div className="title">
           <p>Tell us about you</p>
         </div>
-        <div className="container-content">
-          <form className="content">
+        <div className="content">
+          <form className="form">
             <div className="row">
               <div className="col-25">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="title">Title</label>
               </div>
               <div className="col-75">
-                <input type="text" placeholder="What is your name?" />
+                <input
+                  type="text"
+                  placeholder="Write a title for your garden"
+                />
               </div>
             </div>
             <div className="row">
               <div className="col-25">
-                <label htmlFor="surname">Surname</label>
+                <label htmlFor="description">Description</label>
               </div>
               <div className="col-75">
-                <input type="text" placeholder="And your last name?" />
+                <input type="text" placeholder="Explain what do you offer" />
               </div>
             </div>
             <div className="row">
               <div className="col-25">
-                <label htmlFor="location">Location</label>
+                <label htmlFor="direction">Direction</label>
               </div>
               <div className="col-75">
                 <input type="text" placeholder="Where is your garden?" />
@@ -35,10 +38,10 @@ const GardenForm = () => {
             </div>
             <div className="row">
               <div className="col-25">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="price">Price</label>
               </div>
               <div className="col-75">
-                <input type="text" placeholder="What is your e-mail??" />
+                <input type="text" placeholder="How much does it cost?" />
               </div>
             </div>
             <div className="row">

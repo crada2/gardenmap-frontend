@@ -14,19 +14,22 @@
 }
 
 .container {
-  border-radius: 1%;
+  border-radius: 0.2rem;
+  border: 1px #807a85 solid;
   background-color: #dbcfe6;
-  width: 70%;
+  min-width: 50%;
   height: 20em;
   display: flex;
   flex-direction: column;
   margin-left: 5%;
   margin-top: 15%;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
+  top: 3vh;
   position: relative;
+  float: left;
 }
 
-.container-title {
+.title {
   font-family: romantice;
   font-size: 4vh;
   width: 100%;
@@ -39,9 +42,13 @@
   background-size: 100%;
 }
 
-.container-content {
+.content {
   background: rgb(207, 194, 186);
   padding: 5%;
+}
+
+.form {
+  position: relative;
 }
 
 .col-25 {
@@ -54,6 +61,11 @@
   float: left;
   width: 75%;
   margin-top: 2%;
+}
+
+label {
+  padding: 0.25em 0.25em 0.25em 0;
+  display: inline-block;
 }
 
 input[type="text"],
@@ -80,7 +92,6 @@ button {
   margin: 3%;
 }
 
-label {
-  padding: 0.25em 0.25em 0.25em 0;
-  display: inline-block;
+button:hover {
+  background-color: #807a85;
 }

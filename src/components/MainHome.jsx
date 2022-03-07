@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "../assets/styles/mainHome.css";
 

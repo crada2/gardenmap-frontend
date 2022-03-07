@@ -6,7 +6,7 @@ const MainHome = () => {
     <div>
       <div className="containerHome">
         <div className="containerSvg">
-          <h2 className="title"> How to be part of the garden family?</h2>
+          <h2 className="titleHome"> How to be part of the garden family?</h2>
           <article className="boxInfo">
             <section className="sectionHome">
               <div className="homeImg">

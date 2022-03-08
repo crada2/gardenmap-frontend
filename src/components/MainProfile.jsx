@@ -1,27 +1,32 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, {  useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../assets/styles/mainprofile.css";
 
-
 const MainProfile = () => {
   const [loading, setLoading] = useState(true);
-  const  [profile, setProfile] = useState([]);
+  const [profile, setProfile] = useState([]);
 
   useEffect(() => {
-    setLoading(false)
+    setLoading(false);
     axios.get("http://localhost:8000/items").then((res) => {
       setProfile(res.data);
     });
-  }, [setLoading])
-  
+  }, [setLoading]);
 
-  return (
+  if (loading) {
+    return (
+      <section>
+        <p>Loading...</p>
+      </section>
+    );
+  }
+
+  return profile.map(({ id, title, description, direction, price }) => (
     <div>
-      
-        <main className="gridProfile">
-          <div className="mainprofile-cardmap">
-            <article className="articleProfile">
+      <main className="gridProfile">
+        <div className="mainprofile-cardmap">
+          <article className="articleProfile">
             <div className="map-local">
               <div className="map-profile">
                 <iframe
@@ -30,44 +35,38 @@ const MainProfile = () => {
                 ></iframe>
               </div>
             </div>
-            </article>
-          </div>
-
-     
-      <article className="articleDescription">
-      <div className="map-perfil">
-                <ul>
-                  <p>🌻 Alquiler de Huerto con Merendero</p>
-                  <ul className="dentro">
-                    <li>🌱 por dia 40$</li>
-                    <li>🌱 por mes 150$</li>
-                  </ul>
-                  <p>🌻 Visitas guiadas: 5$/person</p>
-                  <ul className="dentro">
-                    <li>🌱 1h visita</li>
-                    <li>🌱 actividad con niños</li>
-                    <li>🌱 cesta regalo</li>
-                  </ul>
-                  <p>🌻 Description</p>
-                  <ul className="dentro">
-                    <li>🌱 Market place</li>
-                    <li>🌱 mercado ecológico</li>
-                    <li>🌱 talleres free para todas las edades</li>
-                  </ul>
-                  <p>🌻 Localitation</p>
-                  <ul className="dentro">
-                    <li>🌱 Market place</li>
-                   
-                  </ul>
-                </ul>
+          </article>
         </div>
-      </article>
-      
-      
-        
-        
-    </main> 
-    <article className="articleLogin" >
+
+        <article className="articleDescription">
+          <div className="map-perfil">
+            <ul>
+              <p>🌻 {profile.title}</p>
+              <ul className="dentro">
+                <li>🌱 por dia 40$</li>
+                <li>🌱 por mes 150$</li>
+              </ul>
+              <p>🌻 Visitas guiadas: {profile.price}$/person</p>
+              <ul className="dentro">
+                <li>🌱 1h visita</li>
+                <li>🌱 actividad con niños</li>
+                <li>🌱 cesta regalo</li>
+              </ul>
+              <p>🌻 Description</p>
+              <ul className="dentro">
+                <li>🌱 {profile.description}</li>
+                {/*      <li>🌱 mercado ecológico</li>
+                <li>🌱 talleres free para todas las edades</li> */}
+              </ul>
+              <p>🌻 Location</p>
+              <ul className="dentro">
+                <li>🌱 {profile.price}</li>
+              </ul>
+            </ul>
+          </div>
+        </article>
+      </main>
+      <article className="articleLogin">
         <div class="textLogin">
           <p className="dataLogin">Name:Fulano</p>
           <p className="dataLogin">Last Name: Mengano Bartol</p>
@@ -75,11 +74,9 @@ const MainProfile = () => {
           <p className="dataLogin">Email: 66666@garden.com</p>
           <p className="dataLogin">Profile: 987123986129731</p>
         </div>
-      </article>   
-  </div>
-
-    
-  );
+      </article>
+    </div>
+  ));
 };
 
 export default MainProfile;

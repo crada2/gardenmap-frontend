@@ -1,11 +1,24 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React from "react";
+import React, {  useState, useEffect } from "react";
+import axios from "axios";
 import "../assets/styles/mainprofile.css";
 
+
 const MainProfile = () => {
+  const [loading, setLoading] = useState(true);
+  const  [profile, setProfile] = useState([]);
+
+  useEffect(() => {
+    setLoading(false)
+    axios.get("http://localhost:8000/items").then((res) => {
+      setProfile(res.data);
+    });
+  }, [setLoading])
+  
+
   return (
     <div>
-      <div className="circle"></div>
+      
         <main className="gridProfile">
           <div className="mainprofile-cardmap">
             <article className="articleProfile">

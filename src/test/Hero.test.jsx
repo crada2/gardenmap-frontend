@@ -12,3 +12,22 @@ it('should render a button', () => {
     render(<BtnSlider />)
   })
 
+
+/*describe("BtnSlider", () => {
+
+
+    it("Must display a title", () => {
+        const props = {
+            direction, 
+            moveSlide 
+        };
+  
+        const screen = render(<BtnSlider {...props} />);
+
+  expect(screen.getByDisplayValue(props.direction)).toBeInTheDocument();
+  
+  expect(screen.getByText(props.moveSlide)).toBeInTheDocument();
+ 
+    });
+
+})*/

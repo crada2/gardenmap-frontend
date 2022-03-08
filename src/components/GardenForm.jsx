@@ -30,10 +30,11 @@ const GardenForm = () => {
           <form className="form" onSubmit={submitHandler}>
             <div className="row">
               <div className="col-25">
-                <label htmlFor="title">Title</label>
+                <label htmlFor="title"  >Title</label>
               </div>
               <div className="col-75">
                 <input
+                  id="title"
                   type="text"
                   placeholder="Write a title for your garden"
                   value={title}
@@ -92,7 +93,7 @@ const GardenForm = () => {
                 </select>
               </div>
             </div>
-            <button>Join the garden family!</button>
+            <button type="submit">submit</button>
           </form>
         </div>
       </div>

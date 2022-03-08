@@ -18,6 +18,7 @@
   margin-top: 4em;
   margin-bottom: 4em;
   justify-content: space-around;
+  
   }
 /*.gridProfile > .articleProfile {
   border: 1px solid #ccc;
@@ -40,9 +41,9 @@
 }
 
 .mainprofile-cardmap {
-  width: 60vw;
-  height: 55vh;
-  left: 44px;
+  width: 55vw;
+  height: 60vh;
+  margin-left: 40px;
   top: 50px;
   bottom: 50px;
   background: #00000040;
@@ -56,7 +57,7 @@
 .map-local {
   position: relative;
   display: flex;
-  width: 30vw;
+  width: 26vw;
   height: 25vw;
   left: 34px;
   top: 23px;
@@ -65,34 +66,34 @@
   box-sizing: border-box;
 }
 .map-profile{
-  width: 40vw;;
+  width: 40vw;
+  /*background: green;*/
 }
 
-.ifraMap {
-  width: 100%;
-  height: 19rem;
+.ifraMaping {
+  width: 26vw;
+  height: 23rem;
   border: 4px solid #cca36b;
   box-sizing: border-box;
   border-radius: 3px;
 }
 
-
 .map-perfil {
-  padding: 0 10px 10px;
-  margin-left:5%;
-  font-size: 1em;
-  
+  padding: 0 5px 0 5px ;
+  margin-left:-1%;
+  font-size: 0.9em;
+  margin:0;
 }
 .articleDescription {
-  width: 29vw;
-  height: 25vw;
+  width: 20vw;
+  height: 28vw;
   /*background: pink;*/
-  margin-top: 7%;
-  /* right: 5%; */
+  margin-top: 5%;
+  margin-left: 18vw;
 }
 
 
-.gridProfile > .articleDescription:nth-child(1) {
+.gridProfile > .articleDescription {
   grid-column: span 2;
 }
 ul.dentro {
@@ -104,18 +105,16 @@ ul.dentro {
   grid-column: span 2;
 }
 .articleLogin{
-  
-  /*background: pink;*/
   margin-top:5%;
   width: 342px;
   height: 330px;
-  margin-left: 20vw;
+  margin-left: 72vw;
   top: 541px;
-
   background: rgba(0, 0, 0, 0.25);
-    border: 6px solid rgba(157, 140, 125, 0.25);
+  border: 6px solid rgba(157, 140, 125, 0.25);
   box-sizing: border-box;
   border-radius: 26px;
+  position: absolute;
 }
 
 .textLogin{
@@ -127,23 +126,88 @@ ul.dentro {
 }
 
   /* Extra Small Devices, Phones */ 
-  @media only screen and (max-width : 480px) {
+  @media (max-width : 480px) {
+    .gridProfile {
+      
+      grid-gap: 0;
+     
+  }
+  }
+  @media (max-width : 610px) {
+    .gridProfile {
+      
+      grid-gap: 0;
+     
+  }
+    
+    .map-local{
+        width: 34vw;
+        height: 73vw;
+    }
+    .map-profile{
+      width: 70vw;
+      
+    }
+    .mainprofile-cardmap {
+      height: 111vw;
+    }
+    .ifraMaping {
+      width: 34vh;
+      
+  }
+  .articleLogin {
+    
+    margin-bottom: 10em;
+    margin-left: 25vw;
+    
+}
 
   }
-
   /* Small Devices, Tablets */
-  @media only screen and (max-width : 768px) {
-
+  @media (max-width : 768px) {
+    .mainprofile-cardmap {
+      height: 65vh;
+      width: 89vw;
+    }
+    .articleDescription {
+      height: 63vw;
+      width: 50%;
+      margin-top:7%;
+      
+    }
+    .ifraMaping {
+      width: 42vw;
+      height: 29rem;
+    }
+    .articleLogin{
+  
+      margin-left: 30vw;
+      position: inherit;
+    }
+    
   }
 
   /* Medium Devices, Desktops */
-  @media only screen and (max-width : 992px) {
-    .articleDescription {
-      width: 39vw;
-      height: 35vw;
-      margin-top: 5%;
-      margin-right: 5%;
-      /* right: 5%; */
+  @media (max-width : 992px) {
+    .map-profile{
+      width: 33vw;
     }
+    .mainprofile-cardmap {
+      height: 65vh;
+      
+  }
+    .ifraMaping {
+      width: 26vw;
+      height: 26rem;
+    }
+    
+   
+    .articleDescription {
+      height: 42vw;
+      margin-left: 22%;
+    }
+    /*para prueba*/
+    
+   
 
   }

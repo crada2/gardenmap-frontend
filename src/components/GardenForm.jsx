@@ -4,13 +4,14 @@ import "../assets/styles/form.css";
 
 const GardenForm = () => {
   const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [direction, setDirection] = useState("");
+  /*const [description, setDescription] = useState("");
+  const [direction, setDirection] = useState("");*/
+  const [observations, setObservations] = useState("");
   const [price, setPrice] = useState("");
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const newData = { title, description, direction, price };
+    const newData = { title, observations, price };
 
     fetch("http://localhost:8000/items", {
       method: "POST",
@@ -43,7 +44,7 @@ const GardenForm = () => {
                 />
               </div>
             </div>
-            <div className="row">
+            {/*<div className="row">
               <div className="col-25">
                 <label htmlFor="description">Description</label>
               </div>
@@ -68,6 +69,19 @@ const GardenForm = () => {
                   onChange={(e) => setDirection(e.target.value)}
                 />
               </div>
+            </div>*/}
+            <div className="row">
+              <div className="col-25">
+                <label htmlFor="price">Observations</label>
+              </div>
+              <div className="col-75">
+                <input
+                  type="text"
+                  placeholder="How much does it cost?"
+                  value={observations}
+                  onChange={(e) => setObservations(e.target.value)}
+                />
+              </div>
             </div>
             <div className="row">
               <div className="col-25">
@@ -82,7 +96,7 @@ const GardenForm = () => {
                 />
               </div>
             </div>
-            <div className="row">
+            {/* <div className="row">
               <div className="col-25">
                 <label htmlFor="services">Services</label>
               </div>
@@ -93,7 +107,7 @@ const GardenForm = () => {
                   <option value="Produce">Sell my produce</option>
                 </select>
               </div>
-            </div>
+            </div>*/}
             <button type="submit">submit</button>
           </form>
         </div>

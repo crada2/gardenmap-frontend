@@ -3,7 +3,7 @@ import React from "react";
 
 import "../assets/styles/mainprofile.css";
 
-const MainProfile = ({ title, description, location, price }) => {
+const MainProfile = ({ title, observations, price }) => {
 
   return (
     <div>
@@ -34,16 +34,16 @@ const MainProfile = ({ title, description, location, price }) => {
                 <li>🌱 actividad con niños</li>
                 <li>🌱 cesta regalo</li>
               </ul>
-              <p>🌻 Description</p>
+              <p>🌻 Observations</p>
               <ul className="dentro">
-                <li>🌱 {description}</li>
+                <li>🌱 {observations}</li>
                 {/*      <li>🌱 mercado ecológico</li>
                 <li>🌱 talleres free para todas las edades</li> */}
               </ul>
-              <p>🌻 Location</p>
+              {/*<p>🌻 Location</p>
               <ul className="dentro">
                 <li>🌱 {location}</li>
-              </ul>
+              </ul>*/}
             </ul>
           </div>
         </article>

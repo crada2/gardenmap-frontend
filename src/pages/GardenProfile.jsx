@@ -20,13 +20,14 @@ const GardenProfile = () => {
       return <p>Loading...</p>;
     }
 
-    return profile.map(({ id, description, title, price, location }) => (
+    return profile.map(({ id, description,observations, title, price, location }) => (
       <MainProfile
         key={id}
-        description={description}
+        observations={observations}
+        /*description={description}*/
         title={title}
         price={price}
-        location={location}
+        /*location={location}*/
         
       />
     ));

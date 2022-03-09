@@ -23,12 +23,12 @@ const MainProfile = ({ title, observations, price }) => {
         <article className="articleDescription">
           <div className="map-perfil">
             <ul>
-              <p>🌻 {title}</p>
+              <p>🌻 {title.products}</p>
               <ul className="dentro">
                 <li>🌱 por dia 40$</li>
                 <li>🌱 por mes 150$</li>
               </ul>
-              <p>🌻 Visitas guiadas: {price}$/person</p>
+              <p>🌻 Visitas guiadas: {price.products}$/person</p>
               <ul className="dentro">
                 <li>🌱 1h visita</li>
                 <li>🌱 actividad con niños</li>
@@ -36,7 +36,7 @@ const MainProfile = ({ title, observations, price }) => {
               </ul>
               <p>🌻 Observations</p>
               <ul className="dentro">
-                <li>🌱 {observations}</li>
+                <li>🌱 {observations.products}</li>
                 {/*      <li>🌱 mercado ecológico</li>
                 <li>🌱 talleres free para todas las edades</li> */}
               </ul>

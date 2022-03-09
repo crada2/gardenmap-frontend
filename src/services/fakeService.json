@@ -1,12 +1,20 @@
 {
-  "items": [
-    {
-      "id": 1,
-      "title": "Lorem 1",
-      "description": "Lorem",
-      "price": "2",
-      "location": "c/lorem ipsum num1 "
-    }
-
-  ]
-}
+  
+"id":"1",
+"name": "Pepe",
+"email": "pepe@pepe.com",
+"password": "12345678",
+"direction": "Málaga",
+"telephone": "666777888",
+    "products":[
+        {
+        "title": "Feed the chikens",
+        "observations": "join us and have fun with all your family",
+        "price": "5.5"
+        },
+        {
+        "title": "planting seeds",
+        "observations": "join us and have fun with all your family",
+        "price": "6.5"
+        }
+]}

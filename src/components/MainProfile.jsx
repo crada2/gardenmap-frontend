@@ -1,28 +1,11 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
+
 import "../assets/styles/mainprofile.css";
 
-const MainProfile = () => {
-  const [loading, setLoading] = useState(true);
-  const [profile, setProfile] = useState([]);
+const MainProfile = ({ title, description, location, price }) => {
 
-  useEffect(() => {
-    setLoading(false);
-    axios.get("http://localhost:8000/items").then((res) => {
-      setProfile(res.data);
-    });
-  }, [setLoading]);
-
-  if (loading) {
-    return (
-      <section>
-        <p>Loading...</p>
-      </section>
-    );
-  }
-
-  return profile.map(({ id, title, description, direction, price }) => (
+  return (
     <div>
       <main className="gridProfile">
         <div className="mainprofile-cardmap">
@@ -37,16 +20,15 @@ const MainProfile = () => {
             </div>
           </article>
         </div>
-
         <article className="articleDescription">
           <div className="map-perfil">
             <ul>
-              <p>🌻 {profile.title}</p>
+              <p>🌻 {title}</p>
               <ul className="dentro">
                 <li>🌱 por dia 40$</li>
                 <li>🌱 por mes 150$</li>
               </ul>
-              <p>🌻 Visitas guiadas: {profile.price}$/person</p>
+              <p>🌻 Visitas guiadas: {price}$/person</p>
               <ul className="dentro">
                 <li>🌱 1h visita</li>
                 <li>🌱 actividad con niños</li>
@@ -54,13 +36,13 @@ const MainProfile = () => {
               </ul>
               <p>🌻 Description</p>
               <ul className="dentro">
-                <li>🌱 {profile.description}</li>
+                <li>🌱 {description}</li>
                 {/*      <li>🌱 mercado ecológico</li>
                 <li>🌱 talleres free para todas las edades</li> */}
               </ul>
               <p>🌻 Location</p>
               <ul className="dentro">
-                <li>🌱 {profile.price}</li>
+                <li>🌱 {location}</li>
               </ul>
             </ul>
           </div>
@@ -76,7 +58,7 @@ const MainProfile = () => {
         </div>
       </article>
     </div>
-  ));
-};
+  )};
+
 
 export default MainProfile;

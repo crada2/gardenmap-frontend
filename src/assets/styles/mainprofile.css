@@ -1,17 +1,8 @@
-.circle {
-  height: 80vh;
-  width: 150vh;
-  background: #8c6239;
-  
-  display: flex;
-  position: relative;
-  -webkit-clip-path: circle(75.3% at 74% 72%);
-  clip-path: circle(75.3% at 74% 82%);
-  left: 20%;
-  
+.profileUserHero{
+  padding:2em 3em 2em 3em;
+  background: rgba(115, 121, 114, 0.116);
+
 }
-
-
 
 
 
@@ -49,7 +40,7 @@ ul.dentro {
   
   height: auto;
   top: 29em;
-  background: #dddddd70;
+  background: rgba(255, 255, 255, 0.589);
   border-bottom:  6px solid rgba(157, 140, 125, 0.25);
   border-radius: 26px;
   

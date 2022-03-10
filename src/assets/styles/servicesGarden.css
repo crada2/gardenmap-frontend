@@ -1,10 +1,14 @@
-.highlights {
-  
-margin: 3em auto auto 1em;
-  grid-gap: 2rem;
+.grid-container{
+  height:auto;
+  grid-gap: 5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill,300px);
+  grid-template-columns: repeat(auto-fill,400px);
   justify-content: center;
+  margin-bottom: 4%;
+}
+.highlights {
+width: 30em;
+  padding: 1em;
 }
   
   
@@ -15,7 +19,7 @@ margin: 3em auto auto 1em;
       justify-content: center;
       line-height: 2em;
       max-width: 20rem;
-      margin: 1rem;
+      margin: 4rem;
       padding-top: 1.5rem;
       background: #cca46b21;
       border-radius: 0.3rem;

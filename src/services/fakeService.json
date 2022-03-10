@@ -1,19 +1,26 @@
 {
-"id":"1",
-"name": "Pepe",
-"email": "pepe@pepe.com",
-"password": "12345678",
-"direction": "Málaga",
-"telephone": "666777888",
-    "products":[
+  "items": [
+    {
+      "id": "1",
+      "name": "Pepe",
+      "email": "pepe@pepe.com",
+      "password": "12345678",
+      "direction": "Málaga",
+      "telephone": "666777888",
+      "products": [
         {
-        "title": "Feed the chikens",
-        "observations": "join us and have fun with all your family",
-        "price": "5.5"
+          "id": "1",
+          "title": "Feed the chikens",
+          "observations": "join us and have fun with all your family",
+          "price": "5.5"
         },
         {
-        "title": "planting seeds",
-        "observations": "join us and have fun with all your family",
-        "price": "6.5"
+          "id": "2",
+          "title": "planting seeds",
+          "observations": "join us and have fun with all your family",
+          "price": "6.5"
         }
-]}
+      ]
+    }
+  ]
+}

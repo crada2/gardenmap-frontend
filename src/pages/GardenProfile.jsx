@@ -10,7 +10,7 @@ const GardenProfile = () => {
   useEffect(() => {
     setLoading(false);
     axios.get("http://localhost:8000/items").then((res) => {
-      console.log(res.data.product);
+      setProfile(res.data[0].products);
     });
   }, [setLoading]);
 

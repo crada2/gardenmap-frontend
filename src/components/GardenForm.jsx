@@ -71,19 +71,6 @@ const GardenForm = () => {
               </div> */}
             <div className="row">
               <div className="col-25">
-                <label htmlFor="direction">Observations</label>
-              </div>
-              <div className="col-75">
-                <input
-                  type="text"
-                  placeholder="Explain what it is about"
-                  value={observations}
-                  onChange={(e) => setObservations(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-25">
                 <label htmlFor="price">Observations</label>
               </div>
               <div className="col-75">

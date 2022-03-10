@@ -13,6 +13,7 @@ margin: 3em auto auto 1em;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      line-height: 2em;
       max-width: 20rem;
       margin: 1rem;
       padding-top: 1.5rem;
@@ -22,6 +23,15 @@ margin: 3em auto auto 1em;
       align-items: flex-end;
       align-content: center;
   
+  }
+  .card h3{
+    text-shadow: 2px 2px 8px #8a671d;
+  }
+  .card ul p{
+    text-shadow: 2px 2px 10px #37968194;
+  }
+  .card li{
+    line-height: 1.5em;
   }
   
   .card > * {

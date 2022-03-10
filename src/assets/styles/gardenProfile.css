@@ -8,3 +8,11 @@
     border-radius: 26px;
    width: 100%;
 }
+
+
+@media (max-width : 640px) {
+    .profileUserHero iframe{
+        display: none;
+
+    }
+}

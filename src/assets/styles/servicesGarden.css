@@ -1,11 +1,12 @@
 .highlights {
   
-
-    margin: 0rem 1em 1em 4em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+margin: 3em auto auto 1em;
+  grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,300px);
+  justify-content: center;
+}
+  
   
   .card {
     
@@ -37,9 +38,22 @@
     color: #222;
     text-decoration: none;
   }
+  .card__btn-update {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background: rgba(115, 121, 114, 0.288);
+    border: none;
+    color: #222;
+    text-decoration: none;
+  }
   
   .card__btn:hover {
     background: rgb(231, 183, 223);
+  }
+  .card__btn-update:hover {
+    background: rgb(183, 231, 207);
   }
   
   .infoService{
@@ -47,3 +61,5 @@
    
   
   }
+ 
+ 

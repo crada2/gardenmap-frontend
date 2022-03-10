@@ -36,6 +36,7 @@ const ServicesGarden = ({ title, observations, price }) => {
         </ul>
     </div>
       <button class="card__btn">Delete </button>
+      <button class="card__btn-update">update </button>
     </section>
     </div>
     );

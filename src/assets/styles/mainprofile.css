@@ -65,10 +65,7 @@
   border: 2px solid #ffffff;
   box-sizing: border-box;
 }
-.map-profile{
-  width: 40vw;
-  /*background: green;*/
-}
+
 
 .ifraMaping {
   width: 26vw;
@@ -105,17 +102,25 @@ ul.dentro {
   grid-column: span 2;
 }
 .articleLogin{
-  margin-top:5%;
-  width: 342px;
-  height: 330px;
-  margin-left: 72vw;
-  top: 541px;
-  background: rgba(0, 0, 0, 0.25);
+ 
+  display: flex;
+  
+  color: #8c6239;
+  font-size: larger;
+  line-height: 2em;
+  width: 10%;
+  min-width: 16em;
+  
+  height: auto;
+  top: 29em;
+  background: #dddddd70;
   border: 6px solid rgba(157, 140, 125, 0.25);
-  box-sizing: border-box;
   border-radius: 26px;
-  position: absolute;
-}
+  
+
+ }
+
+
 
 .textLogin{
   padding: 0 10px 10px;
@@ -144,10 +149,9 @@ ul.dentro {
         width: 34vw;
         height: 73vw;
     }
-    .map-profile{
-      width: 70vw;
+    
       
-    }
+    
     .mainprofile-cardmap {
       height: 111vw;
     }
@@ -157,8 +161,8 @@ ul.dentro {
   }
   .articleLogin {
     
-    margin-bottom: 10em;
-    margin-left: 25vw;
+    margin-bottom: 1em;
+    margin-left: 23vw;
     
 }
 
@@ -179,19 +183,13 @@ ul.dentro {
       width: 42vw;
       height: 29rem;
     }
-    .articleLogin{
-  
-      margin-left: 30vw;
-      position: inherit;
-    }
+    
     
   }
 
   /* Medium Devices, Desktops */
   @media (max-width : 992px) {
-    .map-profile{
-      width: 33vw;
-    }
+    
     .mainprofile-cardmap {
       height: 65vh;
       

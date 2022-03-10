@@ -1,0 +1,10 @@
+.profileUserHero{
+    display: flex;
+    
+}
+
+.profileUserHero iframe{
+    border: 6px solid rgba(204, 197, 191, 0.25);
+    border-radius: 26px;
+   width: 100%;
+}

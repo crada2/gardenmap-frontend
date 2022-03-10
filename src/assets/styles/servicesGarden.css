@@ -1,0 +1,49 @@
+.highlights {
+  
+
+    margin: 0rem 1em 1em 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 20rem;
+      margin: 1rem;
+      padding-top: 1.5rem;
+      background: #cca46b21;
+      border-radius: 0.3rem;
+      overflow: hidden;
+      align-items: flex-end;
+      align-content: center;
+  
+  }
+  
+  .card > * {
+    padding: 0 1.5rem;
+  }
+  
+  .card__btn {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background: #ddd;
+    border: none;
+    color: #222;
+    text-decoration: none;
+  }
+  
+  .card__btn:hover {
+    background: rgb(231, 183, 223);
+  }
+  
+  .infoService{
+    display: flex;
+   
+  
+  }

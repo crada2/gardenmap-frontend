@@ -26,7 +26,7 @@ const GardenForm = () => {
     <div className="background">
       <div className="containerFormGarden">
         <div className="title">
-          <p>Tell us about you</p>
+          <p>What do you offer:</p>
         </div>
         <div className="content">
           <form className="form" onSubmit={submitHandler}>
@@ -38,7 +38,7 @@ const GardenForm = () => {
                 <input
                   id="title"
                   type="text"
-                  placeholder="Write a title for your garden"
+                  placeholder="A title for your services"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                 />
@@ -56,8 +56,8 @@ const GardenForm = () => {
                   onChange={(e) => setDescription(e.target.value)}
                 />
               </div>
-            </div>
-            <div className="row">
+            </div> */}
+            {/*  <div className="row">
               <div className="col-25">
                 <label htmlFor="direction">Direction</label>
               </div>
@@ -68,8 +68,20 @@ const GardenForm = () => {
                   value={direction}
                   onChange={(e) => setDirection(e.target.value)}
                 />
+              </div> */}
+            <div className="row">
+              <div className="col-25">
+                <label htmlFor="direction">Observations</label>
               </div>
-            </div>*/}
+              <div className="col-75">
+                <input
+                  type="text"
+                  placeholder="Explain what it is about"
+                  value={observations}
+                  onChange={(e) => setObservations(e.target.value)}
+                />
+              </div>
+            </div>
             <div className="row">
               <div className="col-25">
                 <label htmlFor="price">Observations</label>

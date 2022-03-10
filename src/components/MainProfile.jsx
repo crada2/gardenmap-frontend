@@ -3,7 +3,7 @@ import React from "react";
 
 import "../assets/styles/mainprofile.css";
 
-const MainProfile = ({ title, observations, price }) => {
+const MainProfile = ({ title, observations, price, onDelete }) => {
 
   return (
     <div>
@@ -47,6 +47,15 @@ const MainProfile = ({ title, observations, price }) => {
             </ul>
           </div>
         </article>
+        <div>
+        <button
+            type="button"
+            className="btn-danger"
+            onClick={onDelete}
+          >
+            Delete
+          </button>
+        </div>
       </main>
       <article className="articleLogin">
         <div class="textLogin">

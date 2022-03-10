@@ -6,6 +6,7 @@ import MainProfile from "../components/MainProfile";
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
   const [profile, setProfile] = useState([]);
+  
 
   useEffect(() => {
     setLoading(false);
@@ -13,6 +14,14 @@ const GardenProfile = () => {
       setProfile(res.data[0].products);
     });
   }, [setLoading]);
+
+
+
+
+  const handleDeleteGarden = (id) => {
+    const updatedGarden = profile.filter((profiles) => profiles.id !== id);
+    setProfile(updatedGarden);
+  };
 
   const renderProfile = () => {
     if (loading) {
@@ -26,6 +35,7 @@ const GardenProfile = () => {
         /*description={description}*/
         title={title}
         price={price}
+        onDelete={() => handleDeleteGarden(id)}
         /*location={location}*/
       />
     ));

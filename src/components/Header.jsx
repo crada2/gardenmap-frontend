@@ -1,17 +1,20 @@
 import React from "react";
 import "../assets/styles/header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="containerHeader">
-      <div className="boxHeader">
-        <img
-          className="logoName"
-          src={require("../assets/img/logoName.png")}
-          title="Logo GardenMap"
-          alt="Logo GardenMap"
-        />
-      </div>
+      <Link to="/">
+        <div className="boxHeader">
+          <img
+            className="logoName"
+            src={require("../assets/img/logoName.png")}
+            title="Logo GardenMap"
+            alt="Logo GardenMap"
+          />
+        </div>
+      </Link>
       <nav className="boxNav">
         <li className="navList"> GardenMali </li>
         <li className="navList"> OurStory </li>

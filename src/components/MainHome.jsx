@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "../assets/styles/mainHome.css";
+import { Link } from "react-router-dom";
 
 const MainHome = () => {
   return (
@@ -11,14 +12,16 @@ const MainHome = () => {
           <h2 className="titleHome"> How to be part of the garden family?</h2>
           <article className="boxInfo">
             <section className="sectionHome">
-              <div className="homeImg">
-                <img
-                  className="homeImg planet"
-                  src={require("../assets/img/planet.png")}
-                  title="img tierra"
-                  alt="img tierra"
-                />
-              </div>
+              <Link to="./garden">
+                <div className="homeImg">
+                  <img
+                    className="homeImg planet"
+                    src={require("../assets/img/planet.png")}
+                    title="img tierra"
+                    alt="img tierra"
+                  />
+                </div>
+              </Link>
               <div className="boxList">
                 <ul>
                   <li className="homeLi">mercado ecológico</li>
@@ -29,12 +32,14 @@ const MainHome = () => {
             </section>
 
             <section className="sectionHome">
-              <div className="homeImg">
-                <img
-                  className="homeImg plant"
-                  src={require("../assets/img/plant.png")}
-                />{" "}
-              </div>
+              <Link to="./form">
+                <div className="homeImg">
+                  <img
+                    className="homeImg plant"
+                    src={require("../assets/img/plant.png")}
+                  />{" "}
+                </div>
+              </Link>
               <div className="boxList">
                 <ul>
                   <li className="homeLi">mercado ecológico</li>

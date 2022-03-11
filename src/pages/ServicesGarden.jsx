@@ -4,7 +4,7 @@ import axios from "axios";
 import "../assets/styles/servicesGarden.css";
 
 
-const ServicesGarden = ({ title, observations, price }) => {
+const ServicesGarden = ({ title, observations, price, onDelete }) => {
    return(
         <div class="highlights">
     <section class="card">
@@ -35,7 +35,11 @@ const ServicesGarden = ({ title, observations, price }) => {
         </ul>*/}
         </ul>
     </div>
-      <button class="card__btn">Delete </button>
+      <button 
+        className="card__btn"
+        onClick={onDelete}
+        >Delete 
+        </button>
       <button class="card__btn-update">update </button>
     </section>
     </div>

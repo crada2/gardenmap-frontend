@@ -15,6 +15,11 @@ const GardenProfile = () => {
       setProfile(res.data[0].products);
     });
   }, [setLoading]);
+  
+  const handleDeleteGarden = (id) => {
+      const updatedGarden = profile.filter((profiles) => profiles.id !== id);
+      setProfile(updatedGarden);
+    };
 
   const renderProfile = () => {
     if (loading) {
@@ -27,6 +32,7 @@ const GardenProfile = () => {
         observations={observations}
         title={title}
         price={price}
+        onDelete={() => handleDeleteGarden(id)}
        
         />
       ));

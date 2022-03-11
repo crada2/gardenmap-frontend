@@ -1,18 +1,30 @@
-.profileUserHero{
-    display: flex;
-    
+.profileUserHero {
+  display: flex;
 }
 
-.profileUserHero iframe{
-    border: 6px solid rgba(204, 197, 191, 0.25);
-    border-radius: 26px;
-   width: 100%;
+.profileUserHero iframe {
+  border: 6px solid rgba(204, 197, 191, 0.25);
+  border-radius: 26px;
+  width: 100%;
 }
 
+.card__btn-create {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background: rgba(115, 121, 114, 0.288);
+  border: none;
+  color: #222;
+  text-decoration: none;
+}
 
-@media (max-width : 640px) {
-    .profileUserHero iframe{
-        display: none;
+.card__btn:hover {
+  background: rgb(231, 183, 223);
+}
 
-    }
+@media (max-width: 640px) {
+  .profileUserHero iframe {
+    display: none;
+  }
 }

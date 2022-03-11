@@ -44,31 +44,6 @@ const GardenForm = () => {
                 />
               </div>
             </div>
-            {/*<div className="row">
-              <div className="col-25">
-                <label htmlFor="description">Description</label>
-              </div>
-              <div className="col-75">
-                <input
-                  type="text"
-                  placeholder="Explain what do you offer"
-                  value={description}
-                  onChange={(e) => setDescription(e.target.value)}
-                />
-              </div>
-            </div> */}
-            {/*  <div className="row">
-              <div className="col-25">
-                <label htmlFor="direction">Direction</label>
-              </div>
-              <div className="col-75">
-                <input
-                  type="text"
-                  placeholder="Where is your garden?"
-                  value={direction}
-                  onChange={(e) => setDirection(e.target.value)}
-                />
-              </div> */}
             <div className="row">
               <div className="col-25">
                 <label htmlFor="price">Observations</label>
@@ -95,18 +70,6 @@ const GardenForm = () => {
                 />
               </div>
             </div>
-            {/* <div className="row">
-              <div className="col-25">
-                <label htmlFor="services">Services</label>
-              </div>
-              <div className="col-75">
-                <select id="services" name="services">
-                  <option value="Rent">Rent my garden</option>
-                  <option value="Visit">Organize visits</option>
-                  <option value="Produce">Sell my produce</option>
-                </select>
-              </div>
-            </div>*/}
             <button type="submit">submit</button>
           </form>
         </div>

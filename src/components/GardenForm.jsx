@@ -32,7 +32,7 @@ const GardenForm = () => {
           <form className="form" onSubmit={submitHandler}>
             <div className="row">
               <div className="col-25">
-                <label htmlFor="title"  >Title</label>
+                <label htmlFor="title">Title</label>
               </div>
               <div className="col-75">
                 <input

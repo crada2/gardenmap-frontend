@@ -4,13 +4,10 @@ import React from "react";
 import "../assets/styles/mainprofile.css";
 
 const MainProfile = () => {
-
   return (
     <div>
-      
-     
       <article className="articleLogin">
-      <img
+        <img
           className="logoName"
           src={require("../assets/img/UserGarden.png")}
           title="user img"
@@ -23,11 +20,9 @@ const MainProfile = () => {
           <p className="dataLogin">Email: 66666@garden.com</p>
           <p className="dataLogin">Profile: 987123986129731</p>
         </div>
-        
-         
       </article>
     </div>
-  )};
-
+  );
+};
 
 export default MainProfile;

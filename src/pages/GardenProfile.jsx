@@ -8,18 +8,18 @@ import { Link } from "react-router-dom";
 
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
-  const [profile, setProfile] = useState([]);
+  const [service, setService] = useState([]);
 
   useEffect(() => {
     setLoading(false);
-    axios.get("http://localhost:8000/items").then((res) => {
-      setProfile(res.data[0].products);
+    axios.get("http://localhost:8080/owners").then((res) => {
+      setService(res.data[0].products);
     });
   }, [setLoading]);
 
   const handleDeleteGarden = (id) => {
-    const updatedGarden = profile.filter((profiles) => profiles.id !== id);
-    setProfile(updatedGarden);
+    const updatedGarden = service.filter((profiles) => profiles.id !== id);
+    setService(updatedGarden);
   };
 
   const renderProfile = () => {
@@ -27,7 +27,7 @@ const GardenProfile = () => {
       return <p>Loading...</p>;
     }
 
-    return profile.map(({ id, observations, title, price }) => (
+    return service.map(({ id, observations, title, price }) => (
       <ServicesGarden
         key={id}
         observations={observations}

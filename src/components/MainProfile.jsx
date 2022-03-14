@@ -2,7 +2,7 @@
 import React from "react";
 import "../assets/styles/mainprofile.css";
 
-const MainProfile = ({owner}) => {
+const MainProfile = ({ owner }) => {
   return (
     <div>
       <article className="articleLogin">
@@ -12,8 +12,8 @@ const MainProfile = ({owner}) => {
           title="user img"
           alt="user img"
         />
-        <div class="textLogin">
-          <p className="dataLogin">Name:{owner.name}</p>  
+        <div className="textLogin">
+          <p className="dataLogin">Name:{owner.name}</p>
           <p className="dataLogin">Phone: {owner.telephone}</p>
           <p className="dataLogin">Email: {owner.email}</p>
           <p className="dataLogin">Direction: {owner.direction}</p>

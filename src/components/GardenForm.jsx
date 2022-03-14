@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 import "../assets/styles/form.css";
 
 const GardenForm = () => {
+  const navigate = useNavigate();
   const [title, setTitle] = useState("");
   /*const [description, setDescription] = useState("");
   const [direction, setDirection] = useState("");*/
@@ -17,6 +18,8 @@ const GardenForm = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newData),
+    }).then(() => {
+      navigate("/garden");
     });
   };
 

@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
-
 import "../assets/styles/mainprofile.css";
 
-const MainProfile = () => {
+const MainProfile = ({owner}) => {
   return (
     <div>
       <article className="articleLogin">
@@ -14,11 +13,10 @@ const MainProfile = () => {
           alt="user img"
         />
         <div class="textLogin">
-          <p className="dataLogin">Name:Fulano</p>
-          <p className="dataLogin">Last Name: Mengano Bartol</p>
-          <p className="dataLogin">Phone: 666666666</p>
-          <p className="dataLogin">Email: 66666@garden.com</p>
-          <p className="dataLogin">Profile: 987123986129731</p>
+          <p className="dataLogin">Name:{owner.name}</p>  
+          <p className="dataLogin">Phone: {owner.telephone}</p>
+          <p className="dataLogin">Email: {owner.email}</p>
+          <p className="dataLogin">Direction: {owner.direction}</p>
         </div>
       </article>
     </div>

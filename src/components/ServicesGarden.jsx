@@ -29,13 +29,9 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
             </p>
             <ul className="dentro">
               <li>🌱 {observations}</li>
-              {/*      <li>🌱 mercado ecológico</li>
-            <li>🌱 talleres free para todas las edades</li> */}
+             
             </ul>
-            {/*<p>🌻 Location</p>
-        <ul className="dentro">
-            <li>🌱 {location}</li>
-        </ul>*/}
+        
           </ul>
         </div>
         <button className="card__btn" onClick={onDelete}>

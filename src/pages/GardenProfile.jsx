@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Hero from "../components/Hero/Hero";
@@ -9,11 +10,13 @@ import { Link } from "react-router-dom";
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
   const [service, setService] = useState([]);
+  const [owner, setOwner]= useState([]);
 
   useEffect(() => {
     setLoading(false);
     axios.get("http://localhost:8080/owners").then((res) => {
       setService(res.data.content[0].product);
+      setOwner(res.data.content[0]);
     });
   }, [setLoading]);
 
@@ -36,13 +39,18 @@ const GardenProfile = () => {
         onDelete={() => handleDeleteGarden(id)}
       />
     ));
+
+
+    
   };
 
-  return (
+  return ( 
     <div>
       <Hero />
       <div className="profileUserHero">
-        <MainProfile />
+        <MainProfile
+       owner={owner}
+        />
         <Link to="/form">
           <button className="card__btn-create">Create </button>
         </Link>

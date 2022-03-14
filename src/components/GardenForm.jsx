@@ -13,12 +13,10 @@ const GardenForm = () => {
     event.preventDefault();
     const newData = { title, observations, price };
 
-    fetch("http://localhost:8000/items", {
+    fetch("http://localhost:8080/products", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newData),
-    }).then(() => {
-      console.log(newData);
     });
   };
 

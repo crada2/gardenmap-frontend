@@ -13,7 +13,7 @@ const GardenProfile = () => {
   useEffect(() => {
     setLoading(false);
     axios.get("http://localhost:8080/owners").then((res) => {
-      setService(res.data[0].products);
+      setService(res.data.content[0].product);
     });
   }, [setLoading]);
 

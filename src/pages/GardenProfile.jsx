@@ -29,10 +29,12 @@ const GardenProfile = () => {
       .then(res => {
         console.log(res);
         console.log(res.data);
-        
+        alert("Record Deleted Successfully");
         const updatedGarden = service.filter((profiles) => profiles.id !== id);
       setService(updatedGarden);
-      })
+      }, (error) => {
+        alert("Operation Failed Here");
+    })
     }
   /*const handleDeleteGarden = (id) => {
     const updatedGarden = service.filter((profiles) => profiles.id !== id);

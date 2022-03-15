@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/form.css";
+import swal from 'sweetalert'; 
 
 const GardenForm = () => {
   const navigate = useNavigate();
@@ -17,6 +18,11 @@ const GardenForm = () => {
       price,
     }).then(() => {
       navigate('/garden')
+      swal({
+        title: "new service added successfully",
+        text: "click 'ok' to continue",
+        icon: "success",
+        }); 
     })
   }
 

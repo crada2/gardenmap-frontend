@@ -21,19 +21,23 @@ const GardenProfile = () => {
     });
   }, [setLoading]);
 
-   //DELETE
-   const deleteDataAPI = () => {
-    axios.delete(`http://localhost:8080/products`, {
-      
-    }).then((id) => {
+  
 
-    })
-  }
-
-  const handleDeleteGarden = (id) => {
+    //DELETE
+    const deleteDataAPI = (id) => {
+      axios.delete(`http://localhost:8080/products/${id}`)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+        
+        const updatedGarden = service.filter((profiles) => profiles.id !== id);
+      setService(updatedGarden);
+      })
+    }
+  /*const handleDeleteGarden = (id) => {
     const updatedGarden = service.filter((profiles) => profiles.id !== id);
     setService(updatedGarden);
-  };
+  };*/
 
   const renderProfile = () => {
     if (loading) {
@@ -46,13 +50,10 @@ const GardenProfile = () => {
         observations={observations}
         title={title}
         price={price}
-        onDelete={() => handleDeleteGarden(id)}
+        onDelete={() => deleteDataAPI(id)}
         
       />
     ));
-
-
-    
   };
 
   return ( 

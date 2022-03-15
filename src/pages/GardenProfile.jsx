@@ -7,6 +7,8 @@ import MainProfile from "../components/MainProfile";
 import ServicesGarden from "../components/ServicesGarden";
 import "../assets/styles/gardenProfile.css";
 import { Link } from "react-router-dom";
+import swal from 'sweetalert'; 
+
 
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
@@ -29,7 +31,11 @@ const GardenProfile = () => {
       .then(res => {
         console.log(res);
         console.log(res.data);
-        alert("Record Deleted Successfully");
+        swal({
+          title: "Deleted service!",
+          text: "You clicked the button!",
+          icon: "success",
+          }); 
         const updatedGarden = service.filter((profiles) => profiles.id !== id);
       setService(updatedGarden);
       }, (error) => {

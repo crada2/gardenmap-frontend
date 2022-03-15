@@ -1,26 +1,28 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/form.css";
 
 const GardenForm = () => {
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
-  /*const [description, setDescription] = useState("");
-  const [direction, setDirection] = useState("");*/
   const [observations, setObservations] = useState("");
   const [price, setPrice] = useState("");
 
+  //POST
+  const sendDataAPI = () => {
+    axios.post(`http://localhost:8080/products`, {
+      title,
+      observations,
+      price,
+    }).then(() => {
+      navigate('/garden')
+    })
+  }
+
   const submitHandler = (event) => {
     event.preventDefault();
-    const newData = { title, observations, price };
 
-    fetch("http://localhost:8080/products", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newData),
-    }).then(() => {
-      navigate("/garden");
-    });
   };
 
   return (
@@ -71,7 +73,7 @@ const GardenForm = () => {
                 />
               </div>
             </div>
-            <button type="submit">submit</button>
+            <button type="submit" onClick={sendDataAPI}>submit</button>
           </form>
         </div>
       </div>

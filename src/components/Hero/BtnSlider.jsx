@@ -5,7 +5,7 @@ import rightArrow from "../../assets/img/right-arrow.svg";
 import "../../assets/styles/hero.css";
 
 export default function BtnSlider({ direction, moveSlide }) {
-  console.log(direction, moveSlide);
+  //console.log(direction, moveSlide);
   return (
     <button
       onClick={moveSlide}

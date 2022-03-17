@@ -11,7 +11,7 @@ const GardenForm = () => {
   const [observations, setObservations] = useState("");
   const [price, setPrice] = useState("");
 
-  //POST
+  //POSTT
   const sendDataAPI = () => {
     axios
       .post(`http://localhost:8080/products`, {

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Form from "./pages/Form";
 import GardenProfile from "./pages/GardenProfile";
 import Layout from "./components/Layout";
+import RegisterForm from "./components/RegisterForm";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="form" element={<Form />} />
           <Route path="garden" element={<GardenProfile />} />
+          <Route path="login" element={<RegisterForm />} />
         </Route>
       </Routes>
     </div>

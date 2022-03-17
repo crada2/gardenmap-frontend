@@ -1,19 +1,13 @@
-@font-face {
-  font-family: romantice;
-  src: url(../fonts/ROMANTICE.otf);
-}
-
-.background {
-  background-image: url(../img/garden.jpg);
+.backRegister {
+  background-image: url(../img/imgForm.png);
   background-size: cover;
+  position: relative;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 60%;
   height: 100vh;
-  opacity: 0.9;
-  /*position: absolute;*/
 }
 
-.containerFormGarden {
+.containerRegister {
   border-radius: 0.4rem;
   border: 1px #807a85 solid;
   background-color: #dbcfe6;
@@ -27,25 +21,12 @@
   position: relative;
 }
 
-.title {
-  font-family: romantice;
-  font-size: 4vh;
-  width: 100%;
-  height: 40vh;
-  padding: 10% 0% 10% 0%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../img/formBanner.png);
-  background-size: 100%;
-}
-
-.content {
+.contentRegister {
   background: rgb(207, 194, 186);
   padding: 5%;
 }
 
-.form {
+.formRegister {
   position: relative;
 }
 
@@ -92,22 +73,4 @@ button {
 
 button:hover {
   background-color: #807a85;
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  .containerFormGarden {
-    max-width: 87vw;
-
-    /* margin-left: 5%; */
-  }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  .containerFormGarden {
-    max-width: 90vw;
-
-    /* margin-left: 5%; */
-  }
 }

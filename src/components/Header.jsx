@@ -8,7 +8,7 @@ const Header = () => {
       <Link to="/">
         <div className="boxHeader">
           <img
-            className="logoName"
+            className="logoHeader"
             src={require("../assets/img/logoName.png")}
             title="Logo GardenMap"
             alt="Logo GardenMap"

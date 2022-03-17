@@ -39,7 +39,10 @@
   background: rgb(207, 194, 186);
   padding: 5%;
 }
-
+.error-text{
+  font-weight: 600;
+  color:red;
+}
 .form {
   position: relative;
 }

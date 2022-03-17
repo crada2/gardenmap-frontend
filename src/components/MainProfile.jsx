@@ -7,7 +7,7 @@ const MainProfile = ({ owner }) => {
     <div>
       <article className="articleLogin">
         <img
-          className="logoName"
+          className="logoUser"
           src={require("../assets/img/UserGarden.png")}
           title="user img"
           alt="user img"

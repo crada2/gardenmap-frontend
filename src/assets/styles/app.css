@@ -41,11 +41,6 @@ html {
 }
 
 @font-face {
-  font-family: texts;
-  src: url(../fonts/Quicksand_Light.otf);
-}
-
-@font-face {
   font-family: headers;
   src: url(../fonts/Quicksand_Book.otf);
 }

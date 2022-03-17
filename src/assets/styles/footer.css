@@ -1,15 +1,13 @@
 .footer {
   background-color: var(--color-footer);
   color: black;
-  font-family: "Archivo", sans-serif;
+  font-family: footer;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 100vh;
-
-  
 }
 
 .logo {

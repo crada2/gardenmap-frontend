@@ -1,29 +1,46 @@
-.backRegister {
+.containerRegister {
+  display: flex;
+  align-content: space-between;
+  align-items: stretch;
+
+  background-image: url(../img/Rectangle.svg);
+  background-size: cover;
+  background-position: 0% 0%;
+
+  background-image: url(../img/Rectangle.svg);
+  background-size: cover;
+  background-position: 4% 0%;
+}
+
+.imgRegister {
   background-image: url(../img/imgForm.png);
   background-size: cover;
-  position: relative;
+  background-position: right;
   background-repeat: no-repeat;
   width: 60%;
   height: 100vh;
 }
 
-.containerRegister {
+.contentRegister {
   border-radius: 0.4rem;
   border: 1px #807a85 solid;
   background-color: #dbcfe6;
-  max-width: 40%;
+  max-width: 60%;
   height: 5%;
-  display: flex;
-  flex-direction: column;
   margin-left: 5%;
-  margin-bottom: 30%;
-  top: 4vw;
-  position: relative;
-}
-
-.contentRegister {
+  margin-bottom: 20%;
+  margin-right: 5%;
   background: rgb(207, 194, 186);
   padding: 5%;
+  top: 10vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleRegister {
+  font-family: titles;
+  font-size: 4vh;
 }
 
 .formRegister {
@@ -34,6 +51,7 @@
   float: left;
   width: 25%;
   margin-top: 5%;
+  margin-right: 2%;
 }
 
 .col-75 {
@@ -73,4 +91,16 @@ button {
 
 button:hover {
   background-color: #807a85;
+}
+
+@media only screen and (max-width: 480px) {
+  .containerRegister {
+    max-width: 87vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .containerRegister {
+    max-width: 90vw;
+  }
 }

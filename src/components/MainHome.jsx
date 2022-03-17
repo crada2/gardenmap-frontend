@@ -57,7 +57,9 @@ const MainHome = () => {
               ></iframe>
               <div className="boxBtn">
                 {" "}
-                <button className="btnMain">Register</button>
+                <Link to="/login">
+                  <button className="btnMain">Register</button>
+                </Link>
               </div>
             </div>
           </div>

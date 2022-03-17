@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import "../assets/styles/register.css";
+//import { v4 as uuidv4 } from "uuid";
 
 const RegisterForm = () => {
   const navigate = useNavigate();
@@ -15,12 +16,13 @@ const RegisterForm = () => {
   //POST OWNER
   const sendDataAPI = () => {
     axios
-      .post(`http://localhost:8080/owners`, {
+      .post(`http://localhost:8080/owners/`, {
         name,
         email,
         password,
         direction,
         telephone,
+        //id: uuidv4(),
       })
       .then(() => {
         navigate("/form");
@@ -37,10 +39,10 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="backRegister">
+    <>
       <div className="containerRegister">
         <div className="contentRegister">
-          <h2>REGISTER</h2>
+          <h2 className="titleRegister">REGISTER</h2>
           <form className="formRegister" onSubmit={submitHandler}>
             <div className="row">
               <div className="col-25">
@@ -62,7 +64,7 @@ const RegisterForm = () => {
               </div>
               <div className="col-75">
                 <input
-                  type="email"
+                  type="text"
                   placeholder="What is your email?"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -113,8 +115,10 @@ const RegisterForm = () => {
             </button>
           </form>
         </div>
+
+        <div className="imgRegister"></div>
       </div>
-    </div>
+    </>
   );
 };
 export default RegisterForm;

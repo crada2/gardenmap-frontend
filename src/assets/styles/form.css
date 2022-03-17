@@ -1,8 +1,3 @@
-@font-face {
-  font-family: romantice;
-  src: url(../fonts/ROMANTICE.otf);
-}
-
 .background {
   background-image: url(../img/garden.jpg);
   background-size: cover;
@@ -28,7 +23,7 @@
 }
 
 .title {
-  font-family: romantice;
+  font-family: titles;
   font-size: 4vh;
   width: 100%;
   height: 40vh;
@@ -64,6 +59,7 @@
 label {
   padding: 0.25em 0.25em 0.25em 0;
   display: inline-block;
+  font-family: headers;
 }
 
 input[type="text"],
@@ -76,12 +72,14 @@ textarea {
   box-sizing: border-box;
   resize: vertical;
   background-color: var(--color-form);
+  font-family: headers;
   color: black;
 }
 
 button {
   background-color: var(--color-form);
-  color: white;
+  font-family: headers;
+  color: rgb(0, 0, 0);
   padding: 3%;
   border: none;
   border-radius: 0.25rem;

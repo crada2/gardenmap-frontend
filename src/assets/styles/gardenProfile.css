@@ -17,6 +17,7 @@
   border: none;
   color: #222;
   text-decoration: none;
+  font-family: headers;
 }
 
 .card__btn:hover {

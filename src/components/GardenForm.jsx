@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/form.css";
-import swal from 'sweetalert'; 
+import swal from "sweetalert";
 
 const GardenForm = () => {
   const navigate = useNavigate();
@@ -12,23 +12,24 @@ const GardenForm = () => {
 
   //POST
   const sendDataAPI = () => {
-    axios.post(`http://localhost:8080/products`, {
-      title,
-      observations,
-      price,
-    }).then(() => {
-      navigate('/garden')
-      swal({
-        title: "new service added successfully",
-        text: "click 'ok' to continue",
-        icon: "success",
-        }); 
-    })
-  }
+    axios
+      .post(`http://localhost:8080/products`, {
+        title,
+        observations,
+        price,
+      })
+      .then(() => {
+        navigate("/garden");
+        swal({
+          title: "new service added successfully",
+          text: "click 'ok' to continue",
+          icon: "success",
+        });
+      });
+  };
 
   const submitHandler = (event) => {
     event.preventDefault();
-
   };
 
   return (
@@ -79,7 +80,9 @@ const GardenForm = () => {
                 />
               </div>
             </div>
-            <button type="submit" onClick={sendDataAPI}>submit</button>
+            <button type="submit" onClick={sendDataAPI}>
+              submit
+            </button>
           </form>
         </div>
       </div>

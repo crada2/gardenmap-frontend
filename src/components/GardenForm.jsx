@@ -35,6 +35,8 @@ const GardenForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm({mode: "onChange"});
   const onSubmit = (data) => {
     console.log(data);
+    sendDataAPI();
+    
   }; // your form submit function which will invoke after successful validation
   
   return (
@@ -54,7 +56,7 @@ const GardenForm = () => {
               <div className="col-75">
                 <input
                 {...register("titleForm", 
-                { required:true, 
+                  {required:true, 
                   maxLength:30, })} 
                   id="title"
                   type="text"
@@ -74,7 +76,7 @@ const GardenForm = () => {
               <div className="col-75">
                 <input
                 {...register("observationsForm", 
-                  { required:true,
+                  {required:true,
                   validate: (value) => value.length > 10
                   })
                 } 
@@ -95,13 +97,11 @@ const GardenForm = () => {
                 <input
                 {...register("priceForm", 
                 { required:true, 
-                  
-                  
                   validate: {
-                    positiveNumber: (value) => parseFloat(value) > 0,
-                    
+                    positiveNumber: (value) => parseInt(value) > 0,
                   }
                   })} 
+                  autoComplete="off"
                   type="text"
                   placeholder="How much does it cost?"
                   value={price}
@@ -112,8 +112,9 @@ const GardenForm = () => {
             {errors.priceForm && errors.priceForm.type === "positiveNumber" && (
               <p className="error-text">The Price is invalid</p>
             )}
+             {errors.priceForm && (<p className="error-text">The price is required.</p>)}
             
-            <button type="submit" onClick={sendDataAPI}>submit</button>
+            <button  type="submit" >submit</button>
           </form>
         </div>
       </div>

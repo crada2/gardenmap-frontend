@@ -2,12 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/form.css";
-<<<<<<< HEAD
-import swal from "sweetalert";
-=======
 import swal from 'sweetalert'; 
 import { useForm } from "react-hook-form";
->>>>>>> 5386b180f600ff7e99adaeb221c773568ae61fed
 
 const GardenForm = () => {
   const navigate = useNavigate();
@@ -35,12 +31,8 @@ const GardenForm = () => {
 
   /*const submitHandler = (event) => {
     event.preventDefault();
-<<<<<<< HEAD
-  };
-=======
 
   };*/
->>>>>>> 5386b180f600ff7e99adaeb221c773568ae61fed
 
   const { register, handleSubmit, formState: { errors } } = useForm({mode: "onChange"});
   const onSubmit = (data) => {
@@ -119,18 +111,12 @@ const GardenForm = () => {
                 />
               </div>
             </div>
-<<<<<<< HEAD
-            <button type="submit" onClick={sendDataAPI}>
-              submit
-            </button>
-=======
             {errors.priceForm && errors.priceForm.type === "positiveNumber" && (
               <p className="error-text">The Price is invalid</p>
             )}
              {errors.priceForm && (<p className="error-text">The price is required.</p>)}
             
             <button  type="submit" >submit</button>
->>>>>>> 5386b180f600ff7e99adaeb221c773568ae61fed
           </form>
         </div>
       </div>

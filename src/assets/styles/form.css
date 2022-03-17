@@ -7,8 +7,13 @@
   opacity: 0.9;
   /*position: absolute;*/
 }
+.contentForm{
+  
+    background: rgb(207, 194, 186);
+    padding: 4%;
 
-.containerFormGarden {
+}
+.containerGarden {
   border-radius: 0.4rem;
   border: 1px #807a85 solid;
   background-color: #dbcfe6;
@@ -43,17 +48,17 @@
   font-weight: 600;
   color:red;
 }
-.form {
+.formGarden {
   position: relative;
 }
 
-.col-25 {
+.col-label {
   float: left;
   width: 25%;
   margin-top: 5%;
 }
 
-.col-75 {
+.col-input {
   float: left;
   width: 75%;
   margin-top: 2%;

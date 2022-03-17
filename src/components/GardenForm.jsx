@@ -43,16 +43,16 @@ const GardenForm = () => {
   
   return (
     <div className="background">
-      <div className="containerFormGarden">
+      <div className="containerGarden">
         <div className="title">
           <p>What do you offer:</p>
         </div>
-        <div className="content">
-          <form className="form" onSubmit={handleSubmit(onSubmit)}>
+        <div className="contentForm">
+          <form className="formGarden" onSubmit={handleSubmit(onSubmit)}>
 
             {/* title */}
             <div className="row">
-              <div className="col-25">
+              <div className="col-label">
                 <label htmlFor="title">Title</label>
               </div>
               <div className="col-75">
@@ -72,7 +72,7 @@ const GardenForm = () => {
 
             {/* Observations */}
             <div className="row">
-              <div className="col-25">
+              <div className="col-label">
                 <label htmlFor="price">Observations</label>
               </div>
               <div className="col-75">
@@ -92,10 +92,10 @@ const GardenForm = () => {
             {errors.observationsForm && <p className="error-text">Please, your observations are incomplete.</p>}
 
             <div className="row">
-              <div className="col-25">
+              <div className="col-label">
                 <label htmlFor="price">Price</label>
               </div>
-              <div className="col-75">
+              <div className="col-input">
                 <input
                 {...register("priceForm", 
                 { required:true, 

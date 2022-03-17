@@ -42,7 +42,7 @@ const RegisterForm = () => {
     <>
       <div className="containerRegister">
         <div className="contentRegister">
-          <h2 className="titleRegister">REGISTER</h2>
+          <h2 className="titleRegister">REGISTER1</h2>
           <form className="formRegister" onSubmit={submitHandler}>
             <div className="row">
               <div className="col-25">

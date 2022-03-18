@@ -116,10 +116,7 @@ const RegisterForm = () => {
               </button>
             </form>
           </div>
-        </div>
-
-        <div className="containerImgRegister">
-          <img className="imgRegister" alt="imageRegister"></img>
+          <div className="imgRegister" alt="imageRegister"></div>
         </div>
       </div>
     </>

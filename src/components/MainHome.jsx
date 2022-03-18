@@ -24,9 +24,9 @@ const MainHome = () => {
               </Link>
               <div className="boxList">
                 <ul>
-                  <li className="homeLi">mercado ecológico</li>
-                  <li className="homeLi">talleres para todas las edades</li>
-                  <li className="homeLi">acompañamiento y ayuda</li>
+                  <li className="homeLi">ORGANIC MARKETS</li>
+                  <li className="homeLi">WORKSHOPS FOR ALL AGES</li>
+                  <li className="homeLi">ACCOMPANIMENT AND HELP</li>
                 </ul>
               </div>
             </section>
@@ -42,9 +42,9 @@ const MainHome = () => {
               </Link>
               <div className="boxList">
                 <ul>
-                  <li className="homeLi">mercado ecológico</li>
-                  <li className="homeLi">talleres para todas las edades</li>
-                  <li className="homeLi">acompañamiento y ayuda</li>
+                  <li className="homeLi">ORGANIC MARKETS</li>
+                  <li className="homeLi">WORKSHOPS FOR ALL AGES</li>
+                  <li className="homeLi">ACCOMPANIMENT AND HELP</li>
                 </ul>
               </div>
             </section>

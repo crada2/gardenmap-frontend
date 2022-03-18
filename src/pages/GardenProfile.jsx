@@ -7,13 +7,12 @@ import MainProfile from "../components/MainProfile";
 import ServicesGarden from "../components/ServicesGarden";
 import "../assets/styles/gardenProfile.css";
 import { Link } from "react-router-dom";
-import swal from 'sweetalert'; 
-
+import swal from "sweetalert";
 
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
   const [service, setService] = useState([]);
-  const [owner, setOwner]= useState([]);
+  const [owner, setOwner] = useState([]);
 
   useEffect(() => {
     setLoading(false);
@@ -23,29 +22,25 @@ const GardenProfile = () => {
     });
   }, [setLoading]);
 
-  
-
-    //DELETE
-    const deleteDataAPI = (id) => {
-      axios.delete(`http://localhost:8080/products/${id}`)
-      .then(res => {
+  //DELETE
+  const deleteDataAPI = (id) => {
+    axios.delete(`http://localhost:8080/products/${id}`).then(
+      (res) => {
         console.log(res);
         console.log(res.data);
         swal({
           title: "Deleted service!",
           text: "You clicked the button!",
           icon: "success",
-          }); 
+        });
         const updatedGarden = service.filter((profiles) => profiles.id !== id);
-      setService(updatedGarden);
-      }, (error) => {
+        setService(updatedGarden);
+      },
+      (error) => {
         alert("Operation Failed Here");
-    })
-    }
-  /*const handleDeleteGarden = (id) => {
-    const updatedGarden = service.filter((profiles) => profiles.id !== id);
-    setService(updatedGarden);
-  };*/
+      }
+    );
+  };
 
   const renderProfile = () => {
     if (loading) {
@@ -59,18 +54,15 @@ const GardenProfile = () => {
         title={title}
         price={price}
         onDelete={() => deleteDataAPI(id)}
-        
       />
     ));
   };
 
-  return ( 
+  return (
     <div>
       <Hero />
       <div className="profileUserHero">
-        <MainProfile
-       owner={owner}
-        />
+        <MainProfile owner={owner} />
         <Link to="/form">
           <button className="card__btn-create">Create </button>
         </Link>

@@ -17,7 +17,7 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
               <li>🌱 por mes 150$</li>
             </ul>
             <div className="infoService">
-               <p>🌻Visitas guiadas: </p>{" "}
+              <p>🌻Visitas guiadas: </p>{" "}
             </div>
             <ul className="dentro">
               <li>🌱 price: 20$/person</li>

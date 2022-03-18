@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="containerHeader">
-      <Link to="/">
+     
         <div className="boxHeader">
+        <Link to="/">
           <img
             className="logoHeader"
             src={require("../assets/img/logoName.png")}
             title="Logo GardenMap"
             alt="Logo GardenMap"
           />
+           </Link>
         </div>
-      </Link>
+     
       <nav className="boxNav">
         <li className="navList"> GardenMali </li>
         <li className="navList"> OurStory </li>

@@ -8,18 +8,24 @@
 }
 
 .logoHeader {
-  margin-left: 3rem;
+  
   height: 5rem;
   padding: 1rem;
 }
-
+.boxHeader{
+  padding: 1rem;
+    cursor: pointer;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
 .boxNav {
   padding: 1rem;
   cursor: pointer;
   flex: 2;
   display: flex;
-  justify-content: start;
-  margin-left: 33rem;
+  justify-content: center;
+
 }
 
 .navList {

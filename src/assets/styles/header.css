@@ -1,4 +1,4 @@
-.containerHeader {
+.header {
   cursor: not-allowed;
   display: flex;
   align-items: center;
@@ -7,19 +7,19 @@
   min-height: 90px;
 }
 
-.logoHeader {
+.h-logo_img {
   
   height: 5rem;
   padding: 1rem;
 }
-.boxHeader{
+.h-logo{
   padding: 1rem;
     cursor: pointer;
     flex: 2;
     display: flex;
     justify-content: center;
 }
-.boxNav {
+.h-nav {
   padding: 1rem;
   cursor: pointer;
   flex: 2;
@@ -28,7 +28,7 @@
 
 }
 
-.navList {
+.h-nav_list {
   list-style: none;
   text-decoration: none;
   color: antiquewhite;
@@ -36,12 +36,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.separator {
+.h-nav_separator {
   padding: 1rem;
   color: antiquewhite;
 }
 
-.headerSpan {
+.h-span {
   display: none;
 }
 
@@ -70,28 +70,28 @@
     color: antiquewhite;
     padding: 1rem;
   }
-  .separator {
+  .h-nav_separator {
     padding: 1rem;
     color: antiquewhite;
   }
 
-  .headerSpan {
+  .h-span {
     display: none;
   }
 }
 @media (max-width: 1194px) {
-  .headerSpan {
+  .h-span {
     flex: 2;
     display: flex;
     justify-content: center;
   }
-  .menu {
+  .h-menu {
     height: 5rem;
     padding: 1rem;
     border-radius: 1.6em;
     margin-left: 30em;
   }
-  .boxNav {
+  .h-nav {
     display: none;
   }
 }

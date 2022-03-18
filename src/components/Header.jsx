@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="containerHeader">
+    <div className="header">
      
-        <div className="boxHeader">
+        <div className="h-logo">
         <Link to="/">
           <img
-            className="logoHeader"
+            className="h-logo_img"
             src={require("../assets/img/logoName.png")}
             title="Logo GardenMap"
             alt="Logo GardenMap"
@@ -17,17 +17,17 @@ const Header = () => {
            </Link>
         </div>
      
-      <nav className="boxNav">
-        <li className="navList"> GardenMali </li>
-        <li className="navList"> OurStory </li>
-        <li className="navList"> Village </li>
-        <li className="navList"> Comunity </li>
-        <p className="separator">|</p>
-        <li className="navList">Green Projects</li>
+      <nav className="h-nav">
+        <li className="h-nav_list"> GardenMali </li>
+        <li className="h-nav_list"> OurStory </li>
+        <li className="h-nav_list"> Village </li>
+        <li className="h-nav_list"> Comunity </li>
+        <p className="h-nav_separator">|</p>
+        <li className="h-nav_list">Green Projects</li>
       </nav>
-      <span className="headerSpan">
+      <span className="h-span">
         <img
-          className="menu"
+          className="h-menu"
           src={require("../assets/img/menu.png")}
           alt="icon menu"
         />

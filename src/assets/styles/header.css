@@ -46,17 +46,17 @@
 }
 
 @media (max-width: 1194px) {
-  .headerSpan {
+  .h-span {
     flex: 2;
     display: flex;
     justify-content: center;
   }
-  .logoHeader {
+  .h-logo_img {
     height: 5rem;
     padding: 1rem;
     border-radius: 1.6em;
   }
-  .boxNav {
+  .h-nav {
     padding: 1rem;
     cursor: pointer;
     flex: 2;
@@ -64,7 +64,7 @@
     justify-content: start;
   }
 
-  .navList {
+  .h-nav_list {
     list-style: none;
     text-decoration: none;
     color: antiquewhite;
@@ -89,26 +89,12 @@
     height: 5rem;
     padding: 1rem;
     border-radius: 1.6em;
-    margin-left: 30em;
+  
   }
   .h-nav {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
-  .menu {
-    margin-left: 16em;
-  }
-}
 
-@media (max-width: 568px) {
-  .menu {
-    margin-left: 10em;
-  }
-}
-@media (max-width: 368px) {
-  .menu {
-    margin-left: 8em;
-  }
-}
+

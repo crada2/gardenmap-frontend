@@ -1,117 +1,67 @@
-.background {
-  background-image: url(../img/garden.jpg);
+.form_main {
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(https://cdn.dribbble.com/users/6024852/screenshots/16232911/media/54a1f06f2c4fb1a591f7ba2124f464d7.png?compress=1&resize=800x600&vertical=top);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   opacity: 0.9;
-  /*position: absolute;*/
 }
-.contentForm {
-  background: rgb(207, 194, 186);
-  padding: 4%;
-}
-.containerGarden {
-  border-radius: 0.4rem;
-  border: 1px #807a85 solid;
-  background-color: #dbcfe6;
-  max-width: 40%;
-  height: 5%;
+.form_container {
+
+  padding: 2em 1em 2em 1em;
+  height: 50%;
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-bottom: 30%;
-  top: 4vw;
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.733);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  min-width: 20em;
+  border-radius: 0.4rem;
+  border: 4px var(--color-form) solid;
 }
 
-.title {
-  font-family: titles;
-  font-size: 4vh;
-  width: 100%;
-  height: 40vh;
-  padding: 10% 0% 10% 0%;
+.form_hero {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-image: url(../img/formBanner.png);
-  background-size: 100%;
+  border-bottom: solid 2px var(--color-form);
+  text-shadow: 2px 2px 20px rgb(0, 0, 0);
+  font-family: titles;
+  font-size: 28pt;
+  color: var(--color-form);
+  padding: 0.8em;
+  margin-bottom: 1em;
+  margin: 0;
 }
 
-.content {
-  background: rgb(207, 194, 186);
-  padding: 5%;
-}
 .error-text {
-  font-weight: 600;
-  color: red;
-}
-.formGarden {
-  position: relative;
+  font-weight: 300;
+  color: rgba(255, 0, 64, 0.657);
 }
 
-.col-label {
-  float: left;
-  width: 25%;
-  margin-top: 5%;
+form {
+  margin: 2em auto 1em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.col-input {
-  float: left;
-  width: 75%;
-  margin-top: 2%;
-}
+.form-label {
+  padding: 1em;
 
-label {
-  padding: 0.25em 0.25em 0.25em 0;
-  display: inline-block;
-  font-family: headers;
-}
-
-input[type="text"],
-select,
-textarea {
   width: 100%;
-  padding: 5%;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  box-sizing: border-box;
-  resize: vertical;
-  background-color: var(--color-form);
-  font-family: headers;
+  color: var(--color-form);
+  font-weight: bolder;
+  text-shadow: 1px 1px rgb(2, 2, 2), -1px -1px #333;
+  border-radius: 0.4rem;
+  padding-left: 0.5em;
+}
+
+.btn_form {
   color: black;
-}
-
-button {
-  background-color: var(--color-form);
-  font-family: headers;
-  color: rgb(0, 0, 0);
-  padding: 3%;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  float: right;
-  margin: 3%;
-}
-
-button:hover {
-  background-color: #807a85;
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  .containerFormGarden {
-    max-width: 87vw;
-
-    /* margin-left: 5%; */
-  }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  .containerFormGarden {
-    max-width: 90vw;
-
-    /* margin-left: 5%; */
-  }
+  font-weight: bold;
 }

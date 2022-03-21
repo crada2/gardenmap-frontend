@@ -45,19 +45,21 @@ const GardenForm = () => {
   }; // your form submit function which will invoke after successful validation
 
   return (
-    <div className="background">
-      <div className="containerGarden">
-        <div className="title">
-          <p>What do you offer:</p>
+    <div className="form_main">
+
+      <div className="form_container">
+
+        <div className="form_hero">
+          <p>What do you offer</p>
         </div>
-        <div className="contentForm">
-          <form className="formGarden" onSubmit={handleSubmit(onSubmit)}>
+
+        <div className="form_container_info">
+          <form className="form_info" onSubmit={handleSubmit(onSubmit)}>
             {/* title */}
-            <div className="row">
-              <div className="col-label">
-                <label htmlFor="title">Title</label>
-              </div>
-              <div className="col-75">
+            
+                <label className="form-label"  htmlFor="f-title">🍀   Title</label>
+            
+             
                 <input
                   {...register("titleForm", { required: true, maxLength: 30 })}
                   id="title"
@@ -66,18 +68,18 @@ const GardenForm = () => {
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                 />
-              </div>
-            </div>
+            
+
+
             {errors.titleForm && (
               <p className="error-text">Pleace, title is required</p>
             )}
 
             {/* Observations */}
-            <div className="row">
-              <div className="col-label">
-                <label htmlFor="price">Observations</label>
-              </div>
-              <div className="col-75">
+            
+                <label className="form-label" htmlFor="f-observations"> 🍀 Observations</label>
+             
+            
                 <input
                   {...register("observationsForm", {
                     required: true,
@@ -88,19 +90,19 @@ const GardenForm = () => {
                   value={observations}
                   onChange={(e) => setObservations(e.target.value)}
                 />
-              </div>
-            </div>
+             
+  
+
+
             {errors.observationsForm && (
               <p className="error-text">
                 Please, your observations are incomplete.
               </p>
             )}
 
-            <div className="row">
-              <div className="col-label">
-                <label htmlFor="price">Price</label>
-              </div>
-              <div className="col-input">
+           
+                <label className="form-label" htmlFor="f-price">🍀  Price</label>
+              
                 <input
                   {...register("priceForm", {
                     required: true,
@@ -114,8 +116,8 @@ const GardenForm = () => {
                   value={price}
                   onChange={(e) => setPrice(e.target.value)}
                 />
-              </div>
-            </div>
+            
+
             {errors.priceForm && errors.priceForm.type === "positiveNumber" && (
               <p className="error-text">The Price is invalid</p>
             )}
@@ -123,10 +125,12 @@ const GardenForm = () => {
               <p className="error-text">The price is required.</p>
             )}
 
-            <button type="submit">submit</button>
+            <button className="btn_form" type="submit">submit</button>
+
           </form>
         </div>
       </div>
+     
     </div>
   );
 };

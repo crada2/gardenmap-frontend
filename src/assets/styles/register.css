@@ -1,62 +1,61 @@
-.background {
-  background-image: url(../img/garden.jpg);
+.containerRegister {
+  display: flex;
+  align-content: space-between;
+  align-items: stretch;
+
+  background-image: url(../img/Rectangle.svg);
   background-size: cover;
+  background-position: 0% 0%;
+
+  background-image: url(../img/Rectangle.svg);
+  background-size: cover;
+  background-position: 4% 0%;
+}
+
+.imgRegister {
+  background-image: url(../img/imgForm.png);
+  background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  opacity: 0.9;
-  /*position: absolute;*/
+  width: 60%;
+  height: 70vw;
+  bottom: 0%;
 }
-.contentForm {
-  background: rgb(207, 194, 186);
-  padding: 4%;
-}
-.containerGarden {
+
+.contentRegister {
   border-radius: 0.4rem;
   border: 1px #807a85 solid;
   background-color: #dbcfe6;
-  max-width: 40%;
+  max-width: 60%;
   height: 5%;
-  display: flex;
-  flex-direction: column;
   margin-left: 5%;
-  margin-bottom: 30%;
-  top: 4vw;
-  position: relative;
-}
-
-.title {
-  font-family: titles;
-  font-size: 4vh;
-  width: 100%;
-  height: 40vh;
-  padding: 10% 0% 10% 0%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../img/formBanner.png);
-  background-size: 100%;
-}
-
-.content {
+  margin-bottom: 20%;
+  margin-right: 5%;
   background: rgb(207, 194, 186);
   padding: 5%;
+  top: 10vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.error-text {
-  font-weight: 600;
-  color: red;
+
+.titleRegister {
+  font-family: titles;
+  font-size: 4vh;
 }
-.formGarden {
+
+.formRegister {
   position: relative;
 }
 
-.col-label {
+.col-25 {
   float: left;
   width: 25%;
   margin-top: 5%;
+  margin-right: 2%;
 }
 
-.col-input {
+.col-75 {
   float: left;
   width: 75%;
   margin-top: 2%;
@@ -65,7 +64,6 @@
 label {
   padding: 0.25em 0.25em 0.25em 0;
   display: inline-block;
-  font-family: headers;
 }
 
 input[type="text"],
@@ -78,14 +76,12 @@ textarea {
   box-sizing: border-box;
   resize: vertical;
   background-color: var(--color-form);
-  font-family: headers;
   color: black;
 }
 
 button {
   background-color: var(--color-form);
-  font-family: headers;
-  color: rgb(0, 0, 0);
+  color: white;
   padding: 3%;
   border: none;
   border-radius: 0.25rem;
@@ -98,20 +94,14 @@ button:hover {
   background-color: #807a85;
 }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .containerFormGarden {
+  .containerRegister {
     max-width: 87vw;
-
-    /* margin-left: 5%; */
   }
 }
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .containerFormGarden {
+  .containerRegister {
     max-width: 90vw;
-
-    /* margin-left: 5%; */
   }
 }

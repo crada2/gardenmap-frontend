@@ -1,79 +1,73 @@
-.grid-container{
-  height:auto;
+.grid-container {
+  height: auto;
   grid-gap: 5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill,400px);
+  grid-template-columns: repeat(auto-fill, 400px);
   justify-content: center;
   margin-bottom: 4%;
 }
 .highlights {
-width: 30em;
+  width: 30em;
   padding: 1em;
 }
-  
-  
-  .card {
-    
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      line-height: 2em;
-      max-width: 20rem;
-      margin: 4rem;
-      padding-top: 1.5rem;
-      background: #cca46b21;
-      border-radius: 0.3rem;
-      overflow: hidden;
-      align-items: flex-end;
-      align-content: center;
-  
-  }
-  .card h3{
-    text-shadow: 2px 2px 8px #8a671d;
-  }
-  .card ul p{
-    text-shadow: 2px 2px 10px #37968194;
-  }
-  .card li{
-    line-height: 1.5em;
-  }
-  
-  .card > * {
-    padding: 0 1.5rem;
-  }
-  
-  .card__btn {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 1rem;
-    background: #ddd;
-    border: none;
-    color: #222;
-    text-decoration: none;
-  }
-  .card__btn-update {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 1rem;
-    background: rgba(115, 121, 114, 0.288);
-    border: none;
-    color: #222;
-    text-decoration: none;
-  }
-  
-  .card__btn:hover {
-    background: rgb(231, 183, 223);
-  }
-  .card__btn-update:hover {
-    background: rgb(183, 231, 207);
-  }
-  
-  .infoService{
-    display: flex;
-   
-  
-  }
- 
- 
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2em;
+  max-width: 20rem;
+  margin: 4rem;
+  padding-top: 1.5rem;
+  background: #cca46b21;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  font-family: headers;
+  align-content: center;
+}
+.card h3 {
+  text-shadow: 2px 2px 8px #8a671d;
+  font-family: titles;
+}
+.card ul p {
+  text-shadow: 2px 2px 10px #37968194;
+}
+.card li {
+  line-height: 1.5em;
+}
+
+.card > * {
+  padding: 0 1.5rem;
+}
+
+.card__btn {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background: #ddd;
+  border: none;
+  color: #222;
+  text-decoration: none;
+}
+.card__btn-update {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background: rgba(115, 121, 114, 0.288);
+  border: none;
+  color: #222;
+  text-decoration: none;
+}
+
+.card__btn:hover {
+  background: rgb(231, 183, 223);
+}
+.card__btn-update:hover {
+  background: rgb(183, 231, 207);
+}
+
+.infoService {
+  display: flex;
+}

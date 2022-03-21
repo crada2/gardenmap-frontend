@@ -9,7 +9,7 @@ const Footer = () => {
         src={require("../assets/img/logo.png")}
         alt="logo"
       />
-      <p>Copyright reserved to CRADA</p>
+      <p>© Copyright 2022 – CRADA. All rights reserved</p>
     </div>
   );
 };

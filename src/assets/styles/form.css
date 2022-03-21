@@ -13,8 +13,8 @@
 .form_container {
 
   padding: 2em 1em 2em 1em;
-  height:65%;
-  min-height: 45em;
+  height: 15em;
+  min-height: 37em;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   border-bottom: solid 2px rgb(234, 252, 234);
   text-shadow: 2px 2px 20px rgb(0, 0, 0);
   font-family: titles;
-  font-size: 28pt;
+  font-size: 25pt;
   color: var(--color-form);
   padding: 0.8em;
   margin-bottom: 1em;
@@ -56,7 +56,7 @@ form {
 
 .form-label {
   padding: .8em;
-font-size: large;
+  font-size: large;
   width: 100%;
   color: var(--color-form);
   font-weight: bolder;

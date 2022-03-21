@@ -51,8 +51,8 @@ form {
 }
 
 .form-label {
-  padding: 1em;
-
+  padding: .8em;
+font-size: large;
   width: 100%;
   color: var(--color-form);
   font-weight: bolder;
@@ -62,6 +62,7 @@ form {
 }
 
 .btn_form {
+  margin-top: 3em;
   color: black;
   font-weight: bold;
 }

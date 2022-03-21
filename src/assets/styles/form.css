@@ -13,8 +13,9 @@
 .form_container {
 
   padding: 2em 1em 2em 1em;
-  height: 50%;
+  height:70%;
   min-height: 45em;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.733);

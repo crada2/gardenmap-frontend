@@ -4,7 +4,7 @@ import "../assets/styles/mainprofile.css";
 
 const MainProfile = ({ owner }) => {
   return (
-    <div>
+    <div className="conteiner">
       <article className="articleLogin">
         <img
           className="logoUser"

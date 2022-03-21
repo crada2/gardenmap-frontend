@@ -5,30 +5,30 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
   return (
     <div className="highlights">
       <section className="card">
-        <h3>Servicio </h3>
+        <button className="card__btn_initial"><img src="" alt="" /></button>
 
         <div className="map-perfil">
           <ul>
             <div className="infoService">
-              <p>🌻{title}</p>{" "}
+              <p>{title}</p>{" "}
             </div>
             <ul className="dentro">
-              <li>🌱 por dia: {price}$</li>
-              <li>🌱 por mes 150$</li>
+              <li> por dia: {price}$</li>
+              <li> por mes 150$</li>
             </ul>
             <div className="infoService">
-              <p>🌻Visitas guiadas: </p>{" "}
+              <img src="" alt="" /><p>Visitas guiadas: </p>{" "}
             </div>
             <ul className="dentro">
-              <li>🌱 price: 20$/person</li>
-              <li>🌱 actividad con niños</li>
-              <li>🌱 cesta regalo</li>
+              <li> price: 20$/person</li>
+              <li> actividad con niños</li>
+              <li> cesta regalo</li>
             </ul>
             <div className="infoService">
-              <p>🌻Observations</p>{" "}
+              <p>Observations</p>{" "}
             </div>
             <ul className="dentro">
-              <li>🌱 {observations}</li>
+              <li> {observations}</li>
             </ul>
           </ul>
         </div>

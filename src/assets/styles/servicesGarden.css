@@ -19,11 +19,30 @@
   max-width: 20rem;
   margin: 4rem;
   padding-top: 1.5rem;
-  background: #cca46b21;
-  border-radius: 0.3rem;
+  background: #F8F8F8;
+  border-radius: 20px;
   overflow: hidden;
   font-family: headers;
   align-content: center;
+  box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25),
+  5px 5px 10px rgba(182, 174, 174, 0.137),
+  -5px -5px 10px rgb(252, 251, 251);
+
+}
+.card__btn_initial{
+  display: block;
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  border: none;
+  color: #222;
+  border-radius: 70px;
+  text-decoration: none;
+  box-shadow:  0px 2px 2px rgba(0, 0, 0, 0.25),
+  5px 5px 10px rgba(182, 174, 174, 0.25),
+  -5px -5px 10px rgb(252, 251, 251);
 }
 .card h3 {
   text-shadow: 2px 2px 8px #8a671d;
@@ -42,23 +61,33 @@
 
 .card__btn {
   display: block;
-  width: 100%;
+  width: 37px;
+  height: 35px;
   margin: 0;
   padding: 1rem;
-  background: #ddd;
+  background: rgb(255, 255, 255);
   border: none;
   color: #222;
+  border-radius: 70px;
   text-decoration: none;
+  box-shadow:  0px 2px 2px rgba(0, 0, 0, 0.25),
+  5px 5px 10px rgba(182, 174, 174, 0.25),
+  -5px -5px 10px rgb(252, 251, 251);
 }
 .card__btn-update {
   display: block;
-  width: 100%;
+  width: 37px;
+  height: 35px;
   margin: 0;
   padding: 1rem;
-  background: rgba(115, 121, 114, 0.288);
+  background: rgba(248, 253, 247, 0.288);
   border: none;
   color: #222;
   text-decoration: none;
+  border-radius: 70px;
+  box-shadow:  0px 2px 2px rgba(0, 0, 0, 0.25),
+  5px 5px 10px rgba(182, 174, 174, 0.25),
+  -5px -5px 10px rgb(252, 251, 251);
 }
 
 .card__btn:hover {

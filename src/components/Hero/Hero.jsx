@@ -28,12 +28,12 @@ const Hero = () => {
   };
 
   return (
-    <div className="container-slider">
+    <div className="hero_slider">
       {DataSlider.map((todo, index) => {
         return (
           <div
             key={todo.id}
-            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+            className={slideIndex === index + 1 ? "hero_slide hero_active-anim" : "hero_slide"}
             >
             <img src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} />
           </div>
@@ -42,11 +42,11 @@ const Hero = () => {
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
-      <div className="container-dots">
+      <div className="hero_dots">
         {Array.from({ length: 6 }).map((todo, index) => (
           <div
             onClick={() => moveDot(index + 1)}
-            className={slideIndex === index + 1 ? "dot active" : "dot"}
+            className={slideIndex === index + 1 ? "hero_dot active" : "hero_dot"}
           ></div>
         ))}
       </div>

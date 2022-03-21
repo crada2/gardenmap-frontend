@@ -27,9 +27,9 @@ html {
 
 :root {
   --color-btnGreen: #0b320c;
-  --color-circle: #8c6239;
-  --color-header: #3a2d19;
-  --color-footer: #2f4922;
+  --color-circle: #000000;
+  --color-header: #070707;
+  --color-footer: #000000;
   --color-font: #056564;
   --color-form: #9d8d7f;
 }

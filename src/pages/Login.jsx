@@ -1,13 +1,17 @@
 import React from "react";
-import LoginUser from "../components/LoginUsers.jsx";
-import Hero from "../components/Hero/Hero";
+import LoginUsers from "../components/LoginUsers";
+import Hero from "../components/Hero/Hero.jsx";
 
 
 
-export default function Login() {
-  <div>
-      <Hero />
-      <LoginUser />
+
+const Login = () => {
+  return (
+    <div>
+       <Hero />
+      <LoginUsers />
     </div>
-}
+  );
+};
+export default Login;
 

@@ -6,14 +6,7 @@ import "../assets/styles/login.css";
 const LoginUsers = () => {
     return (
  
-       <div>
-
-            <h2 className="mh-subtitle">Login</h2>
-          <h2 className="mh-subtitle2">Garden Map</h2>
-
-<form action="">
-    <label htmlFor=""></label>
-</form>
+       <div className="login_main">
 
 
           <article className="boxInfo">
@@ -27,14 +20,8 @@ const LoginUsers = () => {
               <p className="homeLi">
                 "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Possimus et, perspiciatis nisi tempore aspernatur accusantium".</p>
-              <p className="mh-homeLi"> Anya Taylor-Joy</p>
-              <div className="stars-homeLi">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
+              <p className="mh-homeLi"> GardenMaps</p>
+              
 
         </div>
           </div>
@@ -42,17 +29,22 @@ const LoginUsers = () => {
         <section className="mh-review" >
           <div className="mh-box-container">
 
-    <div className="mh-box">
+        <div className="mh-box login_container">
         <i className="fas fa-quote-right"></i>
         <div className="user-commets">
-            <img className="mh-img" src={require("../assets/img/logo.png")} alt=""/>
-            <h3 className="mh-coment-name">John Macintosh</h3>
+            
+   
             <div className="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+
+            <form action="">
+            <label htmlFor="">Name:</label>
+                <input type="text"  />
+                <label htmlFor="">Mail:</label>
+                <input type="text"  />
+                <label htmlFor="">Password:</label>
+                <input type="text"  />
+            </form>
+             
             </div>
             <div className="mh-comment">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium,
@@ -75,15 +67,8 @@ const LoginUsers = () => {
               <p className="homeLi">
                 "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Possimus et, perspiciatis nisi tempore aspernatur accusantium".</p>
-              <p className="mh-homeLi"> Audrey Smith</p>
-              <div className="stars-homeLi">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-
+              <p className="mh-homeLi"> GardenMaps</p>
+             
         </div>
           </div>
           </section>

@@ -1,9 +1,10 @@
-.hero_slider {
+.hero_container-slider {
   height: 409px;
-  margin: 0% auto 0;
+  margin: 1% 1% 0;
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+  border-radius: 36px;
 }
 
 .slide {
@@ -24,7 +25,7 @@
   opacity: 1;
 }
 
-.hero_btn-slide {
+/*.btn-slide {
   width: 3px;
   height: 3px;
   border-radius: 50%;
@@ -37,7 +38,7 @@
   cursor: pointer;
 }*/
 
-.btn-slide {
+.herobtn-slide {
   width: 0.5vw;
   height: 0.5vw;
   border-radius: 50%;
@@ -51,11 +52,13 @@
   background-color: transparent !important;
 }
 
-.hero_btn-slide img {
-  width: 25px;
-  height: 25px;
+.herobtn-slide:hover img {
+  visibility: visible;
+  width: 2vw;
+  height: 2vw;
   pointer-events: none;
 }
+
 .prev {
   top: 50%;
   left: 20px;
@@ -67,14 +70,14 @@
   transform: translateY(-60%);
 }
 
-.hero_dots {
+.hero_container-dots  {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
 }
-.hero_dot {
+.dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -82,17 +85,17 @@
   margin: 0 5px;
   background: #f1f1f1;
 }
-.hero_dot .active {
+.dot .active {
   background: rgb(236, 131, 131);
 }
 @media screen and (max-width: 450px){
-  .container-slider {
+  .hero_container-slider {
     margin: 2.5% 2.5% 0;
     height: 280px;
   }
 }
 @media screen and (max-width: 768px){
-  .container-slider {
+  .hero_container-slider {
     margin: 2% 2% 0;
     height: 367px;
   }

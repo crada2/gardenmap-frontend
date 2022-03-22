@@ -25,8 +25,37 @@
     width: 50vh;
     
 }
-
+.form_login{
+    display: flex;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+}
 .login_card h1{
-    margin: 1em;
+    margin: 1.3em;
     
+}
+
+.label_login{
+
+}
+.input_login{
+   
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #f5fffced;
+    color: black;
+}
+
+.form_login-name {
+    
+    width: 10em;
+    height: 5em;
+}
+.form_login-password{
+  
+    width: 10em;
+    height: 5em;
 }

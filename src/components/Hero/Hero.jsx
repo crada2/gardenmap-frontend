@@ -28,7 +28,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero_slider">
+    <div className="hero_container-slider">
       {DataSlider.map((todo, index) => {
         return (
           <div
@@ -42,11 +42,11 @@ const Hero = () => {
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
-      <div className="hero_dots">
+      <div className="hero_container-dots ">
         {Array.from({ length: 6 }).map((todo, index) => (
           <div
             onClick={() => moveDot(index + 1)}
-            className={slideIndex === index + 1 ? "hero_dot active" : "hero_dot"}
+            className={slideIndex === index + 1 ? "dot active" : "dot"}
           ></div>
         ))}
       </div>

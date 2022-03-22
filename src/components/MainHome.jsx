@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
@@ -10,60 +11,131 @@ const MainHome = () => {
       <div className="containerHome">
         <div className="containerSvg">
           <h2 className="titleHome"> How to be part of the garden family?</h2>
-          <article className="boxInfo">
-            <section className="sectionHome">
-              <Link to="./garden">
-                <div className="homeImg">
-                  <img
-                    className="homeImg planet"
-                    src={require("../assets/img/planet.png")}
-                    title="img tierra"
-                    alt="img tierra"
-                  />
-                </div>
-              </Link>
-              <div className="boxList">
-                <ul>
-                  <li className="homeLi">ORGANIC MARKETS</li>
-                  <li className="homeLi">WORKSHOPS FOR ALL AGES</li>
-                  <li className="homeLi">ACCOMPANIMENT AND HELP</li>
-                </ul>
-              </div>
-            </section>
 
-            <section className="sectionHome">
-              <Link to="./form">
-                <div className="homeImg">
-                  <img
-                    className="homeImg plant"
-                    src={require("../assets/img/plant.png")}
-                  />{" "}
-                </div>
-              </Link>
-              <div className="boxList">
-                <ul>
-                  <li className="homeLi">ORGANIC MARKETS</li>
-                  <li className="homeLi">WORKSHOPS FOR ALL AGES</li>
-                  <li className="homeLi">ACCOMPANIMENT AND HELP</li>
-                </ul>
+          <div className="showcase-area">
+          <div className="container-main">
+            <div className="left">
+              <div className="big-title">
+                <h1 className>Future is here,</h1>
+                <h1 className>Organic Farming.</h1>
               </div>
-            </section>
-          </article>
-          <div className="sectionMap">
-            <div className="google-map-code">
-              <iframe
-                className="ifraMap"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3325395304414!2d-122.01116148467422!3d37.33463524513264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb59127ce078f%3A0x18e1c3ce7becf1b!2sApple%20Park!5e0!3m2!1sen!2sin!4v1637309850935!5m2!1sen!2sin"
-              ></iframe>
-              <div className="boxBtn">
-                {" "}
-                <Link to="/login">
-                  <button className="btnMain">Register</button>
+              <p className="text">
+                Organic Agriculture considers medium-and long-term effect of agricultural interventions on the agro-ecosystem!
+              </p>
+              <div className="cta">
+              <Link to="/login">
+
+                <a className="btn-cta-m" href="#" >Register</a>
                 </Link>
               </div>
+              
+            </div>
+
+            <div className="right-m">
+              <img className="farms" src={require("../assets/img/farms.jpg")}  alt="" />
             </div>
           </div>
         </div>
+
+
+            <h2 className="mh-subtitle">What People Say About</h2>
+          <h2 className="mh-subtitle2">Garden Map</h2>
+          <article className="boxInfo">
+          
+          <section className='card-group card-profile'>
+            <div className='card-container'>
+              <div className='card-bg-img bg1'></div>
+              <div className='card-profile-img'>
+                <img className="img-mainprofile" src={require("../assets/img/logo.png")}/>
+            </div>
+            <div class='card-heading'>
+              <p className="homeLi">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Possimus et, perspiciatis nisi tempore aspernatur accusantium".</p>
+              <p className="mh-homeLi"> Anya Taylor-Joy</p>
+              <div className="stars-homeLi">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+        </div>
+          </div>
+          </section>    
+        <section className="mh-review" >
+          <div className="mh-box-container">
+
+    <div className="mh-box">
+        <i className="fas fa-quote-right"></i>
+        <div className="user-commets">
+            <img className="mh-img" src={require("../assets/img/logo.png")} alt=""/>
+            <h3 className="mh-coment-name">John Macintosh</h3>
+            <div className="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div className="mh-comment">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium,
+                commodi eum?
+            </div>
+        </div>
+      </div>
+            </div>
+
+          </section>
+
+
+          <section className='card-group card-profile'>
+            <div className='card-container'>
+              <div className='card-bg-img bg2'></div>
+              <div className='card-profile-img'>
+                <img className="img-mainprofile" src={require("../assets/img/logo.png")}/>
+            </div>
+            <div class='card-heading'>
+              <p className="homeLi">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Possimus et, perspiciatis nisi tempore aspernatur accusantium".</p>
+              <p className="mh-homeLi"> Audrey Smith</p>
+              <div className="stars-homeLi">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+        </div>
+          </div>
+          </section>
+
+          </article>
+        </div>
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
   );

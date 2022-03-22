@@ -104,8 +104,11 @@
 
 @media (max-width: 568px) {
   .menu {
-    margin-left: 10em;
+    margin-left: 2em;
+    height: 4rem;
   }
+  
+    
 }
 @media (max-width: 368px) {
   .menu {

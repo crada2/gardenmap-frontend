@@ -46,9 +46,7 @@ const GardenForm = () => {
 
   return (
     <div className="form_main">
-
       <div className="form_container">
-
         <div className="form_hero">
           <p>What do you offer</p>
         </div>
@@ -56,43 +54,41 @@ const GardenForm = () => {
         <div className="form_container_info">
           <form className="form_info" onSubmit={handleSubmit(onSubmit)}>
             {/* title */}
-            
-                <label className="form-label"  htmlFor="f-title">🍀   Title</label>
-            
-             
-                <input
-                  {...register("titleForm", { required: true, maxLength: 30 })}
-                  id="title"
-                  type="text"
-                  placeholder="A title for your services"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                />
-            
 
+            <label className="form-label" htmlFor="f-title">
+              🍀 Title
+            </label>
+
+            <input
+              {...register("titleForm", { required: true, maxLength: 30 })}
+              id="title"
+              type="text"
+              placeholder="A title for your services"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
 
             {errors.titleForm && (
               <p className="error-text">Pleace, title is required</p>
             )}
 
             {/* Observations */}
-            
-                <label className="form-label" htmlFor="f-observations"> 🍀 Observations</label>
-             
-            
-                <input
-                  {...register("observationsForm", {
-                    required: true,
-                    validate: (value) => value.length > 10,
-                  })}
-                  type="text"
-                  placeholder="Observations:"
-                  value={observations}
-                  onChange={(e) => setObservations(e.target.value)}
-                />
-             
-  
 
+            <label className="form-label" htmlFor="f-observations">
+              {" "}
+              🍀 Observations
+            </label>
+
+            <input
+              {...register("observationsForm", {
+                required: true,
+                validate: (value) => value.length > 10,
+              })}
+              type="text"
+              placeholder="Observations:"
+              value={observations}
+              onChange={(e) => setObservations(e.target.value)}
+            />
 
             {errors.observationsForm && (
               <p className="error-text">
@@ -100,23 +96,23 @@ const GardenForm = () => {
               </p>
             )}
 
-           
-                <label className="form-label" htmlFor="f-price">🍀  Price</label>
-              
-                <input
-                  {...register("priceForm", {
-                    required: true,
-                    validate: {
-                      positiveNumber: (value) => parseInt(value) > 0,
-                    },
-                  })}
-                  autoComplete="off"
-                  type="text"
-                  placeholder="How much does it cost?"
-                  value={price}
-                  onChange={(e) => setPrice(e.target.value)}
-                />
-            
+            <label className="form-label" htmlFor="f-price">
+              🍀 Price
+            </label>
+
+            <input
+              {...register("priceForm", {
+                required: true,
+                validate: {
+                  positiveNumber: (value) => parseInt(value) > 0,
+                },
+              })}
+              autoComplete="off"
+              type="text"
+              placeholder="How much does it cost?"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+            />
 
             {errors.priceForm && errors.priceForm.type === "positiveNumber" && (
               <p className="error-text">The Price is invalid</p>
@@ -125,12 +121,12 @@ const GardenForm = () => {
               <p className="error-text">The price is required.</p>
             )}
 
-            <button className="btn_form" type="submit">submit</button>
-
+            <button className="btn_form" type="submit">
+              submit
+            </button>
           </form>
         </div>
       </div>
-     
     </div>
   );
 };

@@ -1,69 +1,65 @@
-.containerRegister {
+.form_main_register {
   display: flex;
-  align-content: space-between;
-  align-items: stretch;
-
-  background-image: url(../img/Rectangle.svg);
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+      120deg,
+      rgba(152, 228, 175, 0.26) 0%,
+      rgba(181, 224, 157, 0.336) 100%
+    ),
+    url(https://cdn.dribbble.com/users/6024852/screenshots/16264037/media/3d6f4872328fac5bcfaf29ec260524f3.png?compress=1&resize=1200x900&vertical=top);
   background-size: cover;
-  background-position: 0% 0%;
-
-  background-image: url(../img/Rectangle.svg);
-  background-size: cover;
-  background-position: 4% 0%;
-}
-
-.imgRegister {
-  background-image: url(../img/imgForm.png);
-  background-size: cover;
-  background-position: right;
   background-repeat: no-repeat;
-  width: 60%;
-  height: 70vw;
-  bottom: 0%;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  padding: 80px;
 }
 
-.contentRegister {
-  border-radius: 0.4rem;
-  border: 1px #807a85 solid;
-  background-color: #dbcfe6;
-  max-width: 60%;
-  height: 5%;
-  margin-left: 5%;
-  margin-bottom: 20%;
-  margin-right: 5%;
-  background: rgb(207, 194, 186);
-  padding: 5%;
-  top: 10vw;
-  position: relative;
+.form_container_register {
+  padding: 2em 1em 2em 1em;
+  height: 15em;
+  min-height: 37em;
+  justify-content: center;
   display: flex;
   flex-direction: column;
+  background-color: rgba(5, 5, 5, 0.733);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  min-width: 20em;
+  border-radius: 1rem;
 }
 
-.titleRegister {
+.title_register {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px rgb(234, 252, 234);
+  text-shadow: 2px 2px 20px rgb(0, 0, 0);
   font-family: titles;
-  font-size: 4vh;
+  font-size: 25pt;
+  color: var(--color-form);
+  padding: 0.8em;
+  margin-bottom: 1em;
+  margin: 0;
 }
 
-.formRegister {
-  position: relative;
+.form_label_register {
+  padding: 0.8em;
+  font-size: large;
+  width: 100%;
+  color: var(--color-form);
+  font-weight: bolder;
+  text-shadow: 1px 1px rgb(2, 2, 2), -1px -1px #333;
+  border-radius: 0.4rem;
+  padding-left: 0.5em;
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 5%;
-  margin-right: 2%;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 2%;
-}
-
-label {
-  padding: 0.25em 0.25em 0.25em 0;
-  display: inline-block;
+.btn_form_register {
+  margin-top: 3em;
+  color: black;
+  font-weight: bold;
 }
 
 input[type="text"],

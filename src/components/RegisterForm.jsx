@@ -3,7 +3,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import "../assets/styles/register.css";
-//import { v4 as uuidv4 } from "uuid";
 
 const RegisterForm = () => {
   const navigate = useNavigate();
@@ -39,87 +38,80 @@ const RegisterForm = () => {
   };
 
   return (
-    <>
-      <div className="backgroundRegister">
-        <div className="containerRegister">
-          <div className="contentRegister">
-            <h2 className="titleRegister">REGISTER</h2>
-            <form className="formRegister" onSubmit={submitHandler}>
-              <div className="row">
-                <div className="col-25">
-                  <label htmlFor="name">Name</label>
-                </div>
-                <div className="col-75">
-                  <input
-                    id="name"
-                    type="text"
-                    placeholder="Choose your username"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-25">
-                  <label htmlFor="email">Email</label>
-                </div>
-                <div className="col-75">
-                  <input
-                    type="text"
-                    placeholder="What is your email?"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-25">
-                  <label htmlFor="password">Password</label>
-                </div>
-                <div className="col-75">
-                  <input
-                    type="text"
-                    placeholder="Choose a password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-25">
-                  <label htmlFor="direction">Direction</label>
-                </div>
-                <div className="col-75">
-                  <input
-                    type="text"
-                    placeholder="What is the garden' address?"
-                    value={direction}
-                    onChange={(e) => setDirection(e.target.value)}
-                  />
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-25">
-                  <label htmlFor="telephone">Telephone</label>
-                </div>
-                <div className="col-75">
-                  <input
-                    type="text"
-                    placeholder="Your telephone number"
-                    value={telephone}
-                    onChange={(e) => setTelephone(e.target.value)}
-                  />
-                </div>
-              </div>
-              <button type="submit" onClick={sendDataAPI}>
-                Register
-              </button>
-            </form>
-          </div>
-          <div className="imgRegister" alt="imageRegister"></div>
+    <div className="form_main_register">
+      <div className="form_container_register">
+        <div className="title_register">
+          <p>REGISTER</p>
+        </div>
+        <div className="form_register_info">
+          <form className="form_register_information" onSubmit={submitHandler}>
+            <label className="form_label_register" htmlFor="name">
+              🍀 Name
+            </label>
+
+            <input
+              id="name"
+              type="text"
+              placeholder="Choose your username"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+
+            <label className="form_label_register" htmlFor="email">
+              🍀 Email
+            </label>
+
+            <input
+              type="text"
+              placeholder="What is your email?"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+
+            <label className="form_label_register" htmlFor="password">
+              🍀 Password
+            </label>
+
+            <input
+              type="text"
+              placeholder="Choose a password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+
+            <label className="form_label_register" htmlFor="direction">
+              🍀 Direction
+            </label>
+
+            <input
+              type="text"
+              placeholder="What is the garden' address?"
+              value={direction}
+              onChange={(e) => setDirection(e.target.value)}
+            />
+
+            <label className="form_label_register" htmlFor="telephone">
+              🍀 Telephone
+            </label>
+
+            <input
+              type="text"
+              placeholder="Your telephone number"
+              value={telephone}
+              onChange={(e) => setTelephone(e.target.value)}
+            />
+
+            <button
+              className="btn_form_register"
+              type="submit"
+              onClick={sendDataAPI}
+            >
+              Register
+            </button>
+          </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default RegisterForm;

@@ -7,7 +7,7 @@ describe("Footer", () => {
   it("Must display a title", () => {
     const screen = render(<Footer />);
 
-    expect(screen.getByText(/Copyright reserved to CRADA/i)).toBeInTheDocument();
+    expect(screen.getByText(/© Copyright 2022 - CRADA. All rights reserved/i)).toBeInTheDocument();
     
   });
 })

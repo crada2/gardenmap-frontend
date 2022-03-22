@@ -5,9 +5,9 @@ import Header from "../components/Header";
 
 describe("Header", () => {
     it("Must display a title", () => {
-    const screen = render(<Header />);*/
+    const screen = render(<Header />);
 
-   /*  expect(screen.getByText(/Green Projects/i)).toBeInTheDocument();
+    expect(screen.getByText(/GardenMali/i)).toBeInTheDocument();
 
     });
-})  */
+}) */

@@ -12,15 +12,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
   opacity: 0.9;
-  padding: 80px;
+  height: 90vh;
+ 
 }
 
 .form_container_register {
-  padding: 2em 1em 2em 1em;
-  height: 15em;
-  min-height: 37em;
+
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -46,7 +44,8 @@
 }
 
 .form_label_register {
-  padding: 0.8em;
+
+  padding: 1em;
   font-size: large;
   width: 100%;
   color: var(--color-form);
@@ -67,6 +66,7 @@ select,
 textarea {
   width: 100%;
   padding: 5%;
+  width: 20em;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   box-sizing: border-box;

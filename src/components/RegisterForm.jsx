@@ -51,6 +51,7 @@ const RegisterForm = () => {
 
             <input
               id="name"
+              className="inputRegisterForm"
               type="text"
               placeholder="Choose your username"
               value={name}

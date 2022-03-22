@@ -21,13 +21,13 @@
     border:.1rem solid rgba(0,0,0,.2);
     box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
     border-radius: .5rem;
-   height: 30em;
+   height: 20em;
     width: 50vh;
     
 }
 .form_login{
     display: flex;
-    height: 20vh;
+    height: 10vh;
     margin: 0;
     padding: 0;
 }
@@ -36,26 +36,40 @@
     
 }
 
-.label_login{
+.login_gif{
+    margin-top: -2em;
 
 }
+
+
 .input_login{
    
-    border: 1px solid #ccc;
+    border: 1px solid #dcd8d8;
     border-radius: 0.25rem;
     box-sizing: border-box;
     resize: vertical;
     background-color: #f5fffced;
     color: black;
+    width: 16em;
+    height: 2.3em;
 }
 
 .form_login-name {
-    
-    width: 10em;
-    height: 5em;
-}
-.form_login-password{
+    display: flex;
+    width: 100%;
   
-    width: 10em;
-    height: 5em;
+}
+
+.form_login-password{
+    display: flex;
+    width: 100%;
+    margin-top: 1em;
+  
+}
+.label_login{
+    flex: 1;
+
+}
+.input_login{
+    flex:2;
 }

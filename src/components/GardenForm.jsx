@@ -48,21 +48,21 @@ const GardenForm = () => {
     <div className="form_main">
       <div className="form_container">
         <div className="form_hero">
-          <p>What do you offer</p>
+          <p className="gf-titleform">What do you offer</p>
         </div>
 
         <div className="form_container_info">
           <form className="form_info" onSubmit={handleSubmit(onSubmit)}>
             {/* title */}
 
-            <label className="form-label" htmlFor="f-title">
+            <label className="gf-form-label" htmlFor="f-title">
               🍀 Title
             </label>
 
             <input
               {...register("titleForm", { required: true, maxLength: 30 })}
-              id="title"
-              type="text"
+              className="gf-inputext"
+              type="gf-text"
               placeholder="A title for your services"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
@@ -74,7 +74,7 @@ const GardenForm = () => {
 
             {/* Observations */}
 
-            <label className="form-label" htmlFor="f-observations">
+            <label className="gf-form-label" htmlFor="f-observations">
               {" "}
               🍀 Observations
             </label>
@@ -84,7 +84,9 @@ const GardenForm = () => {
                 required: true,
                 validate: (value) => value.length > 10,
               })}
+              className="gf-inputext"
               type="text"
+              
               placeholder="Observations:"
               value={observations}
               onChange={(e) => setObservations(e.target.value)}
@@ -96,7 +98,7 @@ const GardenForm = () => {
               </p>
             )}
 
-            <label className="form-label" htmlFor="f-price">
+            <label className="gf-form-label" htmlFor="f-price">
               🍀 Price
             </label>
 
@@ -108,7 +110,9 @@ const GardenForm = () => {
                 },
               })}
               autoComplete="off"
+              className="gf-inputext"
               type="text"
+              
               placeholder="How much does it cost?"
               value={price}
               onChange={(e) => setPrice(e.target.value)}
@@ -121,7 +125,7 @@ const GardenForm = () => {
               <p className="error-text">The price is required.</p>
             )}
 
-            <button className="btn_form" type="submit">
+            <button className="gf-btn_form" type="submit">
               submit
             </button>
           </form>

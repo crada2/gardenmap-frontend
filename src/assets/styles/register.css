@@ -12,6 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 100%;
   opacity: 0.9;
   height: 90vh;
  
@@ -25,7 +26,7 @@
   background-color: rgba(5, 5, 5, 0.733);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+  width: 28em;
   min-width: 20em;
   border-radius: 1rem;
 }
@@ -90,14 +91,10 @@ button:hover {
   background-color: #807a85;
 }
 
-@media only screen and (max-width: 480px) {
-  .containerRegister {
-    max-width: 87vw;
+@media (max-width: 1800px) {
+  .form_container_register {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 2%, rgba(42, 56, 83, 0.604) 77%, rgba(240,200,73,1) 100%);
+    width: 28em;
+    border: none;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .containerRegister {
-    max-width: 90vw;
   }
-}

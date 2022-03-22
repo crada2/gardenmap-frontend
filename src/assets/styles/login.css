@@ -21,8 +21,8 @@
     border:.1rem solid rgba(0,0,0,.2);
     box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
     border-radius: .5rem;
-   height: 20em;
-    width: 50vh;
+    height: 22em;
+    width: 53vh;
     
 }
 .form_login{
@@ -37,7 +37,7 @@
 }
 
 .login_gif{
-    margin-top: -2em;
+    margin-top: -2.6em;
 
 }
 

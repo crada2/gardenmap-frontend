@@ -62,7 +62,7 @@
   font-weight: bold;
 }
 
-input[type="text"],
+/*input[type="text"],
 select,
 textarea {
   width: 100%;
@@ -74,6 +74,15 @@ textarea {
   resize: vertical;
   background-color: var(--color-form);
   color: black;
+}*/
+.inputRegisterForm
+select,
+textarea {
+  width: 100%;
+  cursor: pointer;
+  float: right;
+  margin: 3%;
+
 }
 
 button {

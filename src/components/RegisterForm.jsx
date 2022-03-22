@@ -50,6 +50,7 @@ const RegisterForm = () => {
             </label>
 
             <input
+              className="inputRegisterForm"
               id="name"
               type="text"
               placeholder="Choose your username"

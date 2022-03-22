@@ -46,14 +46,14 @@
 
 .form_label_register {
 
-  padding: 0.2em;
-  font-size: small;
+  padding: 1em;
+  font-size: medium;
   width: 100%;
   color: var(--color-form);
   font-weight: bolder;
   text-shadow: 1px 1px rgb(2, 2, 2), -1px -1px #333;
   border-radius: 0.4rem;
-  padding-left: 0.5em;
+  padding-left: 4em;
 }
 
 .btn_form_register {
@@ -96,7 +96,7 @@ button:hover {
 @media (max-width: 1800px) {
   .form_container_register {
     background: linear-gradient(180deg, rgb(0, 0, 0) 2%, rgba(42, 56, 83, 0.604) 77%, rgba(240,200,73,1) 100%);
-    width: 28em;
+    width: 38em;
     border: none;
   }
   }

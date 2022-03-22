@@ -62,7 +62,9 @@ const RegisterForm = () => {
               🍀 Email
             </label>
 
-            <input
+
+             <input
+              className="inputRegisterForm"
               type="text"
               placeholder="What is your email?"
               value={email}
@@ -74,6 +76,7 @@ const RegisterForm = () => {
             </label>
 
             <input
+              className="inputRegisterForm"
               type="text"
               placeholder="Choose a password"
               value={password}
@@ -85,6 +88,7 @@ const RegisterForm = () => {
             </label>
 
             <input
+              className="inputRegisterForm"
               type="text"
               placeholder="What is the garden' address?"
               value={direction}
@@ -96,6 +100,7 @@ const RegisterForm = () => {
             </label>
 
             <input
+              className="inputRegisterForm"
               type="text"
               placeholder="Your telephone number"
               value={telephone}

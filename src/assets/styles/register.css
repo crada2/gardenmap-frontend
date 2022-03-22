@@ -14,8 +14,7 @@
   width: 100%;
   max-width: 100%;
   opacity: 0.9;
-  height: 90vh;
- 
+  height: 100vh;
 }
 
 .form_container_register {
@@ -27,7 +26,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 28em;
-  min-width: 20em;
+  height: 95%;
+  min-width: 10em;
   border-radius: 1rem;
 }
 
@@ -37,17 +37,17 @@
   border-bottom: solid 2px rgb(234, 252, 234);
   text-shadow: 2px 2px 20px rgb(0, 0, 0);
   font-family: titles;
-  font-size: 25pt;
+  font-size: 20pt;
   color: var(--color-form);
-  padding: 0.8em;
+  padding: 1.5em;
   margin-bottom: 1em;
   margin: 0;
 }
 
 .form_label_register {
 
-  padding: 1em;
-  font-size: large;
+  padding: 0.2em;
+  font-size: small;
   width: 100%;
   color: var(--color-form);
   font-weight: bolder;
@@ -62,7 +62,7 @@
   font-weight: bold;
 }
 
-input[type="text"],
+.inputRegisterForm
 select,
 textarea {
   width: 100%;
@@ -85,10 +85,12 @@ button {
   cursor: pointer;
   float: right;
   margin: 3%;
+ 
 }
 
 button:hover {
   background-color: #807a85;
+  
 }
 
 @media (max-width: 1800px) {

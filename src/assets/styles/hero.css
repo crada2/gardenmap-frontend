@@ -11,7 +11,9 @@
   height: 100%;
   position: absolute;
   opacity: 0;
-  transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.1s;
+  
+  
 }
 .hero_slide img {
   width: 100%;
@@ -26,13 +28,27 @@
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background: #a0535305;
+  background: #f7f5f405;
   border: 1px solid #fffafa05;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}*/
+
+.btn-slide {
+  width: 0.5vw;
+  height: 0.5vw;
+  border-radius: 50%;
+  background: #f7f5f405;
+  border: 1px solid #fffafa05;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent !important;
 }
 
 .hero_btn-slide img {
@@ -68,4 +84,16 @@
 }
 .hero_dot .active {
   background: rgb(236, 131, 131);
+}
+@media screen and (max-width: 450px){
+  .container-slider {
+    margin: 2.5% 2.5% 0;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 768px){
+  .container-slider {
+    margin: 2% 2% 0;
+    height: 367px;
+  }
 }

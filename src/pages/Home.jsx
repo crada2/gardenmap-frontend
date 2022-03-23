@@ -5,7 +5,7 @@ import MainHome from "../components/MainHome";
 const Home = () => {
   return (
     <div>
-      <Hero/>
+      <Hero />
       <MainHome />
     </div>
   );

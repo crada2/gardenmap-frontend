@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import serviceApi from "../../services/serviceApi";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import "../../assets/styles/register.css";
 
@@ -66,8 +66,6 @@ const RegisterForm = () => {
         name,
         email,
         password,
-        direction,
-        telephone,
         //id: uuidv4(),
       })
       .then(() => {
@@ -125,9 +123,9 @@ const RegisterForm = () => {
               Register
             </button>
             <p className="rf-link">
-              <a className="rf-link-a" href="#">
+              <Link to="/login" className="rf-link-a" href="#">
                 ¿Are you already registered?
-              </a>
+              </Link>
             </p>
           </form>
         </div>

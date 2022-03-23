@@ -1,6 +1,10 @@
 import RegisterForm from "../components/Auth/RegisterForm";
 
-
-export default function Register() {
-  return <RegisterForm />;
-}
+const Register = () => {
+  return (
+    <div>
+      <RegisterForm />
+    </div>
+  );
+};
+export default Register;

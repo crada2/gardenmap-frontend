@@ -1,32 +1,96 @@
-.profileUserHero {
+.garden_profile {
   display: flex;
+  justify-content: center;
 }
 
-.profileUserHero iframe {
-  border: 6px solid rgba(204, 197, 191, 0.25);
-  border-radius: 26px;
-  width: 100%;
+.garden_profile_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20em;
+  margin: 2em 0em 2em 3em;
+  padding: 1em;
+  background: #f3f0d5;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-.card__btn-create {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 1rem;
-  background: rgba(115, 121, 114, 0.288);
+.garden_profile-info {
+  margin: 0.2em;
+}
+
+.garden_profile_box img {
+  border-radius: 50%;
+  width: 40%;
+}
+
+.garden_iframe {
+  border-radius: 20px;
+  height: 24em;
+  margin: 2em 3em 2em 0em;
+  width: 720px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.garden_create-service {
+  margin-top: 1em;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 2em;
   border: none;
-  color: #222;
-  text-decoration: none;
-  font-family: headers;
+  background: #1f4b30;
+  box-shadow: 0 5px #0b2513;
 }
 
-.card__btn:hover {
-  background: rgb(231, 183, 223);
+.garden_create-service:hover {
+  box-shadow: 0 3px #0b5a8e;
+  top: 1px;
 }
 
-@media (max-width: 640px) {
-  .profileUserHero iframe {
-    display: none;
+@media (max-width: 992px) {
+  .garden_profile_box {
+    margin-top: 3em;
+    position: absolute;
+    border: solid 3px rgb(192, 183, 183);
+    background-color: rgb(248, 242, 231);
+    height: 20em;
+  }
+
+  .garden_map_box {
+    margin-top: 0;
+    background: radial-gradient(
+      circle,
+      rgba(228, 241, 232, 0.28166915052160957) 41%,
+      rgba(223, 233, 225, 0.30849478390461993) 45%,
+      rgba(244, 240, 240, 0.8194444444444444) 75%,
+      rgba(254, 255, 255, 1) 90%
+    );
+    box-shadow: none;
+    border-radius: 0;
+    height: 26em;
+  }
+
+  .garden_iframe {
+    width: 520px;
+    border: 3em solid t;
+    border-radius: 0;
+    height: 23em;
+    position: relative;
+    z-index: -1;
+    background-color: rgb(214, 198, 177);
+  }
+
+  .garden_profile {
+    margin: 0;
+    padding: 0;
   }
 }
-

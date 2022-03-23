@@ -164,7 +164,7 @@ const GardenForm = () => {
             )}
 
             <button className="gf-btn_form" type="submit">
-              submit
+              Submit
             </button>
           </form>
         </div>

@@ -12,17 +12,16 @@
 }
 
 .form_container {
-  margin: 9em;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 2em 1em 2em 1em;
-  height: 50rem;
+  min-height: 44rem;
   justify-content: center;
   display: flex;
   flex-direction: column;
   background-color: rgba(5, 5, 5, 0.733);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
-  min-width: 20em;
+  min-width: 30em;
   border-radius: 1rem;
 }
 
@@ -37,7 +36,7 @@
 
 .error-text {
   font-weight: 900;
-  color: rgb(247, 82, 5);
+  color: rgb(23, 77, 47);
   text-shadow: 1px 1px 15px rgb(5, 0, 0);
 }
 
@@ -62,16 +61,19 @@ form {
 .gf-btn_form {
   margin-top: 2em;
   color: rgb(255, 255, 255);
+  width: 5.5rem;
+  height: 2.8rem;
   font-weight: bold;
   background: var(--color-btnGreen);
   border: none;
   border-radius: 1rem;
-  cursor: pointer;
   padding: 3%;
 }
 
 .gf-btn_form:hover {
-  background-color: var(--color-font);
+  cursor: pointer;
+  background-color: rgb(61, 49, 24);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .gf-inputext {
@@ -90,7 +92,7 @@ form {
   display: flex;
   text-align: center;
   color: white;
-  font-family: Title;
+  font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
 }
 

@@ -10,9 +10,10 @@
   justify-content: center;
   width: 20em;
   margin: 2em 0em 2em 3em;
-  background: #f8f8f8;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25),
-    inset 5px 5px 10px rgba(185, 174, 174, 0.25), inset -5px -5px 10px #fffdfd;
+  padding: 1em;
+  background: #f3f0d5;
+  /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(185, 174, 174, 0.25), inset -5px -5px 10px #fffdfd; */
   border-radius: 20px;
 }
 .garden_profile-info {
@@ -25,17 +26,18 @@
 }
 
 .garden_map_box {
-  margin: 2em 3em 2em 2em;
+
   background: #f8f8f8;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25),
-    inset 5px 5px 10px rgba(185, 174, 174, 0.25), inset -5px -5px 10px #fffdfd;
+  /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(185, 174, 174, 0.25), inset -5px -5px 10px #fffdfd; */
   border-radius: 20px;
 }
 
 .garden_iframe {
+ 
   border-radius: 20px;
-  height: 20vh;
-  margin: 2em 3em 2em 3em;
+  height: 24em;
+  margin: 2em 3em 2em 0em;
   width: 720px;
 }
 

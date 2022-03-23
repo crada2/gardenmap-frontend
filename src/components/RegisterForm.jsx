@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import "../assets/styles/register.css";
 
@@ -10,8 +10,6 @@ const RegisterForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [direction, setDirection] = useState("");
-  const [telephone, setTelephone] = useState("");
 
   //POST OWNER
   const sendDataAPI = () => {
@@ -20,8 +18,6 @@ const RegisterForm = () => {
         name,
         email,
         password,
-        direction,
-        telephone,
         //id: uuidv4(),
       })
       .then(() => {
@@ -49,7 +45,6 @@ const RegisterForm = () => {
             <label className="form_label_register" htmlFor="name">
               🍀 Name
             </label>
-
             <input
               className="inputRegisterForm"
               id="name"
@@ -58,24 +53,19 @@ const RegisterForm = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-
             <label className="form_label_register" htmlFor="email">
               🍀 Email
             </label>
-
-
-             <input
+            <input
               className="inputRegisterForm"
               type="text"
               placeholder="What is your email?"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-
             <label className="form_label_register" htmlFor="password">
               🍀 Password
             </label>
-
             <input
               className="inputRegisterForm"
               type="text"
@@ -83,31 +73,6 @@ const RegisterForm = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-
-            <label className="form_label_register" htmlFor="direction">
-              🍀 Direction
-            </label>
-
-            <input
-              className="inputRegisterForm"
-              type="text"
-              placeholder="What is the garden' address?"
-              value={direction}
-              onChange={(e) => setDirection(e.target.value)}
-            />
-
-            <label className="form_label_register" htmlFor="telephone">
-              🍀 Telephone
-            </label>
-
-            <input
-              className="inputRegisterForm"
-              type="text"
-              placeholder="Your telephone number"
-              value={telephone}
-              onChange={(e) => setTelephone(e.target.value)}
-            />
-
             <button
               className="btn_form_register"
               type="submit"
@@ -115,7 +80,11 @@ const RegisterForm = () => {
             >
               Register
             </button>
-            <p className="rf-link"><a className="rf-link-a" href="#">¿Are you already registered?</a></p>
+            <p className="rf-link">
+              <Link to="/login" className="rf-link-a" href="#">
+                ¿Are you already registered?
+              </Link>
+            </p>
           </form>
         </div>
       </div>

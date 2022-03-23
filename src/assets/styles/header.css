@@ -8,16 +8,15 @@
 }
 
 .h-logo_img {
-  
   height: 5rem;
   padding: 1rem;
 }
-.h-logo{
+.h-logo {
   padding: 1rem;
-    cursor: pointer;
-    flex: 2;
-    display: flex;
-    justify-content: center;
+  cursor: pointer;
+  flex: 2;
+  display: flex;
+  justify-content: center;
 }
 .h-nav {
   padding: 1rem;
@@ -25,7 +24,6 @@
   flex: 2;
   display: flex;
   justify-content: center;
-
 }
 
 .h-nav_list {
@@ -89,15 +87,8 @@
     height: 5rem;
     padding: 1rem;
     border-radius: 1.6em;
-  
   }
   .h-nav {
     display: none;
   }
 }
-
-
-
-  
-    
-

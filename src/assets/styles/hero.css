@@ -13,8 +13,6 @@
   position: absolute;
   opacity: 0;
   transition: opacity ease-in-out 0.1s;
-  
-  
 }
 .slide img {
   width: 100%;
@@ -70,7 +68,7 @@
   transform: translateY(-60%);
 }
 
-.hero_container-dots  {
+.hero_container-dots {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -88,13 +86,13 @@
 .dot .active {
   background: rgb(236, 131, 131);
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .hero_container-slider {
     margin: 2.5% 2.5% 0;
     height: 280px;
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .hero_container-slider {
     margin: 2% 2% 0;
     height: 367px;

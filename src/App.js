@@ -5,7 +5,6 @@ import Form from "./pages/Form";
 import GardenProfile from "./pages/GardenProfile";
 import Layout from "./components/Layout";
 import RegisterForm from "./components/RegisterForm";
-import LoginUsers from "./components/LoginUsers";
 import Login from "./pages/Login";
 
 export default function App() {
@@ -17,7 +16,7 @@ export default function App() {
           <Route path="form" element={<Form />} />
           <Route path="garden" element={<GardenProfile />} />
           <Route path="register" element={<RegisterForm />} />
-          <Route path="login" element={<Login/>} />
+          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </div>

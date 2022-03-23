@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-     
-        <div className="h-logo">
+      <div className="h-logo">
         <Link to="/">
           <img
             className="h-logo_img"
@@ -14,16 +13,17 @@ const Header = () => {
             title="Logo GardenMap"
             alt="Logo GardenMap"
           />
-           </Link>
-        </div>
-     
+        </Link>
+      </div>
       <nav className="h-nav">
         <li className="h-nav_list"> GardenMali </li>
         <li className="h-nav_list"> OurStory </li>
         <li className="h-nav_list"> Village </li>
         <li className="h-nav_list"> Comunity </li>
         <p className="h-nav_separator">|</p>
-        <li className="h-nav_list">Green Projects</li>
+        <Link to="login" className="h-nav_list">
+          Login
+        </Link>
       </nav>
       <span className="h-span">
         <img

@@ -64,6 +64,7 @@ const GardenProfile = () => {
         <MainProfile owner={owner} />
       </div>
       <div className="garden_grid-container">{renderProfile()}</div>
+      <ServicesGarden />
     </div>
   );
 };

@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import Form from "./pages/Form";
 import GardenProfile from "./pages/GardenProfile";
 import Layout from "./components/Layout";
-import RegisterForm from "./components/RegisterForm";
-import LoginUsers from "./components/LoginUsers";
+import RegisterForm from "./components/Auth/RegisterForm";
+//import LoginUsers from "./components/Auth/LoginUsers";
 import Login from "./pages/Login";
 
 export default function App() {

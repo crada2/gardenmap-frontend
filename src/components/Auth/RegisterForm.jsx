@@ -1,20 +1,65 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import axios from "axios";
+import { serviceApi } from '../../services/serviceApi';
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-import "../assets/styles/register.css";
+import "../../assets/styles/register.css";
+
+const initialSingup = {
+  name:"",
+  email:"",
+  password:"",
+};
 
 const RegisterForm = () => {
+ 
+  const [register, setRegister] = useState(initialSingup);
   const navigate = useNavigate();
-  const [name, setName] = useState("");
+
+  const api = serviceApi();
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    setRegister({
+      ...register,
+      [event.target.name]: event.target.value
+    });
+  };
+
+  const sendDataAPI = (e) => {
+    e.preventDefault();
+    const data = {
+        name: register.name,
+        email: register.email,
+        password: register.password
+    }
+
+    axios.get('/sanctum/csrf-cookie').then(res => {
+      api.signin(data).then(res => {
+          setRegister({ ...register, data }); 
+      })
+      .then(() => {
+        navigate("/form", { replace: true });
+        swal({
+          title: "Register complete",
+          text: "click 'ok' to add your offers",
+          icon: "success",
+        });
+      });/* .catch(error => {
+          setRegister({...register, error_list: error.response.data.msg})
+      });*/
+  }, [])
+}
+  /*alert(res.data.msg);
+          navigate('/crud-api-login', { replace: true });const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [direction, setDirection] = useState("");
-  const [telephone, setTelephone] = useState("");
+  const [telephone, setTelephone] = useState("");*/
 
   //POST OWNER
-  const sendDataAPI = () => {
+  /*const sendDataAPI = () => {
     axios
       .post(`http://localhost:8080/owners/`, {
         name,
@@ -33,10 +78,8 @@ const RegisterForm = () => {
         });
       });
   };
-
-  const submitHandler = (event) => {
-    event.preventDefault();
-  };
+*/
+ 
 
   return (
     <div className="form_main_register">
@@ -55,8 +98,8 @@ const RegisterForm = () => {
               id="name"
               type="text"
               placeholder="Choose your username"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={register.name}
+              
             />
 
             <label className="form_label_register" htmlFor="email">
@@ -68,8 +111,8 @@ const RegisterForm = () => {
               className="inputRegisterForm"
               type="text"
               placeholder="What is your email?"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={register.email}
+              
             />
 
             <label className="form_label_register" htmlFor="password">
@@ -80,33 +123,11 @@ const RegisterForm = () => {
               className="inputRegisterForm"
               type="text"
               placeholder="Choose a password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={register.password}
+            
             />
 
-            <label className="form_label_register" htmlFor="direction">
-              🍀 Direction
-            </label>
-
-            <input
-              className="inputRegisterForm"
-              type="text"
-              placeholder="What is the garden' address?"
-              value={direction}
-              onChange={(e) => setDirection(e.target.value)}
-            />
-
-            <label className="form_label_register" htmlFor="telephone">
-              🍀 Telephone
-            </label>
-
-            <input
-              className="inputRegisterForm"
-              type="text"
-              placeholder="Your telephone number"
-              value={telephone}
-              onChange={(e) => setTelephone(e.target.value)}
-            />
+            
 
             <button
               className="btn_form_register"

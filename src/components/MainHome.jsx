@@ -23,7 +23,7 @@ const MainHome = () => {
                 Organic Agriculture considers medium-and long-term effect of agricultural interventions on the agro-ecosystem!
               </p>
               <div className="cta">
-              <Link to="/login">
+              <Link to="/register">
 
                 <a className="btn-cta-m" href="#" >Register</a>
                 </Link>

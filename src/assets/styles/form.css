@@ -72,10 +72,10 @@ form {
   font-weight: bold;
   background: var(--color-btnGreen);
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   cursor: pointer;
+  padding: 3%;
 }
-
 
 .gf-btn_form:hover {
   background-color: var(--color-font);

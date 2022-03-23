@@ -37,11 +37,25 @@
 }
 
 .login_gif{
-    margin-top: -2.6em;
+    margin-top: 0.4em;
 
 }
-
-
+.btn_form_login{
+    background: var(--color-btnGreen);
+  color: white;
+  padding: 2%;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  float: right;
+  margin-top: 1.5em;
+  cursor: pointer;
+  letter-spacing: 2.5px;
+  z-index:9;
+}
+.btn_form_login:hover {
+    background-color: var(--color-font);
+  }
 .input_login{
    
     border: 1px solid #dcd8d8;

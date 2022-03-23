@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -41,7 +42,7 @@ const RegisterForm = () => {
     <div className="form_main_register">
       <div className="form_container_register">
         <div className="title_register">
-          <p>REGISTER</p>
+          <p className="rf-titleform">REGISTER</p>
         </div>
         <div className="form_register_info">
           <form className="form_register_information" onSubmit={submitHandler}>
@@ -114,6 +115,7 @@ const RegisterForm = () => {
             >
               Register
             </button>
+            <p className="rf-link"><a className="rf-link-a" href="#">¿Are you already registered?</a></p>
           </form>
         </div>
       </div>

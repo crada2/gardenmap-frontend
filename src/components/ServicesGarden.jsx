@@ -3,42 +3,38 @@ import "../assets/styles/servicesGarden.css";
 
 const ServicesGarden = ({ title, observations, price, onDelete }) => {
   return (
-    <div className="highlights">
-      <section className="card">
-        <h3>Servicio </h3>
-
-        <div className="map-perfil">
-          <ul>
-            <div className="infoService">
-              <p>🌻{title}</p>{" "}
+    <div className="fakecard">
+        <table className="fakeCardTable">
+        <ul>
+          <h1 className="activitieFake">
+          <img src="https://cdn-icons.flaticon.com/png/512/1892/premium/1892747.png?token=exp=1648041599~hmac=6f22871bc35567953dbdf4fe1d1c0774" alt="" /></h1>
+            <div className="infoServiceFake">
+              <p>🚜 Riding Ponies</p>
             </div>
-            <ul className="dentro">
-              <li>🌱 por dia: {price}$</li>
-              <li>🌱 por mes 150$</li>
+             <ul className="dentroFake">
+                <li> por dia: 40$</li>
+                <li> por mes 150$</li>
             </ul>
-            <div className="infoService">
-              <p>🌻Visitas guiadas: </p>{" "}
+            <div className="infoServiceFake">
+              <p>🚜 Visitas guiadas:</p>
             </div>
-            <ul className="dentro">
-              <li>🌱 price: 20$/person</li>
-              <li>🌱 actividad con niños</li>
-              <li>🌱 cesta regalo</li>
+            <ul className="dentroFake">
+              <li> price: 20$/person</li>
+              <li> actividad con niños y cesta regalo</li>
             </ul>
-            <div className="infoService">
-              <p>🌻Observations</p>{" "}
+            <div className="infoServiceFake">
+              <p>🚜 Observations</p>
             </div>
-            <ul className="dentro">
-              <li>🌱 {observations}</li>
+            <ul className="dentroFake">
+              <li> Join us and pet the ponies</li>
             </ul>
+            <div className="buttonFake">
+            <button className="deleteFake" onClick={'delete'}></button>
+            <button className="createFake" onClick={'create'}></button>
+              </div>
           </ul>
-        </div>
-        
-        <button className="card__btn" onClick={onDelete}>
-          Delete
-        </button>
-        <button className="card__btn-update">update </button>
-      </section>
-    </div>
+        </table>
+      </div>
   );
 };
 

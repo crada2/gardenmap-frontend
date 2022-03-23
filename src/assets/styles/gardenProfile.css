@@ -66,32 +66,37 @@
 
 @media (max-width: 992px) {
   .garden_profile_box{
-    margin-top: 3.4em;
+    
+    margin-top: 3em;
    position: absolute;
    border: solid 3px rgb(192, 183, 183);
-    
+   background-color: rgb(248, 242, 231);
+    height: 20em;
   }
   .garden_map_box {
-    margin: 0;
-    background: transparent;
+    margin-top: 0;
+    background: radial-gradient(circle, rgba(228,241,232,0.28166915052160957) 41%, rgba(223,233,225,0.30849478390461993) 45%, rgba(244,240,240,0.8194444444444444) 75%, rgba(254,255,255,1) 90%);
     box-shadow: none;
     border-radius: 0;
+    height: 26em;
   }
   .garden_iframe{
-    margin: 0;
+    width:520px;
     border: 3em solid t;
     border-radius: 0;
-    width: 100em;
-    height: 25em;
+    height: 23em;
     position: relative;
      z-index: -1;
+     background-color: rgb(214, 198, 177);
  
     
   }
 
 .garden_profile{
 
-  background: radial-gradient(circle, rgba(228,241,232,0.28166915052160957) 41%, rgba(223,233,225,0.30849478390461993) 45%, rgba(244,240,240,0.8194444444444444) 75%, rgba(254,255,255,1) 90%);
+
+margin: 0;  
+padding: 0;
 }
   
 } 

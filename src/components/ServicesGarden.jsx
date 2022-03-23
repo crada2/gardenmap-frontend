@@ -32,6 +32,7 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
             </ul>
           </ul>
         </div>
+        
         <button className="card__btn" onClick={onDelete}>
           Delete
         </button>

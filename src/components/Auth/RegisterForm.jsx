@@ -1,59 +1,48 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import axios from "axios";
-import serviceApi from "../../services/serviceApi";
+import api from "../../services/api";
 import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import "../../assets/styles/register.css";
 
-const initialSingup = {
-  name: "",
-  email: "",
-  password: "",
-};
+console.log(api);
 
 const RegisterForm = () => {
-  const [register, setRegister] = useState(initialSingup);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+
   const navigate = useNavigate();
 
-  const api = serviceApi();
-
-  const submitHandler = (event) => {
-    event.preventDefault();
-    setRegister({
-      ...register,
-      [event.target.name]: event.target.value,
-    });
-  };
-
-  const sendDataAPI = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
-    const data = {
-      name: register.name,
-      email: register.email,
-      password: register.password,
-    };
 
-    axios.get("/sanctum/csrf-cookie").then((res) => {
-      api
-        .signin(data)
-        .then((res) => {
-          setRegister({ ...register, data });
-        })
-        .then(() => {
-          navigate("/form", { replace: true });
-          swal({
-            title: "Register complete",
-            text: "click 'ok' to add your offers",
-            icon: "success",
-          });
-        }); /* .catch(error => {
-          setRegister({...register, error_list: error.response.data.msg})
-      });*/
-    }, []);
+    try {
+      await api.signup({
+        name,
+        email,
+        password,
+      });
+
+      const { data } = await api.login({ username: name, password });
+
+      localStorage.setItem("auth_token", data.accessToken);
+
+      navigate("/form", { replace: true });
+      swal({
+        title: "Register complete",
+        text: "click 'ok' to add your offers",
+        icon: "success",
+      });
+    } catch (error) {
+      console.log(error.message);
+      // Sweet alert de error
+    }
   };
-  /*alert(res.data.msg);
-          navigate('/crud-api-login', { replace: true });const [name, setName] = useState("");
+
+  /*
+  alert(res.data.msg);
+  navigate('/crud-api-login', { replace: true });const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [direction, setDirection] = useState("");
@@ -86,7 +75,7 @@ const RegisterForm = () => {
           <p className="rf-titleform">REGISTER</p>
         </div>
         <div className="form_register_info">
-          <form className="form_register_information" onSubmit={submitHandler}>
+          <form className="form_register_information" onSubmit={submit}>
             <label className="form_label_register" htmlFor="name">
               🍀 Name
             </label>
@@ -95,31 +84,33 @@ const RegisterForm = () => {
               id="name"
               type="text"
               placeholder="Choose your username"
-              value={register.name}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
             />
             <label className="form_label_register" htmlFor="email">
               🍀 Email
             </label>
             <input
               className="inputRegisterForm"
-              type="text"
+              type="email"
               placeholder="What is your email?"
-              value={register.email}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <label className="form_label_register" htmlFor="password">
               🍀 Password
             </label>
             <input
               className="inputRegisterForm"
-              type="text"
+              type="password"
               placeholder="Choose a password"
-              value={register.password}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
-            <button
-              className="btn_form_register"
-              type="submit"
-              onClick={sendDataAPI}
-            >
+            <button className="btn_form_register" type="submit">
               Register
             </button>
             <p className="rf-link">

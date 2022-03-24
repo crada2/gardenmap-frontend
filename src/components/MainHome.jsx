@@ -50,7 +50,7 @@ const MainHome = () => {
                     src={require("../assets/img/logo.png")}
                   />
                 </div>
-                <div class="card-heading">
+                <div className="card-heading">
                   <p className="homeLi">
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Possimus et, perspiciatis nisi tempore aspernatur
@@ -58,11 +58,11 @@ const MainHome = () => {
                   </p>
                   <p className="mh-homeLi"> Anya Taylor-Joy</p>
                   <div className="stars-homeLi">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
                   </div>
                 </div>
               </div>
@@ -79,11 +79,11 @@ const MainHome = () => {
                     />
                     <h3 className="mh-coment-name">John Macintosh</h3>
                     <div className="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
                     </div>
                     <div className="mh-comment">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -103,7 +103,7 @@ const MainHome = () => {
                     src={require("../assets/img/logo.png")}
                   />
                 </div>
-                <div class="card-heading">
+                <div className="card-heading">
                   <p className="homeLi">
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Possimus et, perspiciatis nisi tempore aspernatur
@@ -111,11 +111,11 @@ const MainHome = () => {
                   </p>
                   <p className="mh-homeLi"> Audrey Smith</p>
                   <div className="stars-homeLi">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
                   </div>
                 </div>
               </div>

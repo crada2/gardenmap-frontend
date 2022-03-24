@@ -10,7 +10,7 @@ console.log(api);
 const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
 
   const navigate = useNavigate();
 
@@ -19,12 +19,12 @@ const RegisterForm = () => {
 
     try {
       await api.signup({
-        name,
+        username,
         email,
         password,
       });
 
-      const { data } = await api.login({ username: name, password });
+      const { data } = await api.login({ username: username, password });
 
       localStorage.setItem("auth_token", data.accessToken);
 
@@ -76,7 +76,7 @@ const RegisterForm = () => {
         </div>
         <div className="form_register_info">
           <form className="form_register_information" onSubmit={submit}>
-            <label className="form_label_register" htmlFor="name">
+            <label className="form_label_register" htmlFor="username">
               🍀 Name
             </label>
             <input
@@ -84,8 +84,8 @@ const RegisterForm = () => {
               id="name"
               type="text"
               placeholder="Choose your username"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
             <label className="form_label_register" htmlFor="email">

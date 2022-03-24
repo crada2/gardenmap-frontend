@@ -16,8 +16,8 @@ const GardenProfile = () => {
   useEffect(() => {
     setLoading(false);
     axios.get("http://localhost:8080/users").then((res) => {
-      console.log(res.data.conten[0].product);
-      setUser(res.data.conten[0]);
+      console.log(res.data.product);
+      setUser(res.data);
     });
   }, [setLoading]);
 

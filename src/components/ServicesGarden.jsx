@@ -13,21 +13,21 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
             />
           </h1>
           <div className="infoServiceFake">
-            <p>🚜 Riding Ponies</p>
+            <p>🚜 {title}</p>
           </div>
           <ul className="dentroFake">
             <li> por dia: 40$</li>
             <li> por mes 150$</li>
           </ul>
           <div className="infoServiceFake">
-            <p>🚜 Visitas guiadas:</p>
+            <p>🚜 {price}</p>
           </div>
           <ul className="dentroFake">
             <li> price: 20$/person</li>
             <li> actividad con niños y cesta regalo</li>
           </ul>
           <div className="infoServiceFake">
-            <p>🚜 Observations</p>
+            <p>🚜 {observations}</p>
           </div>
           <ul className="dentroFake">
             <li> Join us and pet the ponies</li>

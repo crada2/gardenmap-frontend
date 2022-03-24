@@ -11,13 +11,13 @@ import swal from "sweetalert";
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
   const [service, setService] = useState([]);
-  const [owner, setOwner] = useState([]);
+  const [user, setUser] = useState([]);
 
   useEffect(() => {
     setLoading(false);
-    axios.get("http://localhost:8080/owners").then((res) => {
-      setService(res.data.content[0].product);
-      setOwner(res.data.content[0]);
+    axios.get("http://localhost:8080/users").then((res) => {
+      console.log(res.data.conten[0].product);
+      setUser(res.data.conten[0]);
     });
   }, [setLoading]);
 
@@ -61,7 +61,7 @@ const GardenProfile = () => {
     <div>
       <Hero />
       <div className="garden_profile">
-        <MainProfile owner={owner} />
+        <MainProfile user={user} />
       </div>
       <div className="garden_grid-container">{renderProfile()}</div>
       <ServicesGarden />

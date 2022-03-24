@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 
-const MainProfile = ({ owner }) => {
+const MainProfile = ({ users }) => {
   return (
     <div>
       <article className="garden_profile">
@@ -10,11 +10,11 @@ const MainProfile = ({ owner }) => {
             src="https://media0.giphy.com/media/eXpd9abiGUSI11E44i/200w.webp?cid=ecf05e47fr5leyjjflmfp12g3mbdgeaqcjyfrkcrwbfzhmm5&rid=200w.webp&ct=g"
             alt=""
           />
-          <p className="garden_profile-info">Pedro{owner.name}</p>
-          <p className="garden_profile-info"> 666666666 {owner.telephone}</p>
-          <p className="garden_profile-info"> pedro@pedro.com{owner.email}</p>
+          <p className="garden_profile-info">Pedro{users.username}</p>
+          <p className="garden_profile-info"> 666666666 {users.telephone}</p>
+          <p className="garden_profile-info"> pedro@pedro.com{users.email}</p>
           <p className="garden_profile-info">
-            calle pamplona 6, casa{owner.direction}
+            calle pamplona 6, casa{users.direction}
           </p>
           <button className="garden_create-service">Add a service</button>
         </div>

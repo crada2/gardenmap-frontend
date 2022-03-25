@@ -11,14 +11,14 @@ import swal from "sweetalert";
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
   const [service, setService] = useState([]);
-  const [users, setUsers] = useState([]);
+  const [users] = useState([]);
 
   useEffect(() => {
     setLoading(false);
-    axios.get("http://localhost:8080/products").then((res) => {
-      console.log(res);
-      // setService(res.data);
-      // setUsers();
+    axios.get("http://localhost:8080/products/user").then((res) => {
+      console.log("los productos del usuario son: ",res.data);
+      setService(res.data);
+     
     });
   }, []);
 

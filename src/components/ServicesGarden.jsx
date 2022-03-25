@@ -33,8 +33,8 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
             <li> Join us and pet the ponies</li>
           </ul>
           <div className="buttonFake">
-            <button className="deleteFake" onClick={"delete"}></button>
-            <button className="createFake" onClick={"create"}></button>
+            <button className="deleteFake" onClick={onDelete}></button>
+            <button className="createFake"></button>
           </div>
         </ul>
       </table>

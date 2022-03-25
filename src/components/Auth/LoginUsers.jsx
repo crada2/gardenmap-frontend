@@ -52,6 +52,7 @@ const LoginUsers = () => {
             </label>
             <input
               className="input_login"
+              
               type="password"
               onChange={(e) => setPassword(e.target.value)}
             />

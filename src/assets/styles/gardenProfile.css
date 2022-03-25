@@ -2,7 +2,12 @@
   display: flex;
   justify-content: center;
 }
-
+.garden_grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-gap: 1.5rem;
+  justify-content: center;
+}
 .garden_profile_box {
   display: flex;
   flex-direction: column;

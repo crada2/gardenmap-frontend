@@ -4,14 +4,13 @@ import api from "../../services/api";
 import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import "../../assets/styles/register.css";
-
-console.log(api);
+import { useUser } from "./AuthProvider";
 
 const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
-
+  const { setUser } = useUser();
   const navigate = useNavigate();
 
   const submit = async (e) => {
@@ -24,18 +23,23 @@ const RegisterForm = () => {
         password,
       });
 
-      const { data } = await api.login({ username: username, password });
+      const { data } = await api.login({ username, password });
+
+      setUser({
+        id: data.id,
+        username: data.username,
+        email: data.email,
+      });
 
       localStorage.setItem("auth_token", data.accessToken);
 
-      navigate("/form", { replace: true });
+      navigate("/garden", { replace: true });
       swal({
         title: "Register complete",
         text: "click 'ok' to add your offers",
         icon: "success",
       });
     } catch (error) {
-      console.log(error.message);
       // Sweet alert de error
     }
   };

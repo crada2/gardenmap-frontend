@@ -15,17 +15,15 @@ const MainHome = () => {
             <div className="container-main">
               <div className="left">
                 <div className="big-title">
-                  <h1 className>How to be part of the garden family?</h1>
+                  <h1>How to be part of the garden family?</h1>
                 </div>
                 <p className="text">
                   Organic Agriculture considers medium-and long-term effect of
                   agricultural interventions on the agro-ecosystem!
                 </p>
                 <div className="cta">
-                  <Link to="/register">
-                    <a className="btn-cta-m" href="#">
-                      Register
-                    </a>
+                  <Link className="btn-cta-m" to="/register">
+                    Register
                   </Link>
                 </div>
               </div>

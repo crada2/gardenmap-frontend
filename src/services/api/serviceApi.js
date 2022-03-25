@@ -12,6 +12,8 @@ axios.interceptors.request.use(function (config) {
 
 export const getUsers = () => axios.get("/users");
 
+export const getCurrentUser = () => axios.get("/users/me");
+
 export const getProducts = () => axios.get("/products");
 
 export const createProduct = (data) => axios.create("/products", data);
@@ -22,7 +24,6 @@ export const getProduct = (id) => axios.get(`products/${id}`);
 
 export const signup = async (data) => {
   const res = await axios.post("/auth/signup", data);
-  console.log({ res });
   return res;
 };
 

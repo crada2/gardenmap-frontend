@@ -1,8 +1,16 @@
 import React from "react";
 import "../assets/styles/header.css";
 import { Link } from "react-router-dom";
+import { useUser } from "./Auth/AuthProvider";
 
 const Header = () => {
+  const { user, setUser } = useUser();
+
+  const logout = () => {
+    setUser(null);
+    localStorage.removeItem("auth_token");
+  };
+
   return (
     <div className="header">
       <div className="h-logo">
@@ -21,9 +29,16 @@ const Header = () => {
         <li className="h-nav_list"> Village </li>
         <li className="h-nav_list"> Comunity </li>
         <p className="h-nav_separator">|</p>
-        <Link to="login" className="h-nav_list">
-          Login
-        </Link>
+
+        {user ? (
+          <button onClick={logout} className="h-nav_logout">
+            Logout
+          </button>
+        ) : (
+          <Link to="login" className="h-nav_list">
+            Login
+          </Link>
+        )}
       </nav>
       <span className="h-span">
         <img

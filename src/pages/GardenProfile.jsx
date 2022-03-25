@@ -11,22 +11,21 @@ import swal from "sweetalert";
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
   const [service, setService] = useState([]);
-  const [user, setUser] = useState([]);
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     setLoading(false);
-    axios.get("http://localhost:8080/users").then((res) => {
-      console.log(res.data.product);
-      setUser(res.data);
+    axios.get("http://localhost:8080/products").then((res) => {
+      console.log(res);
+      // setService(res.data);
+      // setUsers();
     });
-  }, [setLoading]);
+  }, []);
 
   //DELETE
   const deleteDataAPI = (id) => {
     axios.delete(`http://localhost:8080/products/${id}`).then(
       (res) => {
-        console.log(res);
-        console.log(res.data);
         swal({
           title: "Deleted service!",
           text: "You clicked the button!",
@@ -61,10 +60,9 @@ const GardenProfile = () => {
     <div>
       <Hero />
       <div className="garden_profile">
-        <MainProfile user={user} />
+        <MainProfile users={users} />
       </div>
       <div className="garden_grid-container">{renderProfile()}</div>
-      <ServicesGarden />
     </div>
   );
 };

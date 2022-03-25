@@ -1,27 +1,63 @@
 import React from "react";
 import "../../assets/styles/login.css";
+import { useUser } from "./AuthProvider";
+import api from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 const LoginUsers = () => {
+  const [password, setPassword] = React.useState("");
+  const [username, setUsername] = React.useState("");
+  const { setUser } = useUser();
+  const navigate = useNavigate();
+
+  const submit = async (e) => {
+    try {
+      e.preventDefault();
+
+      const { data } = await api.login({ username, password });
+
+      setUser({
+        id: data.id,
+        username: data.username,
+        email: data.email,
+      });
+
+      localStorage.setItem("auth_token", data.accessToken);
+
+      navigate("/garden", { replace: true });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   return (
     <div className="login_container">
       <div className="login_card">
         <h1>Login to GardenMaps</h1>
-        <form className="form_login" action="" method="post">
+        <form className="form_login" onSubmit={submit}>
           <div className="form_login-name">
             <label className="label_login" htmlFor="">
               Name:{" "}
             </label>
-            <input className="input_login" type="text" />
+            <input
+              className="input_login"
+              type="text"
+              onChange={(e) => setUsername(e.target.value)}
+            />
           </div>
 
           <div className="form_login-password">
             <label className="label_login" htmlFor="">
               Password:{" "}
             </label>
-            <input className="input_login" type="text" />
+            <input
+              className="input_login"
+              type="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
-          <button className="btn_form_login" type="submit">
-            Singin
+          <button to="/garden" className="btn_form_login" type="submit">
+            Login
           </button>
         </form>
         <img

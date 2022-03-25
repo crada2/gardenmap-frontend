@@ -13,25 +13,29 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
             />
           </h1>
           <div className="infoServiceFake">
-            <p>🚜 {title}</p>
-          </div>
+            <p>🚜 {title}</p></div>
+            <ul className="dentroFake">
+            <li> Join us and pet the ponies</li>
+          </ul>
+          
+          
+          <div className="infoServiceFake">
+            <p>🚜 Observations: </p>
+            </div>
+            <p>{observations}</p>
+
+ 
           <ul className="dentroFake">
+  
+            <li> actividad con niños y cesta regalo</li>
+          </ul>
+          <div className="infoServiceFake"></div>
+            <p>🚜 Precio: {price} </p>
+            <ul className="dentroFake">
             <li> por dia: 40$</li>
             <li> por mes 150$</li>
           </ul>
-          <div className="infoServiceFake">
-            <p>🚜 {price}</p>
-          </div>
-          <ul className="dentroFake">
-            <li> price: 20$/person</li>
-            <li> actividad con niños y cesta regalo</li>
-          </ul>
-          <div className="infoServiceFake">
-            <p>🚜 {observations}</p>
-          </div>
-          <ul className="dentroFake">
-            <li> Join us and pet the ponies</li>
-          </ul>
+          
           <div className="buttonFake">
             <button className="deleteFake" onClick={onDelete}></button>
             <button className="createFake"></button>

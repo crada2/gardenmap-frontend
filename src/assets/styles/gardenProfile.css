@@ -60,6 +60,50 @@
   box-shadow: 0 3px #0b5a8e;
   top: 1px;
 }
+/*card plus servide*/
+
+.card-service_moreService{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20vh;
+  flex: 1;
+  margin: 20px;
+  width: 100%;
+  min-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4),
+    0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: rgb(245, 245, 245);
+}
+
+.card-service_plus-gif{
+ margin-top: 1em;
+ height: 2em;
+ width: 2em; 
+}
+.card-service_moreService{
+  background-image: url(../img/bg-gardenLogin.png);
+}
+.card-service_plus{
+  background-color: rgb(221, 253, 221);
+  height: 14vh;
+  width: 14vh;
+  border-radius: 50%;
+  border: none;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Feather-core-plus-circle.svg/1024px-Feather-core-plus-circle.svg.png);
+  background-size: cover;
+  opacity: .8;
+}
+.card-service_plus:hover{
+  background-color: rgb(221, 253, 221);
+  height: 13.4vh;
+  width: 13.4vh;
+  box-shadow: 0 4px 10px rgba(3, 75, 59, 0.4),
+  0 5px 15px rgba(40, 240, 14, 0.1);
+  opacity: .9;
+}
 
 @media (max-width: 992px) {
   .garden_profile_box {

@@ -62,7 +62,13 @@ const GardenProfile = () => {
       <div className="garden_profile">
         <MainProfile users={users} />
       </div>
-      <div className="garden_grid-container">{renderProfile()}</div>
+      <div className="garden_grid-container">{renderProfile()}
+        <div className="card-service_moreService">
+         <button className="card-service_plus"></button>
+        </div>
+      </div>
+      
+   
     </div>
   );
 };

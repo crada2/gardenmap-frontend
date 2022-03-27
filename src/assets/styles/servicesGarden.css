@@ -1,5 +1,6 @@
 .card-service{
-  height: 20vh;
+  height: 19vh;
+  padding: .5em;
   margin: 20px;
   width: 100%;
   min-width: 400px;
@@ -16,26 +17,25 @@
   font-size: 2em;
 }
 .card-service_info{
-  margin: 2em;
+  
+  margin: 2em 0 0 2em;
   font-size: 1.2em;
 }
 .card-service_btn{
+
   display: flex;
-  justify-content:end;
+  align-items: center;
+  justify-content: end;
+  margin: 0 2em 1em 0;
 }
 
-.card-service_btnDelete{
-  margin-right: 1em;
- 
-}
-.card-service_btnCreate{
-  background-color: rgb(17, 0, 255);
-  margin-left: 1em;
-}
+
+
 .btn-service_delete img{
  width: 2.4em;
  height: 2.4em;
- margin-top: -1em;
+ margin-top: 1.4em;
+ padding: 0;
 }
 .btn-service_delete img:hover{
   box-shadow: 0 4px 10px rgba(206, 31, 8, 0.4),

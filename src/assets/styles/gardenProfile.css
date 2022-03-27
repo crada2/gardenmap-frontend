@@ -3,10 +3,15 @@
   justify-content: center;
 }
 .garden_grid-container{
+  min-height: 30vh; 
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, 450px);
+  grid-gap: 2.5rem;
+  margin: 5em;
+  display: f;
   justify-content: center;
+ 
+ 
 }
 .garden_profile_box {
   display: flex;
@@ -67,8 +72,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 20vh;
-  flex: 1;
+  height: 19vh; 
   margin: 20px;
   width: 100%;
   min-width: 400px;
@@ -78,11 +82,6 @@
   background-color: rgb(245, 245, 245);
 }
 
-.card-service_plus-gif{
- margin-top: 1em;
- height: 2em;
- width: 2em; 
-}
 .card-service_moreService{
   background-image: url(../img/bg-gardenLogin.png);
 }

@@ -7,8 +7,8 @@ import { useForm } from "react-hook-form";
 
 const GardenForm = () => {
   const navigate = useNavigate();
-  const [direction, setDirection] = useState("");
-  const [telephone, setTelephone] = useState("");
+  //const [direction, setDirection] = useState("");
+  //const [telephone, setTelephone] = useState("");
   const [title, setTitle] = useState("");
   const [observations, setObservations] = useState("");
   const [price, setPrice] = useState("");
@@ -17,8 +17,8 @@ const GardenForm = () => {
   const sendDataAPI = () => {
     axios
       .post(`http://localhost:8080/products`, {
-        direction,
-        telephone,
+        //direction,
+        //telephone,
         title,
         observations,
         price,

@@ -85,7 +85,7 @@
 .card-service_moreService{
   background-image: url(../img/bg-gardenLogin.png);
 }
-.card-service_plus{
+/* .card-service_plus{
   background-color: rgb(221, 253, 221);
   height: 14vh;
   width: 14vh;
@@ -94,9 +94,18 @@
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Feather-core-plus-circle.svg/1024px-Feather-core-plus-circle.svg.png);
   background-size: cover;
   opacity: .8;
+} */
+.card-service_plus{
+  background-color: white;
+  height: 14vh;
+  width: 14vh;
+  border-radius: 50%;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Feather-core-plus-circle.svg/1024px-Feather-core-plus-circle.svg.png);
+  background-size: cover;
+  opacity: 0.8;
 }
 .card-service_plus:hover{
-  background-color: rgb(221, 253, 221);
+  background-color: rgb(239, 253, 239);
   height: 13.4vh;
   width: 13.4vh;
   box-shadow: 0 4px 10px rgba(3, 75, 59, 0.4),

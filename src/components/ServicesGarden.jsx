@@ -12,7 +12,7 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
         <article card-service_info> 
          <h4>Servive:</h4>  {observations} <br />
          <br />
-         <h4>Price Service:</h4> {price}$  
+         <h4>Price Service:</h4> {price} $  
 
         </article>
         <div className="card-service_btn" >

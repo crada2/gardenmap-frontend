@@ -10,7 +10,7 @@ const ServicesGarden = ({ title, observations, price, onDelete }) => {
       <section className="card-service_info">
   
         <article card-service_info> 
-         <h4>Servive:</h4>  {observations} <br />
+         <h4>Service:</h4>  {observations} <br />
          <br />
          <h4>Price Service:</h4> {price} $  
 

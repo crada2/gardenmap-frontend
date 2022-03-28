@@ -32,7 +32,6 @@
 }
 
 
-
 .btn-service_delete img{
  width: 2.4em;
  height: 2.3em;
@@ -43,4 +42,6 @@
   box-shadow: 0 4px 10px rgba(206, 31, 8, 0.4),
   0 5px 15px rgba(240, 67, 14, 0.466);
   border-radius: 0.5rem;
+  width: 3em;
+  height: 3em;
  }

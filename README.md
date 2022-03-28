@@ -101,9 +101,8 @@ Wireframe of the main idea of ​​the project with functionality:
 * Cecilia Carbajal.
 * Claudia Calero Duró.
 * Davina Medina.
-* Mayu.
-* Martha.
-* Sole.
+* Andrea Mayu Ruiz.
+* Soledad Maradini.
 ## Gratitude 🎁
 * Tell others about this project 📢 .
 * Support our projects 🐈‍⬛.

@@ -161,26 +161,11 @@ background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, F
   #h-btn_logout {
     width: 110px; 
     margin-left: 51%;
+    min-height: 40px;
     transform: translateX(-50%);
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 }
 
-/*
-@media screen and (max-width: 992px)
-.nav-links-mobile {
-    
-    left: 51%;cambiar solo esta para que se vaya a derecha
-    
-}
-
-@media screen and (max-width: 992px)
-.h-nav_list, .h-nav_login {
-   
-    text-align: justify;
-    padding: 7px;
-    
-}
-
-*/

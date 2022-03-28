@@ -14,7 +14,7 @@
 .form_container {
   font-family: Arial, Helvetica, sans-serif;
   padding: 2em 1em 2em 1em;
-  min-height: 44rem;
+  min-height: 34rem;
   justify-content: center;
   display: flex;
   flex-direction: column;

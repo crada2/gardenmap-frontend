@@ -57,42 +57,6 @@ const GardenForm = () => {
 
         <div className="form_container_info">
           <form className="form_info" onSubmit={handleSubmit(onSubmit)}>
-            {/* direction */}
-            <label className="gf-form-label" htmlFor="f-address">
-              🍀 Address
-            </label>
-
-            <input
-              {...register("titleForm", { required: true, maxLength: 30 })}
-              className="gf-inputext"
-              type="gf-text"
-              placeholder="A title for your services"
-              value={direction}
-              onChange={(e) => setDirection(e.target.value)}
-            />
-
-            {errors.titleForm && (
-              <p className="error-text">Pleace, direction is required</p>
-            )}
-
-            {/* direction */}
-            <label className="gf-form-label" htmlFor="f-telephone">
-              🍀 Telephone
-            </label>
-
-            <input
-              {...register("titleForm", { required: true, maxLength: 30 })}
-              className="gf-inputext"
-              type="gf-text"
-              placeholder="A title for your services"
-              value={telephone}
-              onChange={(e) => setTelephone(e.target.value)}
-            />
-
-            {errors.titleForm && (
-              <p className="error-text">Pleace, direction is required</p>
-            )}
-
             {/* title */}
 
             <label className="gf-form-label" htmlFor="f-title">
@@ -103,13 +67,13 @@ const GardenForm = () => {
               {...register("titleForm", { required: true, maxLength: 30 })}
               className="gf-inputext"
               type="gf-text"
-              placeholder="A title for your services"
+              placeholder="A title for your service"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
 
             {errors.titleForm && (
-              <p className="error-text">Pleace, title is required</p>
+              <p className="error-text">Please, a title is required</p>
             )}
 
             {/* Observations */}
@@ -126,14 +90,14 @@ const GardenForm = () => {
               })}
               className="gf-inputext"
               type="text"
-              placeholder="Observations:"
+              placeholder="Briefly describe what do your offer"
               value={observations}
               onChange={(e) => setObservations(e.target.value)}
             />
 
             {errors.observationsForm && (
               <p className="error-text">
-                Please, your observations are incomplete.
+                Sorry, your observations are too short.
               </p>
             )}
 

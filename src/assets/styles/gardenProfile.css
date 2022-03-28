@@ -1,15 +1,8 @@
-.garden_profile {
+/* .garden_profile {
   display: flex;
   justify-content: center;
 }
-.garden_grid-container{
-  min-height: 30vh; 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 450px);
-  grid-gap: 2.5rem;
-  margin: 5em;
-  display: f;
-  justify-content: center;
+
  
  
 }
@@ -18,21 +11,79 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 2em 15em 2em 3em;
   width: 20em;
-  margin: 2em 0em 2em 3em;
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 40%), 0 5px 15px rgb(0 0 0 / 10%);
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  height: 25vw;
+  background-image: url(../img/farm.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+     
+  
   padding: 1em;
-  background: #f3f0d5;
+  background: #d5f3f3;
   border-radius: 20px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  
 }
 
+.main_profile {
+  margin-top: 0.5em;
+  font-size: 1.7em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  line-height: 1.2;
+  font-style: oblique;
+  color: #083131;
+  margin-right: 2.3em;
+}
 .garden_profile-info {
-  margin: 0.2em;
+  margin: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  padding-right: 18%;
+  color: whitesmoke;
+  text-shadow: 0.05em 0.04em 0.05em rgb(59, 36, 58);
+  display: flex;
+  align-self: flex-start;
+  margin-left: 2.9em;
 }
 
+.profile-logo{
+  width: 5em;
+  display: flex;
+  margin-right: 11em;
+  margin-top: 1.8em;
+  position: relative;
+}
 .garden_profile_box img {
+  margin-top: 0.4em;
+  margin-right: 3em;
   border-radius: 50%;
   width: 40%;
+  border-width: 6px;
+  border-style: inherit;
+  border-color: white;
+  background-color: #b5cfcf;
+
+}
+.fa-quote-right {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: var(--color-footer);
+  opacity: 0.1;
 }
 
 .garden_iframe {
@@ -64,8 +115,16 @@
 .garden_create-service:hover {
   box-shadow: 0 3px #0b5a8e;
   top: 1px;
-}
+} */
 /*card plus servide*/
+.garden_grid-container{
+  min-height: 30vh; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 450px);
+  grid-gap: 2.5rem;
+  margin: 5em;
+  display: f;
+  justify-content: center;}
 
 .card-service_moreService{
   align-items: center;
@@ -80,23 +139,11 @@
     0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   background-color: rgb(245, 245, 245);
-}
-
-.card-service_moreService{
   background-image: url(../img/bg-gardenLogin.png);
 }
-/* .card-service_plus{
-  background-color: rgb(221, 253, 221);
-  height: 14vh;
-  width: 14vh;
-  border-radius: 50%;
-  border: none;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Feather-core-plus-circle.svg/1024px-Feather-core-plus-circle.svg.png);
-  background-size: cover;
-  opacity: .8;
-} */
+
 .card-service_plus{
-  background-color: white;
+  background-color: rgb(245, 250, 246);
   height: 14vh;
   width: 14vh;
   border-radius: 50%;
@@ -120,6 +167,8 @@
     border: solid 3px rgb(192, 183, 183);
     background-color: rgb(248, 242, 231);
     height: 20em;
+    border-width: 3px;
+    border-color: white;
   }
 
   .garden_map_box {
@@ -133,7 +182,7 @@
     );
     box-shadow: none;
     border-radius: 0;
-    height: 26em;
+    
   }
 
   .garden_iframe {
@@ -143,7 +192,7 @@
     height: 23em;
     position: relative;
     z-index: -1;
-    background-color: rgb(214, 198, 177);
+    background-color: ffrgb(214, 198, 177);
   }
 
   .garden_profile {

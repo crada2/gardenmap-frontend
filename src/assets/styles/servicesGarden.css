@@ -3,7 +3,6 @@
   font-family: Arial, Helvetica, sans-serif; 
   height: 40vh;/* */
   padding: .5em;
-  margin: 20px;
   width: 100%;
   min-width: 400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4),
@@ -14,9 +13,12 @@
 .card-service_title{
   display: flex;
   justify-content: center;
-  background-image: url(../img/farmOpacity.png);
+  background-image: url(../img/farm.jpg);
+  background-size: cover;
  padding: .5em;
   font-size: 2em;
+  opacity: 0.8;
+  border-radius: 6px;
 }
 .card-service_info{
   
@@ -38,9 +40,11 @@
  height: 2.3em;
  margin-top: 1.4em;
  padding: 0;
+ background-color: rgb(240, 197, 78);
 }
 .btn-service_delete img:hover{
-  box-shadow: 0 4px 10px rgba(206, 31, 8, 0.4),
-  0 5px 15px rgba(240, 67, 14, 0.466);
+  box-shadow: 0 4px 10px rgb(240, 197, 78),
+  0 5px 15px rgba(248, 62, 5, 0.986);
+
   border-radius: 0.5rem;
  }

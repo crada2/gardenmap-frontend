@@ -6,11 +6,9 @@ import "../assets/styles/mainProfile.css";
 
 const MainProfile = () => {
   const { user } = useUser();
-  const navigate = useNavigate();
 
-  const handleSubmit = () => {
-    navigate("/form");
-  };
+
+
 
   return (
     <div className="profile-hero">

@@ -57,7 +57,7 @@ const GardenForm = () => {
 
         <div className="form_container_info">
           <form className="form_info" onSubmit={handleSubmit(onSubmit)}>
-            {/* direction */}
+           {/*
             <label className="gf-form-label" htmlFor="f-address">
               🍀 Address
             </label>
@@ -66,7 +66,7 @@ const GardenForm = () => {
               {...register("titleForm", { required: true, maxLength: 30 })}
               className="gf-inputext"
               type="gf-text"
-              placeholder="A title for your services"
+              placeholder=""
               value={direction}
               onChange={(e) => setDirection(e.target.value)}
             />
@@ -75,7 +75,7 @@ const GardenForm = () => {
               <p className="error-text">Pleace, direction is required</p>
             )}
 
-            {/* direction */}
+           
             <label className="gf-form-label" htmlFor="f-telephone">
               🍀 Telephone
             </label>
@@ -84,14 +84,14 @@ const GardenForm = () => {
               {...register("titleForm", { required: true, maxLength: 30 })}
               className="gf-inputext"
               type="gf-text"
-              placeholder="A title for your services"
+              placeholder=""
               value={telephone}
               onChange={(e) => setTelephone(e.target.value)}
             />
 
             {errors.titleForm && (
               <p className="error-text">Pleace, direction is required</p>
-            )}
+            )} */}
 
             {/* title */}
 

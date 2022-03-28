@@ -122,9 +122,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 450px);
   grid-gap: 2.5rem;
-  margin: 5em;
-  display: f;
-  justify-content: center;}
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left:15%;
+  justify-content: start;
+}
 
 .card-service_moreService{
   align-items: center;
@@ -132,19 +134,19 @@
   flex-direction: column;
   justify-content: center;
   height: 40vh; /**/
-  margin: 20px;
+  /* margin: 20px; */
   width: 100%;
   min-width: 400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4),
     0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   /* background-color: rgb(168, 238, 159); */
-  background-image: url(../img/farmOpacity.png);
+  background-image: url(../img/farm.jpg);
   background-size: cover;
 }
 
 .card-service_plus{
-  background-color: rgb(238, 253, 253);
+  background-color: rgb(253, 224, 166);
   height: 10vh;
   width: 10vh;
   border-radius: 50%;
@@ -153,7 +155,7 @@
   opacity: 0.8;
 }
 .card-service_plus:hover{
-  background-color: rgb(209, 246, 243);
+  background-color: rgb(240, 197, 78);
   height: 10.1vh;
   width: 10.1vh;
   box-shadow: 0 4px 10px rgba(3, 75, 59, 0.4),
@@ -162,42 +164,26 @@
 }
 
 @media (max-width: 992px) {
-  .garden_profile_box {
-    margin-top: 3em;
-    position: absolute;
-    border: solid 3px rgb(192, 183, 183);
-    background-color: rgb(248, 242, 231);
-    height: 20em;
-    border-width: 3px;
-    border-color: white;
+  .garden_grid-container{
+    margin:3rem;
+    justify-content: center;
   }
-
-  .garden_map_box {
-    margin-top: 0;
-    background: radial-gradient(
-      circle,
-      rgba(228, 241, 232, 0.28166915052160957) 41%,
-      rgba(223, 233, 225, 0.30849478390461993) 45%,
-      rgba(244, 240, 240, 0.8194444444444444) 75%,
-      rgba(254, 255, 255, 1) 90%
-    );
-    box-shadow: none;
-    border-radius: 0;
-    
-  }
-
-  .garden_iframe {
-    width: 520px;
-    border: 3em solid t;
-    border-radius: 0;
-    height: 23em;
-    position: relative;
-    z-index: -1;
-    background-color: ffrgb(214, 198, 177);
+  
+ /* mapa en responsive o sin mapa???????????????????????*/
+  .map-iframe {
+ display: none;
   }
 
   .garden_profile {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (max-width: 554px) {
+  .garden_profile {
+    display: flex;
+    justify-content: center;
+    
   }
 }

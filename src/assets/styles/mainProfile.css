@@ -60,27 +60,26 @@
   .map-iframe {
     border-radius: 20px;
     height: 384px;
-    margin: 32px 48px 32px 0;
-    width: 720px;
+    
+    
+    margin: 16px 4px 22px 0;
+    width: 680px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
   }
 
-  @media screen and (max-width: 768px) and (min-width: 425px) {
+  @media screen and (max-width: 990px) and (min-width: 425px) {
     .profile-hero {
         margin: auto;
       }
     .garden-profile-card {
     margin-top: 0;
-    position: absolute;
     border: solid 3px rgb(192, 183, 183);
     background-color: rgb(248, 242, 231);
     height: 320px;
+    margin-top: 48px; 
+    margin-left: 35vw;
     }
-    .garden-profile-card {
-        margin-top: 48px; 
-        margin-left: 19%;
-    }
-  
+
     .map-box {
         margin-top: 20px;
         background: radial-gradient(
@@ -95,6 +94,7 @@
         height: 416px;
         width: 290px;
         margin: auto;
+        display: none;
     }
   
     .map-iframe {

@@ -66,14 +66,12 @@
   font-size: 1em;
 }
 #h-btn_logout:hover{
-  box-shadow:inset 0 0 0 2em #6be585;
+  box-shadow:inset 0 0 0 2em #DCA925;
   color:black;
 }
 .h-nav_logout{
   border:2px solid #dd3e54;
-  background: #dd3e54;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0b320c;;  /* fallback for old browsers */
 
   border-radius: 5px;
 }

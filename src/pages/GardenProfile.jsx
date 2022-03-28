@@ -7,11 +7,16 @@ import MainProfile from "../components/MainProfile";
 import ServicesGarden from "../components/ServicesGarden";
 import "../assets/styles/gardenProfile.css";
 import swal from "sweetalert";
+import { Link } from "react-router-dom";
+
 
 const GardenProfile = () => {
   const [loading, setLoading] = useState(true);
   const [service, setService] = useState([]);
   const [users] = useState([]);
+
+
+  
 
   useEffect(() => {
     setLoading(false);
@@ -62,7 +67,14 @@ const GardenProfile = () => {
       <div className="garden_profile">
         <MainProfile users={users} />
       </div>
-      <div className="garden_grid-container">{renderProfile()}</div>
+      <div className="garden_grid-container">{renderProfile()}
+        <div className="card-service_moreService">
+         <Link className="card-service_plus" to={"/form"} ></Link>
+        
+        </div>
+      </div>
+      
+   
     </div>
   );
 };

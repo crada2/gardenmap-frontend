@@ -1,12 +1,10 @@
-/*.garden_profile {
+/* .garden_profile {
   display: flex;
   justify-content: center;
 }
-.garden_grid-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
-  grid-gap: 1.5rem;
-  justify-content: center;
+
+ 
+ 
 }
 .garden_profile_box {
   display: flex;
@@ -28,7 +26,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-      /*
+     
   
   padding: 1em;
   background: #d5f3f3;
@@ -96,6 +94,71 @@
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
+.garden_create-service {
+  margin-top: 1em;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 2em;
+  border: none;
+  background: #1f4b30;
+  box-shadow: 0 5px #0b2513;
+}
+
+.garden_create-service:hover {
+  box-shadow: 0 3px #0b5a8e;
+  top: 1px;
+} */
+/*card plus servide*/
+.garden_grid-container{
+  min-height: 30vh; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 450px);
+  grid-gap: 2.5rem;
+  margin: 5em;
+  display: f;
+  justify-content: center;}
+
+.card-service_moreService{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh; /**/
+  margin: 20px;
+  width: 100%;
+  min-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4),
+    0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  /* background-color: rgb(168, 238, 159); */
+  background-image: url(../img/bg-gardenLogin.png); 
+}
+
+.card-service_plus{
+  background-color: rgb(238, 253, 253);
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Feather-core-plus-circle.svg/1024px-Feather-core-plus-circle.svg.png);
+  background-size: cover;
+  opacity: 0.8;
+}
+.card-service_plus:hover{
+  background-color: rgb(209, 246, 243);
+  height: 10.1vh;
+  width: 10.1vh;
+  box-shadow: 0 4px 10px rgba(3, 75, 59, 0.4),
+  0 5px 15px rgba(40, 240, 14, 0.1);
+  opacity: .9;
+}
 
 @media (max-width: 992px) {
   .garden_profile_box {
@@ -137,4 +200,3 @@
     padding: 0;
   }
 }
-*/

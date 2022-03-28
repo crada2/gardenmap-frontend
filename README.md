@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+<p align="center"><img src="./public/Imgs/Readme.MD/logoName.png?raw=true" width="200"></a></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GardenMaps📍
+============
 
-## Available Scripts
 
+## Introduction 🚜
+The "GardenMaps" project is a web application that aims to link families and agriculture enthusiasts, through activities that promote services such as rent or sale of natural products.
+
+## Objectives of the practice 🌱 🌳
+1.- Users will be able to locate the orchards closest to their home, enjoy open-air events, and keep up to date with their activities and services.
+
+2.- Users will be able to create the events, services or activities that they promote in their gardens or green areas.
+
+3.- Users can register, log in or log out.
+
+4.- Users can delete completed services or activities.
+
+## Structure  🍓 🍋 🍎
+
+- Requisitos Funcionales 🍉
+    - On the cover the application will have a slider with featured images.
+    - On the cover, the header has the login option.
+    - At the end of the session, the user can log out.
+    - On the front page, the user will be able to register for the first time to access their user profile.
+    - Users can record events or activities related to their garden.
+    - The user can delete those events or activities that have already concluded.
+    - Users can see on their profile page the events or activities you have registered.
+
+## Starting 🌿 🌎
+These instructions will allow you to get a working copy of the project on your local computer, for development and testing purposes:
+
+Open terminal and run:
+### `Backend 🪴`
+  - Clone git https://github.com/crada2/gardenmap-backend.git to download the project, do a fork.
+  - Create a database in phpMyAdmin locally: Database name: services
+  - Configuration in: application.properties.example.
+  - Follow setup instructions (Mac, Windows).
+  - Run GardenmapApplication in Spring Boot.
+### `Frontend 🍒`
 In the project directory, you can run:
+  - Clone git https://github.com/crada2/gardenmap-frontend.git to download the project, do a fork.
+    ### `npm start`
 
-### `npm start`
+  - Runs the app in the development mode.\
+  - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Install 🌺
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- npm install
+- axios
+- react-hook-form
+- react-router-dom
+- sweetalert
+- uuid
+- testing-library/react
+## Project in production 🍀
 
-### `npm test`
+Where to find the project in production:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wireframe 🐮
+Wireframe of the main idea of ​​the project with functionality:
 
-### `npm run build`
+<p align="center"> 
+  <img src="./public/Imgs/Readme.MD/movil.png?raw=true" width=80%>
+  <img src="./public/Imgs/Readme.MD/desktop.png?raw=true" width=60%>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Desktop Version 🐣
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+  <img src="./public/img/Readme.MD/crada-destopk.gif" alt="animated" width=60% />
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Mobile First Version 🐝
+<p align="center">
+  <img src="./public/img/Readme.MD/crada-movil.gif" alt="animated"  />
+</p>
 
-### `npm run eject`
+## Dependencies 🏕️
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Frontend: HTML, Css (Atomic Design, BEM), Axios, Swal (alerts), uuid (slider), React Hook Form (validation form), react-router-dom, Axios.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Backend: Spring Boot, Gradle, Postman, Test unitarios.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Bases de datos: MySQL.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tools 🏡
 
-## Learn More
+* Miró
+* Figma
+* Mockup Ninja
+* Trello
+* Font-face
+* Metodologías Ágiles
+* SQL
+* PHP-MyAdmin
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors🌻
+* Sol Turipe.
+* Cecilia Carbajal.
+* Claudia Calero Duró.
+* Davina Medina.
+* Mayu.
+* Martha.
+* Sole.
+## Gratitude 🎁
+* Tell others about this project 📢 .
+* Support our projects 🐈‍⬛.
+* Made with ❤️ by [CRADA 🐱](https://github.com/crada2/TechEventsLaravel)

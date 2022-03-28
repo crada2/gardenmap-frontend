@@ -26,7 +26,7 @@
 }
 
 .herobtn-slide {
-  width: 0.5vw;
+  width: 2.5vw;
   height: 0.5vw;
   border-radius: 50%;
   background: #f7f5f405;
@@ -39,22 +39,22 @@
   background-color: transparent !important;
 }
 
-.herobtn-slide:hover img {
+.herobtn-slide:hover img{
   visibility: visible;
-  width: 2vw;
-  height: 2vw;
+  width: 3.5vw;
+  height: 3.5vw;
   pointer-events: none;
 }
 
 .prev {
   top: 50%;
   left: 20px;
-  transform: translateY(-60%);
+  transform: translateY(-40%);
 }
 .next {
   top: 50%;
   right: 20px;
-  transform: translateY(-60%);
+  transform: translateY(-40%);
 }
 
 .hero_container-dots {

@@ -14,7 +14,7 @@
 .card-service_title{
   display: flex;
   justify-content: center;
-  background-image: url(../img/bg-gardenLogin.png);
+  background-image: url(../img/farmOpacity.png);
  padding: .5em;
   font-size: 2em;
 }

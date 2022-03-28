@@ -138,23 +138,23 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4),
     0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  background-color: rgb(245, 245, 245);
-  background-image: url(../img/bg-gardenLogin.png);
+  /* background-color: rgb(168, 238, 159); */
+  background-image: url(../img/bg-gardenLogin.png); 
 }
 
 .card-service_plus{
-  background-color: rgb(245, 250, 246);
-  height: 14vh;
-  width: 14vh;
+  background-color: rgb(238, 253, 253);
+  height: 10vh;
+  width: 10vh;
   border-radius: 50%;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Feather-core-plus-circle.svg/1024px-Feather-core-plus-circle.svg.png);
   background-size: cover;
   opacity: 0.8;
 }
 .card-service_plus:hover{
-  background-color: rgb(239, 253, 239);
-  height: 13.4vh;
-  width: 13.4vh;
+  background-color: rgb(209, 246, 243);
+  height: 10.1vh;
+  width: 10.1vh;
   box-shadow: 0 4px 10px rgba(3, 75, 59, 0.4),
   0 5px 15px rgba(40, 240, 14, 0.1);
   opacity: .9;

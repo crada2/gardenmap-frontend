@@ -18,14 +18,14 @@ The "GardenMaps" project is a web application that aims to link families and agr
 
 ## Structure  🍓 🍋 🍎
 
-- Requisitos Funcionales 🍉
-    - On the cover the application will have a slider with featured images.
-    - On the cover, the header has the login option.
+- Functional requirements 🍉
+    - On the landing page there is a slider with featured images.
+    - On the landing page the header has the login option.
     - At the end of the session, the user can log out.
-    - On the front page, the user will be able to register for the first time to access their user profile.
-    - Users can record events or activities related to their garden.
-    - The user can delete those events or activities that have already concluded.
-    - Users can see on their profile page the events or activities you have registered.
+    - On the landing page, the user is able to register for the first time to access their user profile.
+    - Users can store events or activities related to their garden.
+    - The user can delete those events or activities if they are no longer available.
+    - Users can see on their profile page the events or activities they have registered.
 
 ## Starting 🌿 🌎
 These instructions will allow you to get a working copy of the project on your local computer, for development and testing purposes:
@@ -33,7 +33,7 @@ These instructions will allow you to get a working copy of the project on your l
 Open terminal and run:
 ### `Backend 🪴`
   - Clone git https://github.com/crada2/gardenmap-backend.git to download the project, do a fork.
-  - Create a database in phpMyAdmin locally: Database name: services
+  - Create a database in phpMyAdmin/DBeaver locally: Database name: services
   - Configuration in: application.properties.example.
   - Follow setup instructions (Mac, Windows).
   - Run GardenmapApplication in Spring Boot.
@@ -81,9 +81,9 @@ Wireframe of the main idea of ​​the project with functionality:
 
 * Frontend: HTML, Css (Atomic Design, BEM), Axios, Swal (alerts), uuid (slider), React Hook Form (validation form), react-router-dom, Axios.
 
-* Backend: Spring Boot, Gradle, Postman, Test unitarios.
+* Backend: Spring Boot, Gradle, Postman, Unit testing.
 
-* Bases de datos: MySQL.
+* Database: MySQL.
 
 ## Tools 🏡
 

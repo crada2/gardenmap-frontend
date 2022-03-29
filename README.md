@@ -62,8 +62,8 @@ Where to find the project in production:
 Wireframe of the main idea of ​​the project with functionality:
 
 <p align="center"> 
-  <img src="./public/Imgs/Readme.MD/movil.png?raw=true" width=80%>
-  <img src="./public/Imgs/Readme.MD/desktop.png?raw=true" width=60%>
+  <img src="./public/Imgs/Readme.MD/movil.png?raw=true" width=60%>
+  <img src="./public/Imgs/Readme.MD/desktop.png?raw=true" width=40%>
 </p>
 
 ## Desktop Version 🐣

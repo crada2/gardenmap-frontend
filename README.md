@@ -74,7 +74,7 @@ Wireframe of the main idea of ​​the project with functionality:
 
 ## Mobile First Version 🐝
 <p align="center">
-  <img src="./public/Imgs/Readme.MD/gardenMovil.gif" alt="animated" width=60%  />
+  <img src="./public/Imgs/Readme.MD/gardenMovil.gif" alt="animated" width=30%  />
 </p>
 
 ## Dependencies 🏕️

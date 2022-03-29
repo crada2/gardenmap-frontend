@@ -69,7 +69,7 @@ Wireframe of the main idea of ​​the project with functionality:
 ## Desktop Version 🐣
 
 <p align="center">
-  <img src="./public/Imgs/Readme.MD/gardenDesktop.gif" alt="animated" width=80% />
+  <img src="./public/Imgs/Readme.MD/gardenDesktop.gif" alt="animated" width=60% />
 </p>
 
 ## Mobile First Version 🐝

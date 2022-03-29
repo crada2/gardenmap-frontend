@@ -7,8 +7,6 @@ import { useForm } from "react-hook-form";
 
 const GardenForm = () => {
   const navigate = useNavigate();
-  const [direction, setDirection] = useState("");
-  const [telephone, setTelephone] = useState("");
   const [title, setTitle] = useState("");
   const [observations, setObservations] = useState("");
   const [price, setPrice] = useState("");
@@ -17,8 +15,6 @@ const GardenForm = () => {
   const sendDataAPI = () => {
     axios
       .post(`http://localhost:8080/products`, {
-        direction,
-        telephone,
         title,
         observations,
         price,
@@ -57,43 +53,7 @@ const GardenForm = () => {
 
         <div className="form_container_info">
           <form className="form_info" onSubmit={handleSubmit(onSubmit)}>
-           {/*
-            <label className="gf-form-label" htmlFor="f-address">
-              🍀 Address
-            </label>
 
-            <input
-              {...register("titleForm", { required: true, maxLength: 30 })}
-              className="gf-inputext"
-              type="gf-text"
-              placeholder=""
-              value={direction}
-              onChange={(e) => setDirection(e.target.value)}
-            />
-
-            {errors.titleForm && (
-              <p className="error-text">Pleace, direction is required</p>
-            )}
-
-           
-            <label className="gf-form-label" htmlFor="f-telephone">
-              🍀 Telephone
-            </label>
-
-            <input
-              {...register("titleForm", { required: true, maxLength: 30 })}
-              className="gf-inputext"
-              type="gf-text"
-              placeholder=""
-              value={telephone}
-              onChange={(e) => setTelephone(e.target.value)}
-            />
-
-            {errors.titleForm && (
-              <p className="error-text">Pleace, direction is required</p>
-            )} */}
-
-            {/* title */}
 
             <label className="gf-form-label" htmlFor="f-title">
               🍀 Title

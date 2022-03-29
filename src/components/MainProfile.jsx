@@ -1,14 +1,11 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import { useUser } from "./Auth/AuthProvider";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import "../assets/styles/mainProfile.css";
 
 const MainProfile = () => {
   const { user } = useUser();
-
-
-
 
   return (
     <div className="profile-hero">

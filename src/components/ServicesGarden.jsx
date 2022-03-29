@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ServicesGarden = ({ title, observations, price, onDelete }) => {
   return (
     <div className="card-service">
-      <section className="card-service_title">{title}</section>
+      <h2 className="card-service_title">{title}</h2>
       <section className="card-service_info">
   
         <article card-service_info> 

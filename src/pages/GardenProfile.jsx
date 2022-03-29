@@ -15,9 +15,6 @@ const GardenProfile = () => {
   const [service, setService] = useState([]);
   const [users] = useState([]);
 
-
-  
-
   useEffect(() => {
     setLoading(false);
     axios.get("http://localhost:8080/products/user").then((res) => {

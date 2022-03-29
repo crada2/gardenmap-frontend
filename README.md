@@ -94,7 +94,7 @@ Wireframe of the main idea of ​​the project with functionality:
 * Font-face
 * Metodologías Ágiles
 * SQL
-* PHP-MyAdmin
+* MyAdmin
 
 ## Authors🌻
 * Sol Turipe.

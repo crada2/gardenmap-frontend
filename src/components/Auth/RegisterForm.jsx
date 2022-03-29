@@ -44,33 +44,6 @@ const RegisterForm = () => {
     }
   };
 
-  /*
-  alert(res.data.msg);
-  navigate('/crud-api-login', { replace: true });const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [direction, setDirection] = useState("");
-  const [telephone, setTelephone] = useState("");*/
-
-  //POST OWNER
-  /*const sendDataAPI = () => {
-    axios
-      .post(`http://localhost:8080/owners/`, {
-        name,
-        email,
-        password,
-        //id: uuidv4(),
-      })
-      .then(() => {
-        navigate("/form");
-        swal({
-          title: "Register complete",
-          text: "click 'ok' to add your offers",
-          icon: "success",
-        });
-      });
-  };
-*/
 
   return (
     <div className="form_main_register">

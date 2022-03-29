@@ -69,12 +69,12 @@ Wireframe of the main idea of ​​the project with functionality:
 ## Desktop Version 🐣
 
 <p align="center">
-  <img src="./public/img/Readme.MD/crada-destopk.gif" alt="animated" width=60% />
+  <img src="./public/Imgs/Readme.MD/gardenDesktop.gif" alt="animated" width=80% />
 </p>
 
 ## Mobile First Version 🐝
 <p align="center">
-  <img src="./public/img/Readme.MD/crada-movil.gif" alt="animated"  />
+  <img src="./public/Imgs/Readme.MD/gardenMovil.gif" alt="animated" width=60%  />
 </p>
 
 ## Dependencies 🏕️

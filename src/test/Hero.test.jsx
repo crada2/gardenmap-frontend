@@ -9,5 +9,3 @@ test.todo(
 it('should render a button', () => {
     render(<BtnSlider />)
   })
-
-
